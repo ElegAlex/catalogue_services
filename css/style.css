@@ -588,12 +588,6 @@ dl.definition-list i {
     .good-practices-list div {
         font-size: 0.9rem;
     }
-<<<<<<< HEAD
-=======
-	aside{
-		left:0;
-	}
->>>>>>> becb2bcb588f511a1f0f3cea860c0aae982af8e4
 }
 @media (max-width: 576px) {
     .card-grid { grid-template-columns: 1fr; }
@@ -646,10 +640,4 @@ dl.definition-list i {
      .practice-icon { font-size: 1.5rem; }
      .good-practices-list div { font-size: 0.85rem; }
 
-<<<<<<< HEAD
 }
-=======
-}
-
-
->>>>>>> becb2bcb588f511a1f0f3cea860c0aae982af8e4
