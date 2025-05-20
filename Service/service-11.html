@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 11: Sauvegardes & Restaurations - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo intégré correctement selon l'exemple -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <form class="search-form" action="#!" method="get" role="search">
+                <label for="main-search" class="visually-hidden">Rechercher dans le catalogue</label>
+                <input type="search" id="main-search" name="q" placeholder="Rechercher un service..." aria-label="Rechercher dans le catalogue">
+                <button type="submit" aria-label="Lancer la recherche">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 11) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 11 : Gestion des Sauvegardes et Restaurations</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 11 : Gestion des Sauvegardes et Restaurations (Backup & Recovery)</h1>
+            <p class="service-summary">Assure la sauvegarde régulière des données de l'infrastructure centrale et permet leur restauration en cas de besoin.</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                 <!-- Liste des Onglets -->
+                 <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Demande Restauration
+                    </button>
+                    <!-- Pas d'onglet SLA spécifique pour ce service interne -->
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                         <h2>Description du Service</h2>
+                        <p>Ce service assure la <strong>protection des données critiques</strong> hébergées sur l'infrastructure centrale de la DRSM IDF (serveurs virtuels, bases de données, partages de fichiers principaux) contre la perte accidentelle, la corruption ou les sinistres.</p>
+                        <p>Il repose sur deux technologies complémentaires :</p>
+                        <ul>
+                            <li><strong>Avamar (National) :</strong> Solution nationale assurant des sauvegardes fréquentes (généralement quotidiennes) avec une rétention à court terme (ex: 30 jours). C'est la protection standard pour la plupart des systèmes.</li>
+                            <li><strong>Veeam Backup & Replication (Local) :</strong> Solution gérée localement par le SI de la DRSM IDF pour répondre à des besoins spécifiques de rétention à plus long terme (ex: archives, données métiers nécessitant 1 an ou plus de conservation) ou pour certains systèmes non couverts par Avamar.</li>
+                        </ul>
+                        <p>Le service comprend la définition des politiques, l'exécution et la surveillance des sauvegardes, la gestion des espaces de stockage, les tests de restauration et le traitement des demandes de restauration validées.</p>
+                        <p class="sla-notice"><strong>Important :</strong> Ce service ne couvre PAS la sauvegarde des données stockées localement sur les postes de travail des utilisateurs (Disque C:, Bureau, Mes Documents...). <strong>Il est de la responsabilité de chaque utilisateur d'enregistrer ses fichiers de travail importants sur les lecteurs réseau désignés (H:, P:, S:...)</strong> pour qu'ils soient inclus dans les sauvegardes.</p>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                         <ul>
+                            <li><strong>Indirectement :</strong> Tous les collaborateurs et services de la DRSM IDF dont l'activité repose sur les données et applications hébergées sur l'infrastructure centrale.</li>
+                             <li><strong>Directement :</strong> Les utilisateurs ou managers qui soumettent une demande de restauration de données suite à une perte ou corruption accidentelle (sur les systèmes sauvegardés).</li>
+                            <li>Le <strong>Service Informatique</strong> lui-même, pour assurer la continuité et la reprise d'activité.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès / Demande Restauration -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                        <h2>Demande de Restauration</h2>
+                        <p>Si vous avez besoin de restaurer des données (fichier, dossier, email, VM...) qui étaient stockées sur les <strong>serveurs ou partages réseau centralisés</strong> et qui ont été perdues ou corrompues :</p>
+                        <ol>
+                            <li>Ouvrez un <strong>ticket S@Mlocal</strong> auprès du Pôle Support.</li>
+                            <li><strong>Précisez impérativement :</strong>
+                                <ul>
+                                    <li><strong>Quoi ?</strong> Le nom exact du/des fichier(s) ou dossier(s), l'objet de l'email, le nom de la VM...</li>
+                                    <li><strong>Où ?</strong> L'emplacement d'origine exact (chemin complet du lecteur réseau, dossier de la boîte mail...).</li>
+                                    <li><strong>Quand ?</strong> La date et si possible l'heure <strong>à laquelle les données étaient encore valides</strong> (avant la perte ou la corruption). Ceci est crucial pour retrouver le bon point de sauvegarde.</li>
+                                    <li><strong>Pourquoi ?</strong> La raison de la demande de restauration (suppression accidentelle, corruption...).</li>
+                                </ul>
+                            </li>
+                            <li>Votre demande sera qualifiée par le support qui vérifiera si les données sont potentiellement récupérables via les sauvegardes existantes (Avamar ou Veeam) et vous tiendra informé du processus.</li>
+                        </ol>
+                         <p class="sla-notice"><strong>Rappel :</strong> Les données sur les disques locaux (C:...) des postes de travail ne sont pas sauvegardées par ce service.</p>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                         <h2>Fonctionnement</h2>
+                         <p>Ce service interne repose sur plusieurs activités clés gérées par les équipes Infrastructure/SI :</p>
+                        <div class="accordion">
+                            <!-- Item Accordéon: Politiques -->
+                            <div class="accordion-item"><h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-11-policy" id="process-trigger-11-policy">Définition des Politiques<span class="accordion-icon" aria-hidden="true"></span></button></h3><div id="process-content-11-policy" role="region" aria-labelledby="process-trigger-11-policy" class="accordion-content"><div><p>Définition des données critiques, des objectifs de RPO/RTO, des périmètres (Avamar court terme vs Veeam long terme) et des durées de rétention. Communication de ces règles et des responsabilités utilisateurs.</p></div></div></div>
+                            <!-- Item Accordéon: Exécution & Surveillance -->
+                            <div class="accordion-item"><h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-11-exec" id="process-trigger-11-exec">Exécution & Surveillance<span class="accordion-icon" aria-hidden="true"></span></button></h3><div id="process-content-11-exec" role="region" aria-labelledby="process-trigger-11-exec" class="accordion-content"><div><p>Configuration des tâches de sauvegarde Avamar (National) et Veeam (Local). Surveillance quotidienne des résultats, diagnostic et résolution rapide des échecs.</p></div></div></div>
+                            <!-- Item Accordéon: Gestion Stockage -->
+                            <div class="accordion-item"><h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-11-storage" id="process-trigger-11-storage">Gestion des Espaces de Sauvegarde<span class="accordion-icon" aria-hidden="true"></span></button></h3><div id="process-content-11-storage" role="region" aria-labelledby="process-trigger-11-storage" class="accordion-content"><div><p>Suivi capacité Avamar (National). Surveillance et gestion active capacité stockage Veeam local (partages NFS...). Planification des besoins futurs (Capacity Planning).</p></div></div></div>
+                             <!-- Item Accordéon: Tests Restauration -->
+                            <div class="accordion-item"><h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-11-test" id="process-trigger-11-test">Tests Périodiques de Restauration<span class="accordion-icon" aria-hidden="true"></span></button></h3><div id="process-content-11-test" role="region" aria-labelledby="process-trigger-11-test" class="accordion-content"><div><p>Vérification proactive et régulière de la capacité à restaurer des données depuis Avamar et Veeam (court et long terme) pour garantir l'intégrité des sauvegardes et maîtriser les procédures.</p></div></div></div>
+                             <!-- Item Accordéon: Traitement Demandes Restauration -->
+                            <div class="accordion-item"><h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-11-restore" id="process-trigger-11-restore">Traitement des Demandes de Restauration<span class="accordion-icon" aria-hidden="true"></span></button></h3><div id="process-content-11-restore" role="region" aria-labelledby="process-trigger-11-restore" class="accordion-content"><div><p>Réception via S@Mlocal, qualification (infos complètes requises!), identification outil (Avamar/Veeam) et point de restauration pertinent, exécution restauration, notification et vérification avec l'utilisateur.</p></div></div></div>
+                         </div>
+                    </div>
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                         <h2>Contacts et support</h2>
+                         <div class="contact-highlight">
+                            <p><strong>Pour toute demande de restauration de données ou question sur les sauvegardes des serveurs :</strong></p>
+                            <p>Contactez le <strong>Pôle Support</strong> via <strong>S@Mlocal</strong> en fournissant le maximum de détails (quoi, où, quand).</p>
+                             <!-- Lien S@Mlocal mis à jour -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/local.home.do" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small" style="margin-top: 0.5rem;">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                         <p>Les équipes Infrastructure (N2/N3) interviendront pour réaliser les opérations de restauration nécessaires.</p>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                        <div class="accordion">
+                             <!-- Activité 11.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-1" id="activity-trigger-11-1">11.1 : Définition et Communication des Politiques de Sauvegarde<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-1" role="region" aria-labelledby="activity-trigger-11-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Établir, documenter et communiquer les règles/périmètres sauvegarde (Avamar/Veeam) et responsabilités utilisateurs.
+                                    <p><strong>Déclencheurs :</strong> Mise en place service, révisions périodiques, changements infra/besoins.</p>
+                                    <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">analytics</span></div><div class="step-content"><h4 class="step-title">Analyse des Besoins</h4><p class="step-description">Identifier données critiques, RPO/RTO, besoins rétention.</p></div></div>
+                                        <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">splitscreen</span></div><div class="step-content"><h4 class="step-title">Définition Périmètre par Technologie</h4><p class="step-description">Lister systèmes/données pour Avamar (court terme, ex: 30j) et Veeam (long terme, ex: >1 an). Exclusions explicites (postes locaux...).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">description</span></div><div class="step-content"><h4 class="step-title">Documentation Politique</h4><p class="step-description">Rédiger document clair (objectifs, périmètres, rétentions, resp. utilisateur sauvegarde réseau, processus restauration).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">approval</span></div><div class="step-content"><h4 class="step-title">Validation Politique</h4><p class="step-description">Par Direction, MSSI...</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">campaign</span></div><div class="step-content"><h4 class="step-title">Communication Politique</h4><p class="step-description">Publication intranet, information utilisateurs.</p></div></div>
+                                           <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">update</span></div><div class="step-content"><h4 class="step-title">Révision Périodique</h4><p class="step-description">Planifier revue annuelle ou si besoin.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Document politique, Intranet, Outils comm interne, Inventaire systèmes.</p>
+                                    <p><strong>Points d'Attention :</strong> Clarté périmètres/rétentions, insister resp. utilisateur, validation/accessibilité politique, réalisme technique.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 11.2 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-2" id="activity-trigger-11-2">11.2 : Exécution et Surveillance des Sauvegardes<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-2" role="region" aria-labelledby="activity-trigger-11-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer exécution fiable/régulière sauvegardes Avamar/Veeam et surveiller quotidiennement pour traiter échecs.
+                                    <p><strong>Déclencheurs :</strong> Exécution auto jobs planifiés, besoin sauvegarde manuelle ponctuelle.</p>
+                                     <div class="process-flow">
+                                          <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">settings_applications</span></div><div class="step-content"><h4 class="step-title">Configuration Jobs Sauvegarde</h4><p class="step-description">Vérif config Avamar (National). Création/config jobs Veeam local (sources, repo, rétention, planning...).</p></div></div>
+                                          <div class="step-connector"></div>
+                                          <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">play_circle</span></div><div class="step-content"><h4 class="step-title">Exécution Automatique</h4><p class="step-description">Jobs Avamar/Veeam s'exécutent selon planning.</p></div></div>
+                                          <div class="step-connector"></div>
+                                          <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">monitoring</span></div><div class="step-content"><h4 class="step-title">Surveillance Quotidienne</h4><p class="step-description">Vérif rapports/statuts jobs Avamar & Veeam (succès, warnings, failures).</p></div></div>
+                                          <div class="step-connector"></div>
+                                          <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Diagnostic & Résolution Échecs/Warnings</h4><p class="step-description">Analyse logs (outil, système), application corrections (relance, config réseau, nettoyage snapshot, espace disque...).</p></div></div>
+                                           <div class="step-connector"></div>
+                                          <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">summarize</span></div><div class="step-content"><h4 class="step-title">Suivi & Reporting</h4><p class="step-description">Tracer incidents S@Mlocal, suivi taux succès, remonter pbs récurrents.</p></div></div>
+                                     </div>
+                                    <p><strong>Outils :</strong> Consoles Avamar/Veeam, vCenter, Outils supervision, S@Mlocal, Bases connaissances.</p>
+                                    <p><strong>Points d'Attention :</strong> Surveillance quotidienne impérative, comprendre erreurs courantes, agir vite sur échecs (RPO), config jobs alignée politique.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 11.3 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-3" id="activity-trigger-11-3">11.3 : Gestion des Supports/Espaces de Sauvegarde<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-3" role="region" aria-labelledby="activity-trigger-11-3" class="accordion-content"><div>
+                                     <strong>Objectif :</strong> Assurer dispo/perf/capacité espaces stockage sauvegardes (Avamar national, Veeam local).
+                                    <p><strong>Déclencheurs :</strong> Surveillance continue capacité, alertes seuil bas, ajout nouveaux systèmes, Capacity Planning.</p>
+                                    <p><strong>Activités Clés (N2/N3) :</strong></p>
+                                    <ul style="list-style: none; padding-left: 0;">
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="vertical-align: middle; color: var(--secondary-color); font-size: 1.5rem; margin-top: 0.1rem;">cloud_upload</span><div><strong>Gestion Stockage Avamar :</strong> Suivre quotas/limites nationales, interagir avec équipes natio si besoin.</div></li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="vertical-align: middle; color: var(--primary-color); font-size: 1.5rem; margin-top: 0.1rem;">dns</span><div><strong>Gestion Stockage Veeam (Local) :</strong> Surveiller espace libre (repos NFS...), configurer nouveaux repos, augmenter capacité si besoin, optimiser usage (dédup/compression, purge rétention), sécuriser accès.</div></li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="vertical-align: middle; color: var(--primary-color); font-size: 1.5rem; margin-top: 0.1rem;">update</span><div><strong>Capacity Planning :</strong> Anticiper besoins futurs stockage.</div></li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="vertical-align: middle; color: var(--muted-text-color); font-size: 1.5rem; margin-top: 0.1rem;">inventory</span><div><strong>Gestion Supports Physiques (si applicable) :</strong> Rotation, stockage sécurisé, vérification (bandes/disques externes).</div></li>
+                                    </ul>
+                                    <p><strong>Outils :</strong> Console Veeam (repos), Outils admin stockage local (NAS...), Outils supervision, Interface Avamar (si accès), Outils planification.</p>
+                                    <p><strong>Points d'Attention :</strong> Anticiper manque espace Veeam, perf stockage impacte sauvegardes/restaurations, comprendre gestion rétention Veeam, sécuriser stockage.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 11.4 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-4" id="activity-trigger-11-4">11.4 : Tests Périodiques de Restauration<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-4" role="region" aria-labelledby="activity-trigger-11-4" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Vérifier proactivement/régulièrement capacité restauration depuis Avamar/Veeam (court/long terme) pour garantir intégrité sauvegardes et maîtrise procédures.
+                                    <p><strong>Déclencheurs :</strong> Plan tests défini (ex: trimestriel), suite à changement majeur infra sauvegarde.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">rule</span></div><div class="step-content"><h4 class="step-title">Planifier Scénarios Test</h4><p class="step-description">Définir systèmes/données, points restauration (récent Avamar, ancien Veeam), type restauration, destination (isolée!), critères succès.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">play_arrow</span></div><div class="step-content"><h4 class="step-title">Exécuter Tests Restauration</h4><p class="step-description">Restaurer données sélectionnées vers environnement test via console Avamar ou Veeam.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">fact_check</span></div><div class="step-content"><h4 class="step-title">Vérifier Résultats</h4><p class="step-description">Accéder données restaurées, vérifier intégrité, noter temps, comparer vs critères succès.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">history_edu</span></div><div class="step-content"><h4 class="step-title">Documenter Tests</h4><p class="step-description">Enregistrer scénarios, étapes, résultats (succès/échec), temps, pbs rencontrés.</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Analyser & Corriger Échecs</h4><p class="step-description">Si test échoue: investiguer cause, appliquer corrections, re-tester.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Plan tests, Consoles Avamar/Veeam, Environnement test isolé, Doc résultats tests.</p>
+                                    <p><strong>Points d'Attention :</strong> Tests cruciaux (sauvegarde non testée = non fiable), tester les 2 systèmes/différents types données/points, <strong>JAMAIS tester en écrasant prod</strong>, doc rigoureuse.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 11.5 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-5" id="activity-trigger-11-5">11.5 : Traitement des Demandes de Restauration de Données<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-5" role="region" aria-labelledby="activity-trigger-11-5" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Prendre en charge, qualifier, exécuter demandes restauration (S@Mlocal) via outil approprié (Avamar/Veeam) selon ancienneté/périmètre.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal valide demandant restauration données centrales sauvegardées.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification (N1/N2)</h4><p class="step-description">Ticket S@Mlocal. Vérif infos (Quoi? Où? Quand? Pourquoi?), légitimité, validation managériale si requise.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">schedule</span></div><div class="step-content"><h4 class="step-title">Détermination Outil & Point Restauration (N1/N2)</h4><p class="step-description">Comparer date demandée vs rétentions: Si < rétention Avamar -> Avamar. Sinon si < rétention Veeam -> Veeam. Si > tout -> impossible.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">settings_backup_restore</span></div><div class="step-content"><h4 class="step-title">Exécution Restauration (N2/N3)</h4><p class="step-description">Connexion console Avamar/Veeam. Restaurer (Fichiers: File Level Restore vers origine/temp; VM: Restauration VM vers vSphere - rare).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">check_circle</span></div><div class="step-content"><h4 class="step-title">Notification & Vérification Utilisateur</h4><p class="step-description">Informer fin restauration/emplacement. Demander vérif rapide données.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Clôture</h4><p class="step-description">Après confirmation user, documenter, clôturer ticket.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Consoles Avamar/Veeam, Outils communication.</p>
+                                    <p><strong>Points d'Attention :</strong> Info date/heure user capitale, validation avant overwrite (préférer temp si doute), maîtriser procédures Avamar/Veeam, gérer attentes délais.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 11.6 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-6" id="activity-trigger-11-6">11.6 : Assistance/Conseil sur la Localisation des Données à Sauvegarder<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-6" role="region" aria-labelledby="activity-trigger-11-6" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Informer/conseiller users sur emplacements réseau appropriés pour enregistrer données travail afin qu'elles soient sauvegardées, sensibiliser aux risques stockage local.
+                                    <p><strong>Déclencheurs :</strong> Questions users S@Mlocal, comm interne, suite à perte données locales, info nouveaux partages.</p>
+                                    <p><strong>Activités Clés (Principalement N1 / Comm IT) :</strong></p>
+                                    <ul style="list-style: none; padding-left: 0;">
+                                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color);">folder_managed</span>Identifier emplacements réseau sauvegardés (selon politique 11.1).</li>
+                                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color);">support_agent</span>Répondre sollicitations users (indiquer lecteurs H:, P:..., expliquer pourquoi, déconseiller stockage C:\...).</li>
+                                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color);">campaign</span>Communiquer Proactivement (guides intranet, intégration nouveaux arrivants, rappels périodiques).</li>
+                                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color);">help_outline</span>Conseiller sur Organisation (aide N1 structure lecteurs partagés).</li>
+                                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color);">construction</span>Gérer Cas Particuliers (N2/N3) (si besoin stockage spécifique, analyser et proposer solution sécurisée/sauvegardée).</li>
+                                    </ul>
+                                    <p><strong>Outils :</strong> S@Mlocal, Politique sauvegarde, Intranet, Modèles email.</p>
+                                    <p><strong>Points d'Attention :</strong> Message simple/clair/répété ("Utilisez lecteurs réseau..."), mettre en avant bénéfices/risques, cohérence info vs politique.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 11.7 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-11-7" id="activity-trigger-11-7">11.7 : Administration des Outils de Sauvegarde Locaux (Console Veeam, Licences, Stockage)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-11-7" role="region" aria-labelledby="activity-trigger-11-7" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer gestion technique/config/maintenance/suivi plateforme sauvegarde locale Veeam B&R (y.c. licences/stockage).
+                                    <p><strong>Déclencheurs :</strong> Besoins config initiale/modif, alertes console Veeam (erreurs, licence...), MàJ logicielles Veeam, vérifs routine/maintenance, gestion licences.</p>
+                                     <p><strong>Activités Clés (N2/N3) :</strong></p>
+                                     <div class="activity-cards-container">
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">system_update_alt</span><h4 class="activity-title">Installation & Mise à Jour Veeam</h4><p class="activity-description">Installer/MAJ serveur B&R et composants. Appliquer patchs.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">key</span><h4 class="activity-title">Gestion Licences</h4><p class="activity-description">Installer/MAJ licences Veeam. Surveiller usage vs droits. Anticiper renouvellements.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">settings</span><h4 class="activity-title">Configuration Globale Veeam</h4><p class="activity-description">Configurer serveurs gérés (vCenter), notifications email, utilisateurs/rôles Veeam.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">dns</span><h4 class="activity-title">Gestion Composants Infra Veeam</h4><p class="activity-description">Config/gestion Proxies, Repositories (voir 11.3), Mount Servers, Gateway Server (NFS).</p></div>
+                                          <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">monitoring</span><h4 class="activity-title">Maintenance & Optimisation</h4><p class="activity-description">Surveiller perf serveur/composants, maintenance BDD config Veeam, optimiser.</p></div>
+                                           <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">bug_report</span><h4 class="activity-title">Troubleshooting Plateforme Veeam</h4><p class="activity-description">Diagnostiquer/résoudre pbs logiciel Veeam. Consulter docs/forums. Ouvrir tickets support Veeam.</p></div>
+                                     </div>
+                                    <p><strong>Outils :</strong> Console Veeam B&R, Outils admin OS serveur Veeam, Console vCenter, Outils admin stockage, Portail licences Veeam, Docs/KB Veeam, Support Technique Veeam.</p>
+                                    <p><strong>Points d'Attention :</strong> Maintenir plateforme Veeam à jour, gérer licences proactivement, sécuriser accès console/serveur, comprendre rôle composants, documenter config locale.</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

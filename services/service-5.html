@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 5: Comptes Utilisateurs & Accès - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo intégré correctement selon l'exemple -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <form class="search-form" action="#!" method="get" role="search">
+                <label for="main-search" class="visually-hidden">Rechercher dans le catalogue</label>
+                <input type="search" id="main-search" name="q" placeholder="Rechercher un service..." aria-label="Rechercher dans le catalogue">
+                <button type="submit" aria-label="Lancer la recherche">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 5) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 5 : Gestion des Comptes Utilisateurs et Accès</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 5 : Gestion des Comptes Utilisateurs et Accès (Identités et Droits)</h1>
+            <p class="service-summary">Responsable du cycle de vie des identités numériques et de la gestion des droits d'accès aux ressources et applications.</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                 <!-- Liste des Onglets -->
+                <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Accès & Demandes
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-sla" id="tab-sla" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">timer</span> Niveaux de Service
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                         <h2>Description du Service</h2>
+                        <p>Ce service est responsable du cycle de vie des <strong>identités numériques</strong> des collaborateurs au sein du système d'information de la DRSM IDF. Il assure la <strong>création</strong>, la <strong>modification</strong> et la <strong>suppression</strong> des comptes utilisateurs (principalement dans l'Active Directory - AD), ainsi que la <strong>gestion des droits d’accès</strong> aux ressources partagées (dossiers, boîtes mail fonctionnelles) et à certaines applications.</p>
+                        <p>L'objectif est de garantir que chaque collaborateur dispose des accès <strong>nécessaires et suffisants</strong> à l'exercice de ses fonctions (principe du moindre privilège), tout en assurant la <strong>sécurité et la traçabilité</strong> des accès.</p>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                         <h2>Bénéficiaires</h2>
+                         <ul>
+                            <li><strong>Tous les collaborateurs</strong> de la DRSM IDF (internes permanents, CDD, alternants, stagiaires).</li>
+                            <li>Les <strong>partenaires ou prestataires externes</strong> nécessitant un accès temporaire et justifié aux ressources IT (selon procédure spécifique).</li>
+                            <li>Les <strong>responsables hiérarchiques</strong> (pour la validation des demandes d'accès).</li>
+                            <li>Les <strong>services RH</strong> (pour la communication des mouvements de personnel).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès & Demandes -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                         <h2>Modalités d’accès & Demandes</h2>
+                        <ol>
+                            <li>
+                                <strong>Création de compte (nouvel employé interne)</strong>
+                                <ul>
+                                    <li>Processus initié par le <strong>service RH</strong>, qui transmet les informations au <strong>pôle support</strong> (via canaux définis) avant l'arrivée.</li>
+                                    <li>Le pôle support crée le compte AD, l'email et les accès de base.</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>Création de compte (prestataire externe)</strong>
+                                <ul>
+                                     <li>Demande spécifique via <strong>ticket S@Mlocal</strong> par le <strong>manager ou référent interne</strong>. Voir Fiche Activité 5.8.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Demande de modification ou d’accès supplémentaire</strong>
+                                <ul>
+                                    <li>Le collaborateur (ou son manager) crée un <strong>ticket S@Mlocal</strong> (catégorie "Gestion des comptes / Droits d'accès"), en justifiant le besoin (ex: accès dossier 'ProjetX').</li>
+                                    <li>Soumis à <strong>validation managériale</strong>.</li>
+                                    <li>Le pôle support (ou N2) applique la modification après validation.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Gestion des mots de passe</strong>
+                                <ul>
+                                    <li><strong>Oubli/Expiration :</strong> Réinitialisation **autonome** via **Carte Agent (IDPRIME)** sur poste connecté.</li>
+                                    <li><strong>Compte verrouillé / Problème persistant :</strong> Contacter le <strong>pôle support</strong> (téléphone si bloqué, sinon S@Mlocal).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Départ d’un collaborateur (interne ou externe)</strong>
+                                <ul>
+                                     <li>Le <strong>service RH</strong> (internes) ou le <strong>manager référent</strong> (externes) notifie le <strong>pôle support</strong> de la date de départ.</li>
+                                     <li>Le pôle support procède à la <strong>désactivation</strong> du compte et des accès à la date de départ (ou J+1). Crucial pour la sécurité.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Panel SLA -->
+                    <div role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" class="tab-panel">
+                         <h2>Niveaux de Service (SLA Indicatifs)</h2>
+                        <p class="sla-notice"><strong>Note Importante :</strong> Les délais indiqués sont fournis à titre indicatif et ne constituent pas un engagement contractuel, mais des objectifs.</p>
+                        <div class="table-responsive">
+                            <table class="sla-table">
+                                <thead>
+                                    <tr>
+                                        <th>Indicateur</th>
+                                        <th>Objectif Indicatif</th>
+                                        <th>Précisions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Délai de création de compte (interne)</td>
+                                        <td><strong>J-0 / J+1</strong> (si planifié)</td>
+                                        <td>Arrivée planifiée et communiquée par RH : compte prêt le jour J. Demande tardive : 2-3 jours ouvrés max.</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Délai de création de compte (externe)</td>
+                                        <td><strong>5 jours ouvrés</strong></td>
+                                        <td>Après réception demande complète et validée (voir Fiche 5.8).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Délai de traitement (demande d’accès validée)</td>
+                                        <td><strong>2 jours ouvrés</strong> (standard)</td>
+                                        <td>Ajout standard groupe AD/accès ressource courante. Plus long si appli spécifique (délai communiqué).</td>
+                                     </tr>
+                                     <tr>
+                                        <td>Délai de désactivation de compte (sécurité)</td>
+                                        <td><strong>Jour J / J+1 ouvrable</strong></td>
+                                        <td>Désactivation effective. Si risque avéré (demande urgente direction/RH), désactivation immédiate (heures ouvrées).</td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                         <h2>Processus et fonctionnement</h2>
+                        <div class="accordion">
+                             <!-- Item Accordéon: Onboarding -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-5-onboarding" id="process-trigger-5-onboarding">Onboarding (Arrivées)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-5-onboarding" role="region" aria-labelledby="process-trigger-5-onboarding" class="accordion-content"><div>
+                                    <p><strong>Internes :</strong> Coordination RH & IT. Identification besoins accès standards liés au poste. Création compte AD, email, groupes base. Préparation parallèle du poste (Svc 2) et Carte Agent (Svc 9).</p>
+                                    <p><strong>Externes :</strong> Suivi de la procédure spécifique (Fiche 5.8) incluant validation, durée définie, parrain interne, et accès limités au strict nécessaire.</p>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Gestion des changements -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-5-change" id="process-trigger-5-change">Gestion des changements (Mobilité, Évolution droits)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-5-change" role="region" aria-labelledby="process-trigger-5-change" class="accordion-content"><div>
+                                    <p>Notification par RH ou demande managériale via S@Mlocal. Analyse des nouveaux besoins et retrait des accès devenus inutiles (principe du moindre privilège maintenu). Application des changements idéalement pour la date de prise de fonction.</p>
+                                </div></div>
+                            </div>
+                            <!-- Item Accordéon: Accès Applications Métiers -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-5-apps" id="process-trigger-5-apps">Gestion des accès aux applications métiers<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-5-apps" role="region" aria-labelledby="process-trigger-5-apps" class="accordion-content"><div>
+                                    <p>Pour certaines applications, la demande d'accès via S@Mlocal peut nécessiter une <strong>validation fonctionnelle</strong> par un référent métier ou le MSSI (pour la pertinence) avant que l'équipe IT n'effectue l'action technique (attribution de licence, ajout au groupe AD spécifique).</p>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Offboarding -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-5-offboarding" id="process-trigger-5-offboarding">Offboarding (Départs)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-5-offboarding" role="region" aria-labelledby="process-trigger-5-offboarding" class="accordion-content"><div>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_ind</span></div><div class="step-content"><h4 class="step-title">Réception Information Départ</h4><p class="step-description">Notification par RH ou Manager référent.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">calendar_month</span></div><div class="step-content"><h4 class="step-title">Planification Désactivation</h4><p class="step-description">Prévue pour la date de départ effective.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">no_accounts</span></div><div class="step-content"><h4 class="step-title">Exécution Actions (Jour J / J+1)</h4><p class="step-description">Désactivation compte AD, coupure VPN, gestion messagerie (selon politique), révocation accès applicatifs.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">devices_fold</span></div><div class="step-content"><h4 class="step-title">Récupération Matériel & Carte</h4><p class="step-description">Coordination avec Service 2 et Service 9.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">history_edu</span></div><div class="step-content"><h4 class="step-title">Traçabilité</h4><p class="step-description">Documentation de l'ensemble des opérations.</p></div></div>
+                                    </div>
+                                     <p><strong>NB :</strong> La gestion rigoureuse et réactive des comptes et accès est essentielle. Chaque étape clé est formalisée et tracée via S@Mlocal.</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon principal -->
+                    </div> <!-- Fin Panel Processus -->
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                        <h2>Contacts et support</h2>
+                         <div class="contact-highlight">
+                            <p><strong>Pôle support (DRSM IDF) :</strong> Point d’entrée unique via <strong>S@Mlocal</strong> (ou téléphone en cas de blocage) pour toute demande de création, modification, suppression de compte ou d'accès, ainsi que pour les problèmes de mot de passe ou de droits.</p>
+                             <!-- Lien S@Mlocal mis à jour selon la consigne -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/local.home.do" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                         <p><strong>Service RH / Managers :</strong> Interlocuteurs pour initier les processus d'arrivée/départ et valider les demandes d'accès.</p>
+                         <p><strong>Documentation :</strong></p>
+                         <ul>
+                            <li>La <strong>Charte Informatique</strong> (disponible sur l'intranet) rappelle les règles d'usage des comptes et mots de passe.</li>
+                         </ul>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                        <div class="accordion">
+                            <!-- Activité 5.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-1" id="activity-trigger-5-1">5.1 : Création de Comptes Utilisateurs (Onboarding)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-1" role="region" aria-labelledby="activity-trigger-5-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Créer compte AD, configurer attributs initiaux, assigner accès base pour nouvel arrivant.
+                                    <p><strong>Déclencheurs :</strong> Demande formalisée RH (interne) ou S@Mlocal validée (externe via Fiche 5.8).</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Validation Demande</h4><p class="step-description">Vérif infos complètes (nom, fonction, dates...).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person_add</span></div><div class="step-content"><h4 class="step-title">Création Compte AD</h4><p class="step-description">ADUC/outil, convention nommage, attributs, MDP temp + forcer changement.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">mail</span></div><div class="step-content"><h4 class="step-title">Création Boîte aux Lettres</h4><p class="step-description">(Coordination Svc 3) Vérif création auto/manuelle.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">group</span></div><div class="step-content"><h4 class="step-title">Assignation Groupes Base</h4><p class="step-description">Ajout aux groupes standards (profil/service).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">tune</span></div><div class="step-content"><h4 class="step-title">Configuration Attributs Spécifiques</h4><p class="step-description">(Si nécessaire) Profil itinérant, script connexion, lecteur perso...</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">lock</span></div><div class="step-content"><h4 class="step-title">Communication Sécurisée Infos</h4><p class="step-description">ID + MDP temp. transmis à RH/Manager pour remise Jour J.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Traçabilité & Coordination</h4><p class="step-description">MAJ ticket/outil. Info autres services (Svc 2, Svc 9).</p></div></div>
+                                    </div>
+                                    <!-- Correction Outils : Suppression O365 -->
+                                    <p><strong>Outils :</strong> ADUC, Console Exchange / Centre d'Admin, S@Mlocal/Outil RH-IT, Procédures internes.</p>
+                                    <p><strong>Points d'Attention :</strong> Respect délais (J1), rigueur standards, sécurité comm MDP, moindre privilège, gestion comptes externes.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 5.2 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-2" id="activity-trigger-5-2">5.2 : Attribution et Gestion des Droits d’Accès<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-2" role="region" aria-labelledby="activity-trigger-5-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Traiter les demandes d'ajout/modif/suppr de droits spécifiques (dossiers, applis via groupes AD, BAL partagées...), après validation et selon moindre privilège.
+                                    <p><strong>Déclencheurs :</strong> Demande S@Mlocal (accès dossier, appli, BAL partagée), mobilité interne, retrait accès inutiles.</p>
+                                     <div class="process-flow">
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification Demande</h4><p class="step-description">Via S@Mlocal. User, ressource, accès demandé?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">verified_user</span></div><div class="step-content"><h4 class="step-title">Vérification Justification & Validation</h4><p class="step-description">Manager obligatoire. + Proprio ressource/MSSI si sensible.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">settings</span></div><div class="step-content"><h4 class="step-title">Identification Mécanisme Attribution</h4><p class="step-description">Groupe AD (préféré)? ACL? Console appli?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_accounts</span></div><div class="step-content"><h4 class="step-title">Application Modification</h4><p class="step-description">Ajout/retrait groupe AD (standard), modif ACL (si besoin), gestion délégations BAL, transmission admin appli.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">check_circle</span></div><div class="step-content"><h4 class="step-title">Vérification par Utilisateur</h4><p class="step-description">(Si possible) Demander test accès (après déco/reco).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Enregistrement action dans S@Mlocal.</p></div></div>
+                                     </div>
+                                    <!-- Correction Outils : Suppression O365 -->
+                                    <p><strong>Outils :</strong> S@Mlocal, ADUC, Explorateur fichiers (ACL), Console Exchange / Centre d'Admin, Docs internes.</p>
+                                    <p><strong>Points d'Attention :</strong> Validation systématique, moindre privilège strict, privilégier groupes AD, retirer accès inutiles, traçabilité.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 5.3 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-3" id="activity-trigger-5-3">5.3 : Modification et Mise à Jour de Profils Utilisateurs<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-3" role="region" aria-labelledby="activity-trigger-5-3" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Mettre à jour infos/attributs compte AD suite à changement admin, orga, technique.
+                                    <p><strong>Déclencheurs :</strong> Notif RH (nom, service, manager...), demande manager/user (S@Mlocal), besoin technique IT.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Validation Demande/Notif</h4><p class="step-description">Vérifier source et légitimité.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person</span></div><div class="step-content"><h4 class="step-title">Identification Compte AD</h4><p class="step-description">Localiser le compte utilisateur concerné.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit</span></div><div class="step-content"><h4 class="step-title">Identification Attributs à Modifier</h4><p class="step-description">Nom, prénom, service, manager, etc.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_accounts</span></div><div class="step-content"><h4 class="step-title">Modification Attributs AD</h4><p class="step-description">Via console ADUC. Attention si changement nom/login/email.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">group</span></div><div class="step-content"><h4 class="step-title">Vérification Impacts Connexes</h4><p class="step-description">(Ex: Appartenance groupes si changement service/fonction).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">notifications</span></div><div class="step-content"><h4 class="step-title">Information Utilisateur (si pertinent)</h4><p class="step-description">Notifier si impact nom affichage, email...</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Tracer modification dans ticket/outil.</p></div></div>
+                                     </div>
+                                    <p><strong>Outils :</strong> ADUC, S@Mlocal/Outil RH-IT, Procédures internes.</p>
+                                    <p><strong>Points d'Attention :</strong> Fiabilité source demande, vigilance changement nom/ID (impacts!), vérifier droits si changement fonction, cohérence infos AD/RH.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 5.4 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-4" id="activity-trigger-5-4">5.4 : Réinitialisation des Identifiants et Mots de Passe (Planifiée / Non Urgente)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-4" role="region" aria-labelledby="activity-trigger-5-4" class="accordion-content"><div>
+                                     <strong>Objectif :</strong> Gérer les demandes de reset MDP non urgentes.
+                                    <p><strong>Déclencheurs :</strong> Demande user S@Mlocal (compromission suspectée, anticipation...), instruction Sécu IT, procédure interne planifiée.</p>
+                                     <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification Demande</h4><p class="step-description">Comprendre contexte et raison.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">calendar_month</span></div><div class="step-content"><h4 class="step-title">Planification Action (si besoin)</h4><p class="step-description">Convenir moment avec utilisateur.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">admin_panel_settings</span></div><div class="step-content"><h4 class="step-title">Vérification Identité Utilisateur</h4><p class="step-description">(Si demande indiv.) Méthode sécurisée.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">lock_reset</span></div><div class="step-content"><h4 class="step-title">Réinitialisation MDP</h4><p class="step-description">ADUC: MDP temporaire complexe + Forcer changement.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">send_to_mobile</span></div><div class="step-content"><h4 class="step-title">Communication MDP Sécurisée</h4><p class="step-description">Verbalement, canal sécurisé...</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">password</span></div><div class="step-content"><h4 class="step-title">Instruction Changement MDP</h4><p class="step-description">Utilisateur doit changer immédiatement.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">check_circle</span></div><div class="step-content"><h4 class="step-title">Suivi & Confirmation</h4><p class="step-description">Assurer que changement effectué.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Tracer action dans S@Mlocal.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, ADUC, Procédures internes vérif identité/comm MDP, Politique MDP.</p>
+                                    <p><strong>Points d'Attention :</strong> Pas réutiliser anciens MDP, forcer changement, sécurité comm MDP, tracer resets, différencier vs urgence N1.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 5.5 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-5" id="activity-trigger-5-5">5.5 : Suppression et Désactivation de Comptes (Offboarding Partiel)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-5" role="region" aria-labelledby="activity-trigger-5-5" class="accordion-content"><div>
+                                     <strong>Objectif :</strong> Désactiver/supprimer comptes AD lors départ/fin contrat/longue absence. *Focus compte AD.*
+                                    <p><strong>Déclencheurs :</strong> Notif formelle RH/manager, instruction désactivation longue absence, instruction sécu.</p>
+                                     <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Validation Notification</h4><p class="step-description">Vérifier source et date effet.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person_search</span></div><div class="step-content"><h4 class="step-title">Identification Compte AD</h4><p class="step-description">Localiser le compte concerné.</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                         <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Action à Réaliser ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Désactivation (Préférée)</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person_off</span></div><div class="step-content"><h4 class="step-title">Désactiver Compte AD</h4><p class="step-description">Via ADUC. Empêche connexion immédiate.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">move_item</span></div><div class="step-content"><h4 class="step-title">Déplacer vers OU dédiée</h4><p class="step-description">Ex: "Comptes Désactivés".</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3c</span><span class="material-symbols-outlined step-icon" aria-hidden="true">description</span></div><div class="step-content"><h4 class="step-title">MAJ Description Compte</h4><p class="step-description">Indiquer date/raison désactivation.</p></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Suppression (Rare/Différée)</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3d</span><span class="material-symbols-outlined step-icon" aria-hidden="true">delete_forever</span></div><div class="step-content"><h4 class="step-title">Supprimer Compte AD</h4><p class="step-description">Après délai défini ou instruction claire. SID perdu !</p></div></div></div></div></div></div>
+                                         <div class="step-connector after-decision"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">sync_lock</span></div><div class="step-content"><h4 class="step-title">Vérification Révocation Accès Clés</h4><p class="step-description">(Coordination Fiche 5.7).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">forward_to_inbox</span></div><div class="step-content"><h4 class="step-title">Gestion Boîte aux Lettres</h4><p class="step-description">(Coordination Svc 3) Conservation, redirection, archivage...</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Tracer action compte AD dans ticket/outil.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> ADUC, S@Mlocal/Outil RH-IT, Procédures offboarding.</p>
+                                    <p><strong>Points d'Attention :</strong> Agir rapidement (Jour J), privilégier désactivation vs suppression immédiate, coordination autres services (Fiche 5.7), traçabilité.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 5.6 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-6" id="activity-trigger-5-6">5.6 : Gestion des Groupes de Sécurité<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-6" role="region" aria-labelledby="activity-trigger-5-6" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Créer/Modifier/Supprimer groupes sécurité AD et gérer appartenances pour simplifier gestion droits (RBAC).
+                                    <p><strong>Déclencheurs :</strong> Besoin identifié (Fiche 5.2), demande création nouveau groupe, modif appartenance masse, suppression groupe obsolète, audit.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification Demande</h4><p class="step-description">Comprendre besoin (créer/modif/suppr).</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                         <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Type d'Action ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Créer / Modifier</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">design_services</span></div><div class="step-content"><h4 class="step-title">Analyse & Conception (si création)</h4><p class="step-description">Vérif existant, Nom standard, Scope/Type, OU, Doc objectif/proprio.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">group_add</span></div><div class="step-content"><h4 class="step-title">Création/Modif Groupe & Appartenances</h4><p class="step-description">Via ADUC ou PowerShell. Attention imbrication.</p></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Supprimer</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2c</span><span class="material-symbols-outlined step-icon" aria-hidden="true">policy</span></div><div class="step-content"><h4 class="step-title">Vérification Usage & Validation</h4><p class="step-description">Impératif: vérifier qu'aucune permission n'utilise ce groupe. Validation proprio/IT.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2d</span><span class="material-symbols-outlined step-icon" aria-hidden="true">delete</span></div><div class="step-content"><h4 class="step-title">Suppression Groupe</h4><p class="step-description">Via ADUC. Action définitive (SID perdu).</p></div></div></div></div></div></div>
+                                          <div class="step-connector after-decision"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Tracer action dans S@Mlocal/outil.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> ADUC, S@Mlocal, PowerShell, Docs internes, Outils audit AD.</p>
+                                    <p><strong>Points d'Attention :</strong> Convention nommage stricte, documenter objectif, privilégier groupes vs droits directs, prudence imbrication, PAS supprimer sans analyse impact, revues périodiques.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 5.7 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-7" id="activity-trigger-5-7">5.7 : Révocation des Accès et Offboarding Complet<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-7" role="region" aria-labelledby="activity-trigger-5-7" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Coordonner et exécuter la révocation complète de tous les accès IT lors d'un départ définitif.
+                                    <p><strong>Déclencheurs :</strong> Notification formelle départ (RH/manager).</p>
+                                      <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception Notification Départ</h4><p class="step-description">Noter date/heure effectives.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist</span></div><div class="step-content"><h4 class="step-title">Planification Actions (Jour J / J+1)</h4><p class="step-description">Création ticket/checklist Offboarding.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person_off</span></div><div class="step-content"><h4 class="step-title">Désactivation Compte AD</h4><p class="step-description">(Coord. 5.5) Action immédiate à date/heure départ.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">sync_lock</span></div><div class="step-content"><h4 class="step-title">Révocation Accès Spécifiques</h4><p class="step-description">VPN, Messagerie, Applis Métiers, Outils Collab, Accès Physiques, Téléphonie (Coordination Services 3, 6, 8, 9).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">group_remove</span></div><div class="step-content"><h4 class="step-title">Retrait Groupes AD</h4><p class="step-description">Nettoyer appartenances du compte désactivé.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">devices_fold</span></div><div class="step-content"><h4 class="step-title">Récupération Matériel & Carte</h4><p class="step-description">(Coordination Services 2, 9).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">history_edu</span></div><div class="step-content"><h4 class="step-title">Vérification & Traçabilité</h4><p class="step-description">Checklist complète. Documentation.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Clôture Processus Offboarding IT</h4><p class="step-description">Fin des actions IT.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal/Checklist, ADUC, Consoles admin divers services, Procédure offboarding, Canaux communication équipes.</p>
+                                    <p><strong>Points d'Attention :</strong> Rapidité exécution (Jour J), coordination équipes IT/RH/Managers, révocation complète, traçabilité, inclure comptes externes.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 5.8 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-5-8" id="activity-trigger-5-8">5.8 : Procédure de demande de compte pour Prestataire Externe<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-5-8" role="region" aria-labelledby="activity-trigger-5-8" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Décrire étapes/prérequis pour obtenir compte IT temporaire pour prestataire externe.
+                                    <p><strong>Prérequis/Principes :</strong> Accès si strictement nécessaire/durée minimale, moindre privilège, référent interne obligatoire, respect Charte IT.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_ind</span></div><div class="step-content"><h4 class="step-title">Initiation par Référent Interne</h4><p class="step-description">Création ticket S@Mlocal (catégorie/type spécifique).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">list_alt</span></div><div class="step-content"><h4 class="step-title">Fourniture Informations</h4><p class="step-description">ID presta, Coordonnées, ID référent, Justification, Liste accès requis, Dates mission (Début/Fin).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">verified_user</span></div><div class="step-content"><h4 class="step-title">Validation</h4><p class="step-description">Manager référent interne (+ MSSI/Direction si sensible).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person_add</span></div><div class="step-content"><h4 class="step-title">Traitement IT</h4><p class="step-description">Après validation: création compte (nom spé), attribution accès, config date expiration. Comm sécurisée ID/MDP au référent.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">event_busy</span></div><div class="step-content"><h4 class="step-title">Fin de Mission</h4><p class="step-description">Compte désactivé auto date fin. Notifier si départ anticipé. Prolongation = nouvelle demande avant expiration.</p></div></div>
+                                    </div>
+                                    <p><strong>Délai Indicatif :</strong> ~3 jours ouvrés après réception demande complète et validée.</p>
+                                    <p><strong>Responsabilités :</strong> Référent interne (accueil, comm ID, rappel règles sécu, notif fin mission).</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

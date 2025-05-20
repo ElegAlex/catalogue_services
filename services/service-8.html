@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 8: Téléphonie & Communications Unifiées - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo intégré correctement selon l'exemple -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <form class="search-form" action="#!" method="get" role="search">
+                <label for="main-search" class="visually-hidden">Rechercher dans le catalogue</label>
+                <input type="search" id="main-search" name="q" placeholder="Rechercher un service..." aria-label="Rechercher dans le catalogue">
+                <button type="submit" aria-label="Lancer la recherche">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 8) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 8 : Téléphonie et Communications Unifiées</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 8 : Téléphonie et Communications Unifiées</h1>
+            <p class="service-summary">Gère les moyens de communication vocale (téléphonie mobile professionnelle, téléphonie fixe résiduelle).</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                 <!-- Liste des Onglets -->
+                 <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Accès & Demandes
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-typologie" id="tab-typologie" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">phonelink_setup</span> Typologie
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-support" id="tab-support" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">build</span> Support & Incidents
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-sla" id="tab-sla" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">timer</span> Niveaux de Service
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                         <h2>Description du Service</h2>
+                        <p>Ce service gère l'ensemble des moyens de communication vocale mis à disposition des collaborateurs de la DRSM Île-de-France. L'organisation repose principalement sur l'attribution d'un <strong>téléphone portable professionnel à chaque collaborateur</strong>, adapté à son profil métier, pour répondre aux besoins de mobilité et de télétravail.</p>
+                        <p>Quelques <strong>lignes fixes sur IP (TOIP)</strong> subsistent pour des usages spécifiques et justifiés (ex: secrétariats de direction). Le service couvre la fourniture des appareils, la gestion des lignes et forfaits, le support technique et la configuration associée (y compris l'enrôlement MDM/Airwatch pour les smartphones).</p>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                         <ul>
+                            <li><strong>Tous les collaborateurs</strong> de la DRSM IDF.</li>
+                            <li>Les services nécessitant une ligne fixe spécifique (ex: secrétariat de direction).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès & Demandes -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                        <h2>Modalités d’accès & Demandes</h2>
+                         <ol>
+                            <li>
+                                <strong>Téléphone portable</strong>
+                                <ul>
+                                    <li><strong>Attribution automatique</strong> à l'arrivée ou lors d'un changement de poste impactant le profil téléphonique, selon les critères définis (voir onglet Typologie).</li>
+                                    <li>Pour toute <strong>demande spécifique</strong> (remplacement suite à panne/casse, perte/vol, changement de forfait justifié, demande de clé 4G si éligible) : créer un <strong>ticket S@Mlocal</strong>.</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>Téléphone fixe TOIP (Usage résiduel)</strong>
+                                <ul>
+                                    <li>Attribué uniquement sur justification validée par la direction pour des postes spécifiques.</li>
+                                    <li>Pour tout <strong>incident</strong> (poste ne fonctionne plus, problème de qualité voix) ou <strong>demande de configuration</strong> (renvoi d'appel, modification groupement) : créer un <strong>ticket S@Mlocal</strong>.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                     <!-- Panel Typologie -->
+                     <div role="tabpanel" id="panel-typologie" aria-labelledby="tab-typologie" class="tab-panel">
+                         <h2>Typologie des postes et forfaits mobiles</h2>
+                        <p><em>(Selon note de cadrage du 06/01/2025)</em></p>
+                        <div class="table-responsive">
+                            <table class="sla-table"> <!-- Réutilisation du style SLA Table pour cohérence -->
+                                <thead>
+                                    <tr>
+                                        <th>Profil métier</th>
+                                        <th>Type téléphone</th>
+                                        <th>Type forfait</th>
+                                        <th>Enrôlement MDM</th>
+                                        <th>Clé 4G (si besoin validé)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Agent de direction</td><td>Smartphone évolué</td><td>DATA</td><td>OUI</td><td>OUI</td></tr>
+                                    <tr><td>Auditeurs, CAM</td><td>Smartphone standard</td><td>DATA</td><td>NON</td><td>OUI</td></tr>
+                                    <tr><td>Chargé de secrétariat de direction, Chauffeurs, etc.</td><td>Smartphone standard</td><td>SANS DATA</td><td>NON</td><td>NON</td></tr>
+                                    <tr><td>MCR/MCRA</td><td>Smartphone évolué</td><td>DATA</td><td>OUI</td><td>OUI</td></tr>
+                                    <tr><td>Informaticiens</td><td>Smartphone standard</td><td>DATA</td><td>NON</td><td>NON</td></tr>
+                                    <tr><td>Praticiens-conseils (sauf chefs/adjoints)</td><td>Smartphone standard</td><td>SANS DATA</td><td>NON</td><td>NON</td></tr>
+                                    <tr><td>Praticien Conseil Chef (ou Adjoint) d’Échelon/Service</td><td>Smartphone évolué</td><td>DATA</td><td>OUI</td><td>NON</td></tr>
+                                    <tr><td>Référents PRADO, Responsables d’unité ELSM, etc.</td><td>Smartphone standard</td><td>SANS DATA</td><td>NON</td><td>NON</td></tr>
+                                    <tr><td>Téléconseillers</td><td>Smartphone standard</td><td>DATA</td><td>OUI</td><td>NON</td></tr>
+                                    <tr><td>Autres métiers (profil standard)</td><td>Téléphone standard</td><td>SANS DATA</td><td>NON</td><td>NON</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                         <p><em>Remarque : L'éligibilité à une clé 4G est étudiée au cas par cas. L'enrôlement MDM/Airwatch est requis pour accéder aux données professionnelles depuis le smartphone.</em></p>
+                     </div>
+
+                     <!-- Panel Support & Incidents - VERSION CARTES AMÉLIORÉES -->
+                     <div role="tabpanel" id="panel-support" aria-labelledby="tab-support" class="tab-panel">
+                         <h2>Support et incidents : Que faire ?</h2>
+
+                         <!-- Section Téléphone Portable -->
+                         <div class="incident-category">
+                             <h3 class="category-title"><span class="material-symbols-outlined" aria-hidden="true">phone_iphone</span> Téléphone Portable</h3>
+                             <div class="incident-card-row"> <!-- Utilisation de flex ou grid pour l'alignement -->
+                                 <div class="incident-card card-type-panne"> <!-- Carte spécifique pour Panne -->
+                                     <span class="material-symbols-outlined incident-icon" aria-hidden="true">phonelink_erase</span>
+                                     <h4 class="incident-title">Panne Matérielle / Casse</h4>
+                                     <p class="incident-details">L'appareil ne s'allume plus, ne charge plus, écran cassé...</p>
+                                     <p class="incident-action"><strong>Action :</strong> Ticket S@Mlocal</p>
+                                     <p class="incident-contact-details">Pour diagnostic, réparation ou remplacement.</p>
+                                 </div>
+                                 <div class="incident-card card-type-urgence"> <!-- Carte spécifique pour Urgence -->
+                                      <span class="material-symbols-outlined incident-icon" aria-hidden="true">sos</span>
+                                      <h4 class="incident-title">Perte ou Vol</h4>
+                                      <p class="incident-details">Signaler la disparition de l'appareil.</p>
+                                      <p class="incident-action"><strong>Action IMMÉDIATE :</strong></p>
+                                      <ul class="incident-details-list">
+                                          <li>Ticket S@Mlocal</li>
+                                          <li><strong>ET</strong> Appel Urgent <strong class="contact-info">06 64 50 50 53</strong></li>
+                                      </ul>
+                                       <p class="incident-contact-details">Pour blocage urgent ligne/appareil.</p>
+                                 </div>
+                                 <div class="incident-card card-type-support"> <!-- Carte spécifique pour Support -->
+                                      <span class="material-symbols-outlined incident-icon" aria-hidden="true">tune</span>
+                                      <h4 class="incident-title">Problème Fonctionnement / Paramétrage</h4>
+                                      <p class="incident-details">Difficulté d'utilisation, config messagerie, pb réseau mobile...</p>
+                                      <p class="incident-action"><strong>Action :</strong> Ticket S@Mlocal</p>
+                                      <p class="incident-contact-details">Pour assistance N1.</p>
+                                 </div>
+                             </div>
+                         </div>
+
+                          <!-- Section Téléphonie Fixe -->
+                          <div class="incident-category">
+                             <h3 class="category-title"><span class="material-symbols-outlined" aria-hidden="true">call</span> Téléphonie Fixe TOIP (Usage résiduel)</h3>
+                             <div class="incident-card-row">
+                                  <div class="incident-card card-type-panne">
+                                     <span class="material-symbols-outlined incident-icon" aria-hidden="true">signal_disconnected</span>
+                                     <h4 class="incident-title">Panne</h4>
+                                     <p class="incident-details">Ex: Pas de tonalité, ne s'allume plus...</p>
+                                     <p class="incident-action"><strong>Action :</strong> Ticket S@Mlocal</p>
+                                     <p class="incident-contact-details">Pour diagnostic par le Pôle Support.</p>
+                                 </div>
+                                  <div class="incident-card card-type-demande">
+                                      <span class="material-symbols-outlined incident-icon" aria-hidden="true">settings_phone</span>
+                                      <h4 class="incident-title">Demande de Configuration</h4>
+                                      <p class="incident-details">Ex: Renvois d'appel, groupements...</p>
+                                      <p class="incident-action"><strong>Action :</strong> Ticket S@Mlocal</p>
+                                      <p class="incident-contact-details">Pour traitement par le Pôle Support.</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                    <!-- Panel SLA -->
+                    <div role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" class="tab-panel">
+                         <h2>Niveaux de Service (SLA Indicatifs)</h2>
+                         <p class="sla-notice"><strong>Note Importante :</strong> Les délais indiqués sont fournis à titre indicatif et ne constituent pas un engagement contractuel, mais des objectifs.</p>
+                         <div class="table-responsive">
+                            <table class="sla-table">
+                                <thead>
+                                    <tr>
+                                        <th>Indicateur</th>
+                                        <th>Objectif Indicatif</th>
+                                        <th>Précisions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Fourniture mobile (nouvelle/remplacement std)</td>
+                                        <td><strong>5 jours ouvrés</strong> (si stock)</td>
+                                        <td>7-10j si enrôlement MDM requis. Si commande externe: 2-4 semaines (variable).</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Prise en charge incident mobile/fixe</td>
+                                        <td><strong>2 heures ouvrées</strong></td>
+                                        <td>Accusé réception et qualification via S@Mlocal.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blocage ligne (Perte/Vol mobile)</td>
+                                        <td><strong>Immédiat</strong> (heures ouvrées)</td>
+                                        <td>Après signalement téléphonique urgent.</td>
+                                     </tr>
+                                      <tr>
+                                        <td>Remplacement mobile (si immobilisé)</td>
+                                        <td><strong>24 à 48h ouvrées</strong> (prêt)</td>
+                                        <td>Selon criticité et disponibilité stock, en attente réparation/remplacement définitif.</td>
+                                     </tr>
+                                     <tr>
+                                        <td>Résolution incident TOIP fixe (panne bloquante)</td>
+                                        <td><strong>4 heures ouvrées</strong></td>
+                                        <td>Intervention prioritaire pour standards, secrétariats direction...</td>
+                                     </tr>
+                                      <tr>
+                                        <td>Résolution incident TOIP fixe (panne isolée)</td>
+                                        <td><strong>1 jour ouvré</strong></td>
+                                        <td>Traitement standard.</td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                         </div>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                         <h2>Processus et fonctionnement</h2>
+                        <div class="accordion">
+                             <!-- Item Accordéon: Attribution Initiale -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-8-attrib" id="process-trigger-8-attrib">Attribution initiale<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-8-attrib" role="region" aria-labelledby="process-trigger-8-attrib" class="accordion-content"><div>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">person_search</span></div><div class="step-content"><h4 class="step-title">Identification Profil</h4><p class="step-description">Basée sur le profil métier transmis par RH/Manager.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build_circle</span></div><div class="step-content"><h4 class="step-title">Préparation Appareil & Ligne</h4><p class="step-description">Config base, enrôlement MDM si requis, activation SIM.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">phone_iphone</span></div><div class="step-content"><h4 class="step-title">Remise Utilisateur</h4><p class="step-description">Avec guide de prise en main.</p></div></div>
+                                        <p><em>Pour TOIP Fixe : Installation physique et configuration via interface admin.</em></p>
+                                    </div>
+                                </div></div>
+                            </div>
+                            <!-- Item Accordéon: Gestion des Demandes -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-8-demandes" id="process-trigger-8-demandes">Gestion des demandes<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-8-demandes" role="region" aria-labelledby="process-trigger-8-demandes" class="accordion-content"><div>
+                                    <div class="process-flow">
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_note</span></div><div class="step-content"><h4 class="step-title">Demande via S@Mlocal</h4><p class="step-description">Remplacement, changement forfait, clé 4G...</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">approval</span></div><div class="step-content"><h4 class="step-title">Validation Manager/IT</h4><p class="step-description">Vérification de la légitimité et de la conformité.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">engineering</span></div><div class="step-content"><h4 class="step-title">Traitement Support</h4><p class="step-description">Commande, configuration, échange.</p></div></div>
+                                    </div>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Gestion des Incidents -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-8-incidents" id="process-trigger-8-incidents">Gestion des incidents<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-8-incidents" role="region" aria-labelledby="process-trigger-8-incidents" class="accordion-content"><div>
+                                      <div class="process-flow">
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">report_problem</span></div><div class="step-content"><h4 class="step-title">Signalement Incident</h4><p class="step-description">Via S@Mlocal (ou appel urgent si perte/vol).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">diagnosis</span></div><div class="step-content"><h4 class="step-title">Diagnostic N1</h4><p class="step-description">Identification du problème.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build_circle</span></div><div class="step-content"><h4 class="step-title">Résolution / Coordination</h4><p class="step-description">Résolution directe (si possible) ou coordination avec opérateur mobile / support CRAMIF (TOIP) / service réparation.</p></div></div>
+                                    </div>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Sécurité Mobiles Enrôlés -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-8-security" id="process-trigger-8-security">Sécurité (Mobiles enrôlés MDM)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-8-security" role="region" aria-labelledby="process-trigger-8-security" class="accordion-content"><div>
+                                    <p>L'utilisateur s'engage à respecter la charte SI :</p>
+                                    <ul>
+                                        <li>Ne pas supprimer l'agent MDM (Airwatch).</li>
+                                        <li>Utiliser des codes de verrouillage sécurisés.</li>
+                                        <li><strong>Signaler immédiatement perte/vol</strong> pour permettre l'effacement à distance des données professionnelles.</li>
+                                    </ul>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Gestion de Flotte -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-8-fleet" id="process-trigger-8-fleet">Gestion de flotte<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-8-fleet" role="region" aria-labelledby="process-trigger-8-fleet" class="accordion-content"><div>
+                                    <p>Activités internes au service IT :</p>
+                                    <ul>
+                                        <li>Suivi de l'inventaire (appareils, lignes, SIM).</li>
+                                        <li>Gestion des factures opérateur.</li>
+                                        <li>Optimisation des forfaits.</li>
+                                    </ul>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon principal -->
+                    </div> <!-- Fin Panel Processus -->
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                         <h2>Contacts et support</h2>
+                         <div class="contact-highlight">
+                            <p><strong>Pôle support :</strong></p>
+                            <ul>
+                                <li>Entrée unique via <strong>S@Mlocal</strong> pour toute demande ou incident concernant la téléphonie mobile ou fixe.</li>
+                                <li>Téléphone (<strong class="contact-info">06 64 50 50 53</strong>) pour signaler <strong>urgemment</strong> une perte ou un vol de mobile.</li>
+                            </ul>
+                             <!-- Lien S@Mlocal mis à jour -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/local.home.do" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small" style="margin-top: 0.5rem;">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                         <p>Le pôle support coordonne avec l'opérateur mobile, le support CRAMIF (TOIP), et les services de réparation.</p>
+                         <p><strong>Documentation :</strong> Guides de prise en main des téléphones, procédures MDM (Airwatch), charte d'utilisation disponibles sur l'intranet.</p>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                        <div class="accordion">
+                             <!-- Activité 8.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-8-1" id="activity-trigger-8-1">8.1 : Configuration et Assistance à la Messagerie Mobile<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-8-1" role="region" aria-labelledby="activity-trigger-8-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer config/utilisation Outlook Mobile sur smartphones pro enrôlés.
+                                    <p><strong>Déclencheurs :</strong> Nouveau smartphone pro, problème synchro/accès sur mobile, demande d'aide, onboarding utilisateur éligible.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Identifier user, smartphone, problème via S@Mlocal.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist</span></div><div class="step-content"><h4 class="step-title">Vérification Prérequis</h4><p class="step-description">Smartphone pro fourni DRSM? Enrôlé MDM (Airwatch)? Licences OK? App Outlook approuvée (via MDM) installée?</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">tune</span></div><div class="step-content"><h4 class="step-title">Assistance Config Initiale</h4><p class="step-description">Guider ajout compte (@assurance-maladie.fr), processus authentification (SSO/MFA...).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">sync_problem</span></div><div class="step-content"><h4 class="step-title">Dépannage Synchro/Accès</h4><p class="step-description">Vérif connectivité, redémarrage app/tel, vérifier si MDP AD changé, vérifier état compte MDM, envisager reset/re-ajout compte Outlook Mobile.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit</span></div><div class="step-content"><h4 class="step-title">Assistance Fonctionnalités</h4><p class="step-description">Config signature, notifications, recherche contacts GAL.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer fonctionnement avec user. Documenter. Clôturer.</p></div></div>
+                                     </div>
+                                    <p><strong>Outils Principaux :</strong> S@Mlocal, Smartphone pro, Outlook Mobile, Console MDM (accès limité), Console Admin Exchange (accès limité), Guides.</p>
+                                    <p><strong>Points d'Attention :</strong> Support exclusif appareils pro enrôlés, respecter politiques MDM, app via MDM, ne pas demander MDP, confidentialité.</p>
+                                    <p><strong>Escalade :</strong> Pb enrôlement/politiques MDM (->N2/N3 MDM), Pb licence/config Exchange (->Admin N2/N3), Pb auth complexe (->N2/N3 Identité), Bug Outlook Mobile (->N3/Support Microsoft).</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 8.2 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-8-2" id="activity-trigger-8-2">8.2 : Maintenance et Remplacement des Équipements Téléphoniques<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-8-2" role="region" aria-labelledby="activity-trigger-8-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Diagnostiquer pannes matérielles (mobiles/fixes), gérer remplacement accessoires, coordonner réparation/remplacement appareils.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal (mobile KO/cassé, chargeur HS, fixe KO...).</p>
+                                     <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification Incident</h4><p class="step-description">Identifier équipement, nature panne.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">troubleshoot</span></div><div class="step-content"><h4 class="step-title">Diagnostic Initial (N1)</h4><p class="step-description">Essayer autre chargeur? Redémarrage forcé? Vérif alim/réseau (fixe)?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">cable</span></div><div class="step-content"><h4 class="step-title">Gestion Accessoires (N1/N2)</h4><p class="step-description">Si accessoire HS -> Vérif stock, fournir remplacement, récupérer défectueux.</p></div></div>
+                                        <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">diagnosis</span></div><div class="step-content"><h4 class="step-title">Diagnostic Approfondi Appareil (N2)</h4><p class="step-description">Confirmer panne matérielle, vérifier garantie, évaluer réparabilité.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build_circle</span></div><div class="step-content"><h4 class="step-title">Coordination Réparation/Remplacement</h4><p class="step-description">Si garantie: procédure fournisseur/opérateur. Si hors garantie/non réparable: remplacement stock/commande.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">devices_other</span></div><div class="step-content"><h4 class="step-title">Prêt de Matériel (Mobile si besoin)</h4><p class="step-description">Proposer prêt si réparation/remplacement long et stock dispo.</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Suivi & Clôture</h4><p class="step-description">Suivre réparation/remplacement, confirmer fonctionnement, récupérer prêt, MAJ inventaire/ticket.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Inventaire, Stock accessoires/prêts, Portails fournisseurs/opérateurs.</p>
+                                    <p><strong>Points d'Attention :</strong> Distinguer matériel/logiciel, procédures garantie, gestion stock, continuité service, MAJ inventaire.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 8.3 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-8-3" id="activity-trigger-8-3">8.3 : Enrôlement et Gestion des Téléphones Mobiles (MDM)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-8-3" role="region" aria-labelledby="activity-trigger-8-3" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer enrôlement initial MDM (Airwatch), vérifier conformité, gérer config/sécu via console MDM.
+                                    <p><strong>Déclencheurs :</strong> Prépa nouveau smartphone pro éligible, perte enrôlement, vérif conformité, déploiement politiques/apps MDM.</p>
+                                     <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception Demande / Identification Besoin</h4><p class="step-description">Via S@Mlocal, onboarding, instruction...</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">qr_code_scanner</span></div><div class="step-content"><h4 class="step-title">Préparation Enrôlement (si besoin)</h4><p class="step-description">Réinitialisation usine, préparation QR code/ID groupe...</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">login</span></div><div class="step-content"><h4 class="step-title">Assistance Enrôlement Utilisateur</h4><p class="step-description">Guider processus sur smartphone (ID pro, acceptation profils...).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">verified_user</span></div><div class="step-content"><h4 class="step-title">Vérification Post-Enrôlement (Console MDM)</h4><p class="step-description">Vérifier succès, conformité, application profils/apps managées.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">tune</span></div><div class="step-content"><h4 class="step-title">Gestion Courante via Console MDM</h4><p class="step-description">Vérif conformité, pousser synchro, installer/désinstaller app, localiser/verrouiller/effacer (critique!).</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer fonctionnement avec user. Documenter.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Console MDM (Airwatch), Smartphones pro, Procédures MDM, Compte AD user.</p>
+                                    <p><strong>Points d'Attention :</strong> Enrôlement obligatoire, suivre procédures, actions critiques MDM contrôlées/tracées, expliquer objectif MDM, création politiques = N3.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 8.4 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-8-4" id="activity-trigger-8-4">8.4 : Support Technique et Intervention sur Site (Téléphonie)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-8-4" role="region" aria-labelledby="activity-trigger-8-4" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assistance technique directe (sur site si besoin) pour pbs urgents/complexes téléphonie.
+                                    <p><strong>Déclencheurs :</strong> Ticket/Appel urgent (tél KO), pb connexion/config TLT nécessitant manip physique (SIM...), PIN SIM bloqué (PUK), aide config avancée TOIP, diag distant pointant vers pb physique.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support_agent</span></div><div class="step-content"><h4 class="step-title">Prise en charge Ticket/Appel Urgent</h4><p class="step-description">Évaluation urgence/impact.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">settings_remote</span></div><div class="step-content"><h4 class="step-title">Tentative Résolution Distante</h4><p class="step-description">(Priorité) Vérifs/manipulations à distance.</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                          <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Résolution Distante OK ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Oui</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">arrow_forward</span></div><div class="step-content"><h4 class="step-title">-> Validation & Clôture</h4></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Non</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">engineering</span></div><div class="step-content"><h4 class="step-title">Décision Intervention Site</h4><p class="step-description">Planification avec user, prépa matériel.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Intervention Physique</h4><p class="step-description">Mobile: Diag matériel, pb SIM (remplacer, PUK), aide MDM, config prêt. Fixe: Vérif connexions, reset usine, aide config.</p></div></div></div></div></div></div>
+                                          <div class="step-connector after-decision"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">fact_check</span></div><div class="step-content"><h4 class="step-title">Tests & Validation</h4><p class="step-description">Assurer fonctionnement avec user ou mise en place solution contournement (prêt).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Détail intervention sur site, MAJ inventaire, clôture ticket.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Tél prêt/SIM rechange, Codes PUK (sécurisé), Outils diag base, Console MDM/TOIP.</p>
+                                    <p><strong>Points d'Attention :</strong> Intervention site = dernier recours, sécu/confidentialité, gestion PUK sécurisée, procédure intervention domicile, pas réparation matérielle avancée sur site.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 8.5 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-8-5" id="activity-trigger-8-5">8.5 : Suivi des Demandes d’Attribution et de Réparation (Téléphonie)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-8-5" role="region" aria-labelledby="activity-trigger-8-5" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Gérer processus logistique/admin attributions/réparations/remplacements, assurer traçabilité/inventaire.
+                                    <p><strong>Déclencheurs :</strong> Demande attribution validée, décision remplacement/réparation (issue 8.2), réception appareil neuf/réparé.</p>
+                                    <p><strong>Activités Clés (N1/N2 - Gestion Flotte):</strong></p>
+                                    <!-- Stepper Visuel pour les activités -->
+                                    <ol class="stepper">
+                                        <li class="stepper-item">
+                                            <div class="stepper-marker"><span class="material-symbols-outlined" aria-hidden="true">person_add</span></div>
+                                            <div class="stepper-content">
+                                                <h4 class="stepper-title">Gestion Demandes Attribution</h4>
+                                                <p class="stepper-frequency">Sur Demande</p>
+                                                <p class="stepper-description">Vérif profil/stock, commande si besoin, prépa appareil (SIM, config, MDM), remise user, MAJ inventaire.</p>
+                                            </div>
+                                        </li>
+                                        <li class="stepper-item">
+                                            <div class="stepper-marker"><span class="material-symbols-outlined" aria-hidden="true">construction</span></div>
+                                            <div class="stepper-content">
+                                                <h4 class="stepper-title">Gestion Réparations</h4>
+                                                 <p class="stepper-frequency">Sur Incident</p>
+                                                <p class="stepper-description">Dossier garantie, logistique envoi/retour, suivi statut, test retour, restitution.</p>
+                                            </div>
+                                        </li>
+                                         <li class="stepper-item">
+                                             <div class="stepper-marker"><span class="material-symbols-outlined" aria-hidden="true">published_with_changes</span></div>
+                                            <div class="stepper-content">
+                                                <h4 class="stepper-title">Gestion Remplacements</h4>
+                                                 <p class="stepper-frequency">Sur Incident/Obsolescence</p>
+                                                <p class="stepper-description">Attribuer neuf/recond., MAJ inventaire (marquer ancien, enregistrer nouveau), recyclage.</p>
+                                            </div>
+                                        </li>
+                                         <li class="stepper-item">
+                                             <div class="stepper-marker"><span class="material-symbols-outlined" aria-hidden="true">devices_other</span></div>
+                                            <div class="stepper-content">
+                                                <h4 class="stepper-title">Gestion des Prêts</h4>
+                                                 <p class="stepper-frequency">Sur Incident Long</p>
+                                                <p class="stepper-description">Attribuer prêt (stock), noter, récupérer, vérifier/reset.</p>
+                                            </div>
+                                        </li>
+                                          <li class="stepper-item">
+                                              <div class="stepper-marker"><span class="material-symbols-outlined" aria-hidden="true">monitoring</span></div>
+                                            <div class="stepper-content">
+                                                <h4 class="stepper-title">Suivi & Reporting Flotte</h4>
+                                                <p class="stepper-frequency">Continu/Périodique</p>
+                                                <p class="stepper-description">Inventaire à jour, suivi délais, analyse coûts/pannes.</p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <!-- Fin Stepper -->
+                                    <p><strong>Outils :</strong> S@Mlocal, Outil gestion parc/flotte mobile, Stock physique, Portails fournisseurs/opérateurs, Procédures internes.</p>
+                                    <p><strong>Points d'Attention :</strong> Rigueur MAJ inventaire (IMEI, SIM...), respect processus commande/budget, suivi précis statuts réparation, gestion stock prêts, procédures recyclage.</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

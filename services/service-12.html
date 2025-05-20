@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 12: Cycle de Vie Développements Internes - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo intégré correctement selon l'exemple -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <form class="search-form" action="#!" method="get" role="search">
+                <label for="main-search" class="visually-hidden">Rechercher dans le catalogue</label>
+                <input type="search" id="main-search" name="q" placeholder="Rechercher un service..." aria-label="Rechercher dans le catalogue">
+                <button type="submit" aria-label="Lancer la recherche">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 12) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 12 : Gestion du Cycle de Vie des Développements Internes</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 12 : Gestion du Cycle de Vie des Développements Internes</h1>
+            <p class="service-summary">Encadre la création, l'évolution et la maintenance des applications développées spécifiquement pour la DRSM IDF.</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                 <!-- Liste des Onglets -->
+                 <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Demandes
+                    </button>
+                    <!-- Pas d'onglet SLA spécifique pour ce service interne -->
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Cycle de Vie
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Activités Détaillées
+                    </button>
+                </div>
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                        <h2>Description du Service</h2>
+                        <p>Ce service couvre l'ensemble des activités liées à la <strong>création, à l'amélioration et à la maintenance des applications logicielles développées spécifiquement</strong> pour les besoins internes de la DRSM Île-de-France.</p>
+                        <p>Il vise à fournir des outils sur mesure, efficaces et sécurisés pour répondre à des problématiques métiers non couvertes par les solutions nationales ou du marché.</p>
+                        <p>Le service englobe la gestion des demandes d'évolution, l'analyse des besoins, la conception, le développement, les tests, le déploiement et la maintenance corrective et évolutive de ces applications.</p>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                         <ul>
+                           <li>Les <strong>Services Métiers</strong> de la DRSM IDF ayant identifié un besoin spécifique pouvant être solutionné par un développement interne.</li>
+                           <li>Les <strong>Collaborateurs</strong> utilisateurs finaux des applications développées en interne.</li>
+                           <li>Le <strong>Service Informatique</strong> pour la gestion et la maintenance des applications.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès / Demandes -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                        <h2>Modalités de Demande</h2>
+                         <ol>
+                            <li>
+                                <strong>Nouvelle Idée / Nouveau Développement :</strong>
+                                <ul>
+                                    <li>Contacter le <strong>Responsable Informatique</strong> par email pour une première discussion informelle.</li>
+                                    <li>Si l'idée est jugée pertinente, une <strong>expression de besoin formalisée</strong> sera demandée au service demandeur avant analyse plus poussée.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Bug ou Évolution sur Application Existante :</strong>
+                                <ul>
+                                     <li>Ouvrir un <strong>ticket S@Mlocal</strong> en précisant :</li>
+                                     <li>Le nom de l'application interne concernée.</li>
+                                     <li>La description détaillée du bug (avec étapes de reproduction, captures d'écran) ou de l'évolution souhaitée et sa justification.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                         <p><em>Voir la Fiche Activité 12.1 pour le détail de la gestion initiale des demandes.</em></p>
+                    </div>
+
+                    <!-- Panel Cycle de Vie -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                         <h2>Cycle de Vie d'un Développement Interne</h2>
+                         <p>Le développement d'une application interne suit généralement les étapes suivantes :</p>
+                         <!-- Utilisation du Stepper car c'est un cycle séquentiel global -->
+                         <ol class="stepper">
+                            <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">lightbulb</span></div><div class="stepper-content"><h4 class="stepper-title">Gestion Demande Initiale</h4><p class="stepper-description">Réception (Email/S@Mlocal), qualification (Nouveau/Bug/Évolution), demande formalisation besoin (si nouveau). (Voir 12.1)</p></div></li>
+                            <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">person_search</span></div><div class="stepper-content"><h4 class="stepper-title">Analyse Besoins & Spécifications</h4><p class="stepper-description">Ateliers métier, clarification, rédaction spécifications fonctionnelles, validation métier. (Voir 12.2)</p></div></li>
+                            <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">architecture</span></div><div class="stepper-content"><h4 class="stepper-title">Conception Technique & Architecture</h4><p class="step-description">Traduction spécifs en solution technique, choix technos, modèle BDD, sécurité by design. (Voir 12.3)</p></div></li>
+                            <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">code</span></div><div class="stepper-content"><h4 class="stepper-title">Développement & Tests Unitaires</h4><p class="step-description">Codage fonctionnalités, respect standards, tests unitaires, versioning (Git). (Voir 12.4)</p></div></li>
+                             <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">dns</span></div><div class="stepper-content"><h4 class="stepper-title">Gestion des Environnements</h4><p class="step-description">Mise en place/maintenance environnements Dev, Test, Production. (Voir 12.5)</p></div></li>
+                             <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">science</span></div><div class="stepper-content"><h4 class="stepper-title">Tests Intégration & Utilisateurs (UAT)</h4><p class="step-description">Coordination tests techniques et validation fonctionnelle par le métier (recette). Gestion anomalies. (Voir 12.6)</p></div></li>
+                             <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">rocket_launch</span></div><div class="stepper-content"><h4 class="stepper-title">Déploiement & Mise en Production</h4><p class="step-description">Planification (runbook, rollback), déploiement contrôlé, tests post-MEP, communication. (Voir 12.7)</p></div></li>
+                              <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">bug_report</span></div><div class="stepper-content"><h4 class="stepper-title">Maintenance Corrective & Évolutive</h4><p class="step-description">Traitement bugs signalés, implémentation améliorations validées via S@Mlocal. (Voir 12.8)</p></div></li>
+                               <li class="stepper-item"><div class="stepper-marker"><span class="material-symbols-outlined">description</span></div><div class="stepper-content"><h4 class="stepper-title">Documentation</h4><p class="step-description">Production et maintien à jour documentation technique et utilisateur. (Voir 12.9)</p></div></li>
+                         </ol>
+                    </div>
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                        <h2>Contacts et support</h2>
+                         <div class="contact-highlight">
+                            <p><strong>Pour une nouvelle demande de développement :</strong> Contactez le <strong>Responsable Informatique</strong>.</p>
+                             <p><strong>Pour un problème ou une évolution sur une application interne existante :</strong> Créez un <strong>ticket S@Mlocal</strong>.</p>
+                             <!-- Lien S@Mlocal mis à jour -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/local.home.do" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-small" style="margin-top: 0.5rem;">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                         <p>Le Service Informatique (équipe de développement/maintenance) assurera le suivi et la réalisation en coordination avec les services métiers demandeurs.</p>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Activités Détaillées</h2>
+                        <div class="accordion">
+                             <!-- Activité 12.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-1" id="activity-trigger-12-1">12.1 : Gestion des Demandes de Développement / Évolution<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-1" role="region" aria-labelledby="activity-trigger-12-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Centraliser, qualifier, assurer suivi initial sollicitations (nouvelle idée ou action sur existant).
+                                    <p><strong>Déclencheurs :</strong> Email au RI (nouvelle idée) ou Ticket S@Mlocal (bug/évolution existant).</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception Sollicitation</h4><p class="step-description">Identifier canal (Email/S@Mlocal).</p></div></div>
+                                        <div class="step-connector decision"></div>
+                                        <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Type de Demande ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Nouveau Dév. (Email)</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">note_add</span></div><div class="step-content"><h4 class="step-title">Traitement Initial</h4><p class="step-description">Accusé réception, demander formalisation besoin, enregistrer pour analyse faisabilité (->12.2).</p></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Appli Existante (S@Mlocal)</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">bug_report</span></div><div class="step-content"><h4 class="step-title">Traitement Initial</h4><p class="step-description">Si Bug: évaluer criticité, assigner pour diag (->12.8). Si Évolution: vérifier justif, enregistrer backlog.</p></div></div></div></div></div></div>
+                                         <div class="step-connector after-decision"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">forward_to_inbox</span></div><div class="step-content"><h4 class="step-title">Communication Prise en Compte</h4><p class="step-description">Informer demandeur statut initial et prochaines étapes.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Email, S@Mlocal, Outil suivi projet/Backlog, Modèle expression besoin.</p>
+                                    <p><strong>Points d'Attention :</strong> Respect double canal, formalisation indispensable pour nouveau dév., distinguer bug/évolution, comm claire au demandeur.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 12.2 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-2" id="activity-trigger-12-2">12.2 : Analyse des Besoins et Spécifications Fonctionnelles<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-2" role="region" aria-labelledby="activity-trigger-12-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Traduire demande dév./évo majeure validée en exigences fonctionnelles claires, détaillées, validées par métier.
+                                    <p><strong>Déclencheurs :</strong> Demande validée pour étude avec expression besoin formalisée.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">groups</span></div><div class="step-content"><h4 class="step-title">Ateliers de Travail</h4><p class="step-description">Animer réunions avec métier/utilisateurs clés.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_search</span></div><div class="step-content"><h4 class="step-title">Approfondir & Clarifier Besoin</h4><p class="step-description">Processus actuel/cible, objectifs, règles gestion, acteurs, fonctionnalités, données, contraintes...</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_document</span></div><div class="step-content"><h4 class="step-title">Rédaction Spécifications Fonctionnelles</h4><p class="step-description">Document structuré : Use Cases/User Stories, descr. fonctions, exigences non fonctionnelles, maquettes.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">approval</span></div><div class="step-content"><h4 class="step-title">Validation Spécifications Métier</h4><p class="step-description">Soumettre pour relecture, ajustements, validation formelle.</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">timer</span></div><div class="step-content"><h4 class="step-title">Estimation Charge Initiale</h4><p class="step-description">Estimation macro charge dév pour aide priorisation.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Bureautique, Outils maquettage, Outils gestion exigences (si dispo), Salle réunion/Visio.</p>
+                                    <p><strong>Points d'Attention :</strong> Forte implication métier cruciale, langage compréhensible métier, doc détaillée mais évolutive, validation formelle métier clé.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 12.3 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-3" id="activity-trigger-12-3">12.3 : Conception Technique et Architecture Applicative<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-3" role="region" aria-labelledby="activity-trigger-12-3" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Traduire spécifs fonctionnelles validées en solution technique concrète (archi, technos, BDD, sécu).
+                                    <p><strong>Déclencheurs :</strong> Validation spécifications fonctionnelles détaillées (issue 12.2).</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">analytics</span></div><div class="step-content"><h4 class="step-title">Analyse Spécifications Fonctionnelles</h4><p class="step-description">Comprendre exigences techniques sous-jacentes.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">lan</span></div><div class="step-content"><h4 class="step-title">Définition Architecture Globale</h4><p class="step-description">Client-serveur, web... Couches logicielles et interactions.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">terminal</span></div><div class="step-content"><h4 class="step-title">Choix Technologies</h4><p class="step-description">Langages, frameworks, librairies, SGBD... (selon standards/compétences).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">database</span></div><div class="step-content"><h4 class="step-title">Conception Base de Données</h4><p class="step-description">Modèle logique/physique (schéma, tables, relations...).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">http</span></div><div class="step-content"><h4 class="step-title">Définition Interfaces</h4><p class="step-description">API, formats d'échange entre composants.</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">security</span></div><div class="step-content"><h4 class="step-title">Intégration Sécurité (by Design)</h4><p class="step-description">Mécanismes authentification, autorisation, protection données...</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist</span></div><div class="step-content"><h4 class="step-title">Planification Aspects Techniques</h4><p class="step-description">Gestion erreurs, logs, configuration, déploiement initial.</p></div></div>
+                                           <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_document</span></div><div class="step-content"><h4 class="step-title">Documentation Conception Technique</h4><p class="step-description">Rédiger document technique détaillé.</p></div></div>
+                                            <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">9</span><span class="material-symbols-outlined step-icon" aria-hidden="true">approval</span></div><div class="step-content"><h4 class="step-title">Revue & Validation Technique</h4><p class="step-description">Faire relire/valider par pairs/architecte.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Modélisation (UML...), Conception BDD, Docs technos, Spécifs fonctionnelles, Doc conception technique.</p>
+                                    <p><strong>Points d'Attention :</strong> Alignement besoins fonctionnels/non-fonctionnels, maintenabilité/évolutivité/sécurité, standards organisme, Sécurité by Design, doc technique essentielle.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 12.4 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-4" id="activity-trigger-12-4">12.4 : Développement, Codage et Tests Unitaires<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-4" role="region" aria-labelledby="activity-trigger-12-4" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Écrire code source appli selon conception technique/spécifs fonctionnelles, respecter bonnes pratiques, assurer qualité initiale via tests unitaires.
+                                    <p><strong>Déclencheurs :</strong> Validation conception technique, affectation tâches dév.</p>
+                                    <p><strong>Activités Clés (Développeurs) :</strong></p>
+                                     <div class="activity-cards-container">
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">home_repair_service</span><h4 class="activity-title">Mise en Place Environnement Dév</h4><p class="activity-description">Config IDE, BDD locale, outils build, Git...</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">code</span><h4 class="activity-title">Codage Fonctionnalités</h4><p class="activity-description">Implémentation modules/interfaces.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">rule</span><h4 class="activity-title">Respect Standards Codage</h4><p class="activity-description">Conventions nommage, style, commentaires.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">enhanced_encryption</span><h4 class="activity-title">Intégration Sécurité</h4><p class="activity-description">Codage sécurisé (anti-injection SQL, XSS...).</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">biotech</span><h4 class="activity-title">Écriture Tests Unitaires</h4><p class="activity-description">Tests automatisés pour chaque unité de code.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">play_circle</span><h4 class="activity-title">Exécution Tests Unitaires</h4><p class="activity-description">Régulièrement pour détecter régressions.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">commit</span><h4 class="activity-title">Gestion Code Source (Versioning)</h4><p class="activity-description">Utilisation Git (branches, commits...).</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">reviews</span><h4 class="activity-title">Revue de Code (Peer Review)</h4><p class="activity-description">(Si pratique mise en place) Relecture par pairs.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">integration_instructions</span><h4 class="activity-title">Intégration Continue</h4><p class="activity-description">(Si mise en place) Automatisation build, tests...</p></div>
+                                     </div>
+                                    <p><strong>Outils :</strong> IDE, Langages/Frameworks, SGBD, Frameworks tests unitaires, Git/GitLab..., Outils CI.</p>
+                                    <p><strong>Points d'Attention :</strong> Qualité code (lisibilité...), tests unitaires fondamentaux, versioning indispensable, bonnes pratiques sécu.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 12.5 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-5" id="activity-trigger-12-5">12.5 : Gestion des Environnements (Développement, Test, Production)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-5" role="region" aria-labelledby="activity-trigger-12-5" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Mettre en place, configurer, maintenir environnements nécessaires (Dev, Test/Recette, Prod), assurer cohérence/isolation.
+                                    <p><strong>Déclencheurs :</strong> Démarrage nouveau projet, besoin MAJ/rafraîchissement env existant, prépa phase test/déploiement.</p>
+                                     <p><strong>Activités Clés (Infra / DevOps / Dév) :</strong></p>
+                                    <ul style="list-style: none; padding-left: 0;">
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">view_list</span>Définir besoins par environnement.</li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">dns</span>Provisionner infrastructure (VMs, conteneurs...).</li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">settings</span>Configurer environnements (apps, BDD, configs spécifiques...).</li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">upload</span>Déployer versions applicatives (Dev, Test).</li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">database</span>Gérer données (test minimal Dev, représentatives/anonymisées Test, réelles Prod).</li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">security</span>Sécuriser environnements (accès, droits...).</li>
+                                        <li style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.8rem;"><span class="material-symbols-outlined" aria-hidden="true" style="color: var(--primary-color); margin-top: 0.1rem;">monitor</span>Maintenir et Surveiller (MàJ sécu OS/BDD..., dispo/perf Test/Prod).</li>
+                                    </ul>
+                                    <p><strong>Outils :</strong> Virtualisation, Infra as Code, Conteneurisation, SGBD, Outils déploiement/CI/CD, Supervision, Scripts.</p>
+                                    <p><strong>Points d'Attention :</strong> Isolation cruciale (pas dépendance Dev/Test sur Prod), cohérence Test/Prod, gestion données test (représentativité, anonymisation), sécu Prod prioritaire, automatisation.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 12.6 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-6" id="activity-trigger-12-6">12.6 : Coordination des Tests d'Intégration et Utilisateurs (UAT)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-6" role="region" aria-labelledby="activity-trigger-12-6" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Organiser, coordonner, suivre tests intégration (interactions composants) et UAT (validation fonctionnelle métier) avant MEP.
+                                    <p><strong>Déclencheurs :</strong> Fin dév version/fonctionnalités, dispo version sur env Test/Recette.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">rule</span></div><div class="step-content"><h4 class="step-title">Préparation Phase Test</h4><p class="step-description">Stratégie, prépa env test/données, rédaction plan test (scénarios, résultats attendus, critères acceptation), mobilisation testeurs (IT/Métier).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">integration_instructions</span></div><div class="step-content"><h4 class="step-title">Exécution Tests Intégration (IT)</h4><p class="step-description">Tester interfaces modules, échanges données, workflows techniques. Remonter anomalies.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">groups</span></div><div class="step-content"><h4 class="step-title">Coordination Tests Utilisateurs (UAT)</h4><p class="step-description">Présentation/formation testeurs métier, fournir plan test UAT/accès recette, support testeurs, collecte/centralisation retours/anomalies.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">bug_report</span></div><div class="step-content"><h4 class="step-title">Suivi Correction Anomalies</h4><p class="step-description">Qualifier anomalies, assigner dév (->12.8), suivre corrections, organiser re-tests (non-régression).</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">thumb_up</span></div><div class="step-content"><h4 class="step-title">Obtention Validation Finale (Go/No-Go)</h4><p class="step-description">Présenter bilan tests, obtenir validation formelle métier (PV recette).</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Env Test/Recette, Plan test/Cahier recette, S@Mlocal/Outil Bug Tracking, Outils communication.</p>
+                                    <p><strong>Points d'Attention :</strong> Implication users finaux (métier) fondamentale, plan test clair/couvrant, gestion rigoureuse anomalies, validation formelle conditionne MEP, tests non-régression.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 12.7 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-7" id="activity-trigger-12-7">12.7 : Déploiement et Mise en Production<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-7" role="region" aria-labelledby="activity-trigger-12-7" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Installer nouvelle version validée (ou nouvelle appli) en Production de manière contrôlée, sécurisée, minimisant impact.
+                                    <p><strong>Déclencheurs :</strong> Validation recette (PV), Validation RFC (si processus), Planification date/fenêtre MEP.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">calendar_month</span></div><div class="step-content"><h4 class="step-title">Planification MEP</h4><p class="step-description">Date/heure (HNO?), plan déploiement détaillé (runbook), plan comm, plan rollback.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">package</span></div><div class="step-content"><h4 class="step-title">Préparation Package Déploiement</h4><p class="step-description">Assembler éléments (code, scripts SQL, config prod...). Vérifier package testé.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">campaign</span></div><div class="step-content"><h4 class="step-title">Communication Pré-MEP</h4><p class="step-description">Informer users/équipes IT (date, heure, durée, impact).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">rocket_launch</span></div><div class="step-content"><h4 class="step-title">Exécution Déploiement</h4><p class="step-description">Respecter runbook. Sauvegarde config prod avant. Déployer package, exécuter scripts, redémarrer services.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">fact_check</span></div><div class="step-content"><h4 class="step-title">Tests Post-MEP (Smoke Tests)</h4><p class="step-description">Vérifs rapides: démarrage appli, fonctions critiques OK en prod.</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                          <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Tests Post-MEP OK ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Oui</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">thumb_up</span></div><div class="step-content"><h4 class="step-title">-> Validation Succès MEP</h4></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Non</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">history</span></div><div class="step-content"><h4 class="step-title">-> Déclencher Rollback</h4><p class="step-description">Appliquer plan retour arrière.</p></div></div></div></div></div></div>
+                                         <div class="step-connector after-decision"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">notifications_active</span></div><div class="step-content"><h4 class="step-title">Communication Post-MEP</h4><p class="step-description">Informer fin intervention (succès/rollback), service dispo, nouveautés.</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support</span></div><div class="step-content"><h4 class="step-title">Support Post-MEP Immédiat</h4><p class="step-description">Équipe projet/technique en vigilance pour traiter incidents rapides.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">9</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Clôture MEP</h4><p class="step-description">Documenter déroulement. Clôturer ticket/RFC.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> Runbook/Plan rollback, Package déploiement, Outils déploiement, Admin serveurs/BDD, Monitoring, Comm interne, Outil gestion changements.</p>
+                                    <p><strong>Points d'Attention :</strong> Planification rigoureuse, communication, respecter fenêtres maintenance, tests post-MEP indispensables, plan rollback fiable, dispo équipe clé.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 12.8 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-8" id="activity-trigger-12-8">12.8 : Maintenance Corrective et Évolutive des Applications Internes<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-8" role="region" aria-labelledby="activity-trigger-12-8" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer bon fonctionnement/adaptation applis internes post-MEP (traitement bugs, améliorations validées).
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal (bug signalé ou évolution validée/priorisée), anomalies UAT.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Prise en Charge Ticket</h4><p class="step-description">Assignation bug/évo validée à dév/mainteneur.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">bug_report</span></div><div class="step-content"><h4 class="step-title">Diagnostic Bug (si Correctif)</h4><p class="step-description">Analyse description, reproduction bug (env dev/test), identification cause racine.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">code</span></div><div class="step-content"><h4 class="step-title">Développement Correction / Évolution</h4><p class="step-description">Si Bug: corriger code, MAJ tests unitaires. Si Évolution: implémenter fonctionnalité (mini-cycle conception/dév/TU).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">science</span></div><div class="step-content"><h4 class="step-title">Tests Correction / Évolution</h4><p class="step-description">Tests unitaires, tests intégration/non-régression, validation par pair/demandeur (mini-UAT).</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">package</span></div><div class="step-content"><h4 class="step-title">Préparation Déploiement</h4><p class="step-description">Intégrer modif dans release (patch/version mineure), préparer package, rédiger release notes.</p></div></div>
+                                           <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">rocket_launch</span></div><div class="step-content"><h4 class="step-title">Déploiement en Production</h4><p class="step-description">Suivre procédure déploiement (Fiche 12.7), potentiellement simplifiée.</p></div></div>
+                                            <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">MAJ & Clôture Ticket S@Mlocal</h4><p class="step-description">Documenter résolution (version). Confirmer avec demandeur. Clôturer.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Env Dev/Test, Outils dév (IDE, SGBD...), Git, Outils déploiement, Outil suivi projet.</p>
+                                    <p><strong>Points d'Attention :</strong> Prioriser bugs (criticité), jamais corriger en prod direct, assurer non-régression, maintenir backlog évolutions, communiquer déploiements.</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 12.9 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-12-9" id="activity-trigger-12-9">12.9 : Documentation Technique et Utilisateur<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-12-9" role="region" aria-labelledby="activity-trigger-12-9" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Produire et maintenir à jour documentation nécessaire à compréhension, utilisation, maintenance, évolution applis internes.
+                                    <p><strong>Déclencheurs :</strong> Activité continue tout au long cycle vie dév., création nouvelle appli, ajout/modif fonctionnalités, besoin clarification.</p>
+                                    <p><strong>Activités Clés (Équipe Projet) :</strong></p>
+                                     <div class="activity-cards-container" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));"> <!-- Grid plus dense -->
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">fact_check</span><h4 class="activity-title">Identifier Besoins Doc</h4><p class="activity-description">Déterminer docs nécessaires (Utilisateur: guide, manuel, FAQ... / Technique: archi, conception, install...).</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">edit_document</span><h4 class="activity-title">Produire Doc Initiale</h4><p class="activity-description">Rédiger au fur et à mesure projet. Utiliser modèles. Adapter langage cible.</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">code</span><h4 class="activity-title">Intégrer Doc au Code</h4><p class="activity-description">Commentaires clairs. Outils auto-génération si possible (Javadoc...).</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">publish</span><h4 class="activity-title">Valider & Publier Doc</h4><p class="activity-description">Relecture pairs/users. Publier doc user (Intranet...). Stocker doc tech (Git, référentiel...).</p></div>
+                                         <div class="activity-card"><span class="material-symbols-outlined activity-icon" aria-hidden="true">update</span><h4 class="activity-title">Maintenir Doc à Jour</h4><p class="activity-description">Intégrer MAJ doc dans processus modif appli. Revues périodiques. Archiver anciennes versions.</p></div>
+                                     </div>
+                                    <p><strong>Outils :</strong> Bureautique, Wiki, Plateformes gestion code, Outils capture écran/vidéo, Modèles docs, Intranet.</p>
+                                    <p><strong>Points d'Attention :</strong> Doc essentielle/souvent négligée, livrable à part entière, MAJ continue clé, langage clair/adapté, facile d'accès.</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

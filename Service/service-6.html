@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 6: Support des Applications Métiers - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                 <!-- Chemin du logo relatif -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <!-- Formulaire de recherche supprimé -->
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 6) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 6 : Support des Applications Métiers</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 6 : Support des Applications Métiers</h1>
+            <p class="service-summary">Assistance fonctionnelle et technique de premier niveau pour les applications métiers spécifiques (Hippocrate, Diadème, etc.).</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                <!-- Liste des Onglets -->
+                 <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Accès & Support
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-sla" id="tab-sla" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">timer</span> Niveaux de Service
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts & Docs
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                        <h2>Description du Service</h2>
+                        <p>Ce service assure l'<strong>assistance fonctionnelle et technique de premier niveau</strong> pour les <strong>applications métiers spécifiques</strong> utilisées au sein de la DRSM Île-de-France (par opposition aux outils bureautiques standards comme la suite Office). Bien que la maintenance évolutive et le support expert (Niveau 3/4) de ces applications soient souvent assurés au niveau national ou par des éditeurs, le service informatique local joue un rôle clé dans :</p>
+                        <ul>
+                            <li>Le <strong>déploiement et la configuration initiale</strong> de l'accès à ces applications sur les postes utilisateurs.</li>
+                            <li>Le <strong>recueil et le diagnostic initial</strong> des incidents ou difficultés rencontrés par les utilisateurs.</li>
+                            <li>La <strong>résolution des problèmes courants</strong> ou connus.</li>
+                            <li>L'<strong>escalade et le suivi</strong> des incidents complexes vers les équipes de support nationales ou les référents métiers compétents.</li>
+                            <li>L'<strong>accompagnement</strong> des utilisateurs (aide à l'utilisation de base, orientation vers la documentation).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                        <ul>
+                           <li>Tous les <strong>collaborateurs</strong> de la DRSM IDF qui utilisent une ou plusieurs applications métiers dans le cadre de leurs fonctions (ex: praticiens-conseils, agents administratifs, etc.).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                        <h2>Modalités d’accès & Support</h2>
+                         <ol>
+                            <li>
+                                <strong>Support aux utilisateurs (Incidents ou Demandes Fonctionnelles N1)</strong>
+                                <ul>
+                                    <li>Pour toute difficulté (bug, message d'erreur, lenteur anormale, question sur une fonctionnalité de base) : ouvrir un <strong>ticket S@Mlocal</strong>.</li>
+                                    <li><strong>Préciser impérativement</strong> :
+                                        <ul>
+                                            <li>Le <strong>nom de l'application</strong> concernée.</li>
+                                            <li>Une <strong>description détaillée</strong> du problème ou de la question.</li>
+                                            <li>Les <strong>étapes</strong> pour reproduire le problème (si possible).</li>
+                                            <li>Joindre une <strong>capture d'écran</strong> du message d'erreur ou de la situation.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Le <strong>pôle support (N1)</strong> effectue un premier diagnostic.</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>Accès initial à une application métier</strong>
+                                <ul>
+                                    <li>La demande d'accès est généralement faite par le manager via <strong>S@Mlocal</strong> (voir Service 5).</li>
+                                    <li>L’accès se fait après <strong>validation de la pertinence</strong> par le <strong>MSSI</strong> ou un référent métier désigné, qui s'assure que l'accès est justifié par les fonctions de l'utilisateur.</li>
+                                    <li>Le <strong>pôle support</strong> réalise ensuite l'action technique nécessaire (installation client lourd si besoin, ajout au groupe AD, fourniture de l'URL d'accès).</li>
+                                    <li>Des <strong>guides utilisateurs</strong> spécifiques à chaque application sont souvent disponibles sur l'intranet national <strong>AMELI RESEAU</strong>.</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>Heures de service</strong>
+                                <ul>
+                                    <li>Le support local (N1/N2) est assuré <strong>aux heures ouvrées</strong>.</li>
+                                    <li>La disponibilité des applications elles-mêmes dépend de l'infrastructure nationale ou de l'éditeur. Les éventuelles plages de maintenance planifiée sont communiquées par les équipes nationales (voir Fiche Activité 6.7).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Panel SLA -->
+                    <div role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" class="tab-panel">
+                        <h2>Niveaux de Service (SLA Indicatifs)</h2>
+                        <p class="sla-notice"><strong>Note Importante :</strong> Les délais indiqués sont fournis à titre indicatif et ne constituent pas un engagement contractuel, mais des objectifs.</p>
+                         <div class="table-responsive">
+                           <table class="sla-table">
+                                <thead>
+                                    <tr>
+                                        <th>Indicateur</th>
+                                        <th>Objectif Indicatif</th>
+                                        <th>Précisions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Délai de réponse (incident applicatif)</td>
+                                        <td><strong>4 heures ouvrées</strong></td>
+                                        <td>Accusé de réception et qualification initiale par le pôle support.</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Délai de résolution (Support Local N1/N2)</td>
+                                        <td><strong>8 à 16 heures ouvrées</strong> (1-2 jours)</td>
+                                        <td>Pour incidents courants/connus avec résolution locale documentée. Questions simples souvent dans la journée.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gestion Incidents escaladés (N3/N4 National)</td>
+                                        <td>Escalade N1->N3 sous <strong>4h ouvrées</strong> / Résolution <strong>variable</strong></td>
+                                        <td>Délai de résolution dépend entièrement du support national/éditeur. Pôle support local assure suivi et communication. Objectifs N3 variables.</td>
+                                     </tr>
+                                      <tr>
+                                        <td>Communication Incidents Majeurs</td>
+                                        <td><strong>Dès que possible</strong></td>
+                                        <td>Relais local des informations d'indisponibilité et délais estimés fournis par le national.</td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                         </div>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                         <h2>Processus et fonctionnement</h2>
+                         <div class="accordion">
+                             <!-- Item Accordéon: Traitement Incident Applicatif -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-6-incident" id="process-trigger-6-incident">Traitement d'un incident applicatif<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-6-incident" role="region" aria-labelledby="process-trigger-6-incident" class="accordion-content"><div>
+                                    <div class="process-flow">
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">report_problem</span></div><div class="step-content"><h4 class="step-title">Signalement via S@Mlocal</h4><p class="step-description">Description précise, application, erreur, étapes reproduction.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support_agent</span></div><div class="step-content"><h4 class="step-title">Qualification N1</h4><p class="step-description">Vérif prérequis (réseau, droits), base connaissances, guides. Tentative résolution si procédure N1 connue.</p></div></div>
+                                        <div class="step-connector decision"></div>
+                                        <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Résolution N1 Possible ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Oui</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">-> Résolution N1</h4></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Non</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">upgrade</span></div><div class="step-content"><h4 class="step-title">-> Escalade N2/N3/N4</h4><p class="step-description">Transfert documenté vers Support National Applicatif ou N3 interne.</p></div></div></div></div></div></div>
+                                        <div class="step-connector after-decision"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_search</span></div><div class="step-content"><h4 class="step-title">Suivi Pôle Support Local</h4><p class="step-description">Relances si besoin, communication des retours N3/N4 à l'utilisateur.</p></div></div>
+                                        <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Vérification résolution avec utilisateur. Proposition contournement si attente correctif.</p></div></div>
+                                    </div>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Demande Évolution -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-6-evolution" id="process-trigger-6-evolution">Demande d’évolution fonctionnelle<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-6-evolution" role="region" aria-labelledby="process-trigger-6-evolution" class="accordion-content"><div><p>Les demandes d'amélioration ou de nouvelle fonctionnalité pour une application métier ne relèvent pas du support incident. Elles doivent suivre un processus spécifique de <strong>gestion des demandes d'évolution</strong>, souvent géré au niveau national (via les instances métier ou projet dédiées). Le pôle support peut orienter l'utilisateur vers le bon canal si connu.</p></div></div>
+                            </div>
+                             <!-- Item Accordéon: Déploiement MàJ -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-6-update" id="process-trigger-6-update">Déploiement des mises à jour<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-6-update" role="region" aria-labelledby="process-trigger-6-update" class="accordion-content"><div><p>Les mises à jour majeures des applications métiers sont généralement <strong>planifiées et déployées par les équipes nationales</strong>. Le service informatique local peut être sollicité pour préparer les postes (prérequis) ou assister au déploiement local si nécessaire. Les utilisateurs sont informés par les canaux nationaux et/ou locaux (voir Fiche 6.7) des indisponibilités éventuelles.</p></div></div>
+                            </div>
+                        </div>
+                    </div> <!-- Fin Panel Processus -->
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                         <h2>Contacts & Documentation</h2>
+                         <div class="contact-highlight">
+                            <p><strong>Pôle support (N1) :</strong> Entrée unique via <strong>S@Mlocal</strong> pour signaler tout problème ou poser une question sur une application métier. Assure le premier diagnostic et l'escalade si nécessaire.</p>
+                             <!-- URL S@Mlocal mise à jour -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/?version=300000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                          <p><strong>Support National / Éditeur (N3/N4) :</strong> Intervient sur escalade pour les problèmes complexes ou les bugs. Le contact direct par l'utilisateur final n'est généralement pas prévu, sauf procédure spécifique à une application.</p>
+                         <p><strong>Guides utilisateurs et Documentation :</strong></p>
+                         <ul>
+                            <li>Principalement disponibles sur l'intranet national <strong>AMELI RESEAU</strong>. Le pôle support peut aider à localiser la documentation pertinente.</li>
+                             <li>Des notes d'information ou guides de nouveautés accompagnent les mises à jour majeures.</li>
+                         </ul>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                         <div class="accordion">
+                            <!-- Activité 6.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-1" id="activity-trigger-6-1">6.1 : Gestion des Incidents d’Accès et d’Authentification<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <!-- CONTENU REMPLACE PAR VERSION PRECEDENTE -->
+                                <div id="activity-content-6-1" role="region" aria-labelledby="activity-trigger-6-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Diagnostiquer et résoudre problèmes d'accès/authentification aux applis métiers (Hippocrate, Diadème...).
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal (accès refusé, ID rejeté, erreur auth...).</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">User, appli exacte, erreur précise.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist</span></div><div class="step-content"><h4 class="step-title">Vérification Prérequis Base (N1)</h4><p class="step-description">Connectivité? Compte AD OK (si auth AD)? Navigateur/Client OK?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">badge</span></div><div class="step-content"><h4 class="step-title">Vérification Accès Spécifiques (N1/N2)</h4><p class="step-description">Membre groupe AD requis? Compte applicatif dédié OK? Habilitations connexion OK?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">lock_open</span></div><div class="step-content"><h4 class="step-title">Résolution (N1/N2)</h4><p class="step-description">Reset MDP applicatif (si N1/N2), Correction groupe AD (via 5.2), Vérif synchro.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture/Escalade</h4><p class="step-description">Confirmer accès user. Documenter. Clôturer ou escalader si pb infra/compte N3.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Console ADUC, Console admin appli (limité/N3), Docs internes.</p>
+                                    <p><strong>Points d'Attention :</strong> Identifier appli/mécanisme auth, respecter validations accès, comm MDP sécu, distinguer authentification vs habilitation.</p>
+                                </div></div>
+                                <!-- FIN CONTENU REMPLACE -->
+                            </div>
+                            <!-- Activité 6.2 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-2" id="activity-trigger-6-2">6.2 : Support Technique et Correction des Dysfonctionnements Logiciels<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <!-- CONTENU REMPLACE PAR VERSION PRECEDENTE -->
+                                <div id="activity-content-6-2" role="region" aria-labelledby="activity-trigger-6-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Diagnostiquer et résoudre (ou escalader) bugs/problèmes techniques des applis métiers.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal (plantage, lenteur spé, erreur fonctionnelle, pb affichage).</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Appli, fonction, erreur exacte, étapes repro, impact.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">monitor</span></div><div class="step-content"><h4 class="step-title">Diagnostic Initial (N1)</h4><p class="step-description">Reproductible? Autres users? Changements? Actions base (redémarrage...)? Base connaissances?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">desktop_windows</span></div><div class="step-content"><h4 class="step-title">Diagnostic Technique (N1/N2)</h4><p class="step-description">(Si client lourd/localisé) Logs locaux? Intégrité client (réparer/réinstaller?)? Dépendances (Java...)? Ressources système poste?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">plagiarism</span></div><div class="step-content"><h4 class="step-title">Analyse Fonctionnelle Base (N1/N2)</h4><p class="step-description">Reproduire sur poste test? Mauvaise utilisation? Lié données spécifiques?</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                         <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Solution / Contournement N1/N2 ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Oui</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">-> Appliquer Solution/Contournement</h4></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">Non</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">upgrade</span></div><div class="step-content"><h4 class="step-title">-> Escalade N3 Structurée</h4><p class="step-description">Documenter diag/tests -> Support National/Éditeur.</p></div></div></div></div></div></div>
+                                          <div class="step-connector after-decision"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Suivi & Clôture</h4><p class="step-description">Suivre résolution N3, communiquer correctif, valider avec user. (Voir 6.6).</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Appli métier, Prise contrôle distance, Logs, Gestionnaire tâches, Docs appli, Outils diag système.</p>
+                                    <p><strong>Points d'Attention :</strong> Infos précises, distinguer bug vs infra/droits/usage, pas modif données direct, qualité doc escalade, gérer attentes délais.</p>
+                                </div></div>
+                                <!-- FIN CONTENU REMPLACE -->
+                            </div>
+                             <!-- Activité 6.3 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-3" id="activity-trigger-6-3">6.3 : Maintenance et Mises à Jour des Applications Métiers (Coordination)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <!-- CONTENU REMPLACE PAR VERSION PRECEDENTE -->
+                                <div id="activity-content-6-3" role="region" aria-labelledby="activity-trigger-6-3" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Gérer install/MàJ applis métiers sur postes users, coordonner déploiement versions/correctifs.
+                                    <p><strong>Déclencheurs :</strong> Demande S@Mlocal (install), notif national/éditeur (MàJ/patch), besoin réinstall.</p>
+                                     <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Demande/Notif via S@Mlocal ou Com interne/externe.</p></div></div>
+                                        <div class="step-connector decision"></div>
+                                          <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Type d'Action ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes"><div class="branch-path"><span class="branch-label">Install / Réinstall (N1/N2)</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number"></span><span class="material-symbols-outlined step-icon" aria-hidden="true">download_for_offline</span></div><div class="step-content"><h4 class="step-title">Exécuter Installation</h4><p class="step-description">Vérif droits user. Déploiement via télédistrib (N2/N3) ou manuel (N1/N2). Vérif config base.</p></div></div></div></div><div class="decision-branch branch-no"><div class="branch-path"><span class="branch-label">MàJ / Correctif (Coord.)</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">calendar_month</span></div><div class="step-content"><h4 class="step-title">Planification (N2/N3)</h4><p class="step-description">Analyse info N3, stratégie déploiement, fenêtre, plan comm.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">biotech</span></div><div class="step-content"><h4 class="step-title">Prépa Technique (N2/N3)</h4><p class="step-description">Packaging, prépa instructions manuelles.</p></div></div><div class="step-connector-branch"></div><div class="process-step user-step nested"><div class="step-icon-container"><span class="step-number">2c</span><span class="material-symbols-outlined step-icon" aria-hidden="true">campaign</span></div><div class="step-content"><h4 class="step-title">Communication Utilisateurs</h4><p class="step-description">Info MàJ, interruptions, actions requises.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2d</span><span class="material-symbols-outlined step-icon" aria-hidden="true">system_update_alt</span></div><div class="step-content"><h4 class="step-title">Déploiement (N2/N3)</h4><p class="step-description">Via outil centralisé ou coordination manuelle.</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">2e</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support</span></div><div class="step-content"><h4 class="step-title">Support Post-Déploiement (N1/N2)</h4><p class="step-description">Traitement incidents liés. Remontée rapide pb majeurs N3.</p></div></div></div></div></div></div>
+                                          <div class="step-connector after-decision"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer succès install/MàJ. Clôturer tickets.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Outils télédistribution, Fichiers install/Packages, Prise contrôle distance, Canaux comm, Docs techniques applis.</p>
+                                    <p><strong>Points d'Attention :</strong> Tester MàJ en pilote, communiquer clairement/en amont, utiliser versions/procédures validées, coordination IT local/national/éditeur/métiers, respecter fenêtres maintenance.</p>
+                                </div></div>
+                                <!-- FIN CONTENU REMPLACE -->
+                            </div>
+                            <!-- Activité 6.4 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-4" id="activity-trigger-6-4">6.4 : Gestion des Habilitations et des Droits d’Accès (Applications Métiers)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <!-- CONTENU REMPLACE PAR VERSION PRECEDENTE -->
+                                <div id="activity-content-6-4" role="region" aria-labelledby="activity-trigger-6-4" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Gérer droits spécifiques (habilitations, profils, rôles) <i>à l'intérieur</i> des applis métiers.
+                                    <p><strong>Déclencheurs :</strong> Demande S@Mlocal (validée manager/métier), ticket incident (droits insuffisants), changement poste, audits.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Appli, user, droit/fonction, justif/erreur.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">verified_user</span></div><div class="step-content"><h4 class="step-title">Vérification Validation</h4><p class="step-description">Manager ET/OU Référent Fonctionnel/Métier.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">settings</span></div><div class="step-content"><h4 class="step-title">Identification Mécanisme Habilitations</h4><p class="step-description">Profils internes appli? Groupes AD mappés?</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_accounts</span></div><div class="step-content"><h4 class="step-title">Attribution/Modif Habilitations</h4><p class="step-description">Si Groupes AD (IT - Fiche 5.2). Si Console Applicative (Admin appli désigné - IT N2/N3 ou Réf. métier).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">gpp_bad</span></div><div class="step-content"><h4 class="step-title">Résolution Erreurs Habilitation</h4><p class="step-description">Vérifier droits user vs requis. Corriger si erreur (après validation).</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">lock_person</span></div><div class="step-content"><h4 class="step-title">Appliquer Moindre Privilège</h4><p class="step-description">N'accorder que droits nécessaires. Retirer superflus.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Demander test user. Documenter. Clôturer ticket.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Console admin spécifique appli (restreint), Console ADUC, Docs internes (matrice rôles).</p>
+                                    <p><strong>Points d'Attention :</strong> Validation métier souvent indispensable, moindre privilège strict, séparation tâches, traçabilité, revues droits périodiques.</p>
+                                </div></div>
+                                <!-- FIN CONTENU REMPLACE -->
+                            </div>
+                            <!-- Activité 6.5 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-5" id="activity-trigger-6-5">6.5 : Assistance Fonctionnelle et Accompagnement des Utilisateurs<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <!-- CONTENU REMPLACE PAR VERSION PRECEDENTE -->
+                                <div id="activity-content-6-5" role="region" aria-labelledby="activity-trigger-6-5" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Aide N1 sur usage fonctionnalités standard applis métiers, orientation doc, assistance paramétrages base.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal (question "comment faire?", sens champ/option, procédure cas standard, dispo doc/formation).</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Comprendre question fonctionnelle.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">find_in_page</span></div><div class="step-content"><h4 class="step-title">Recherche Documentation</h4><p class="step-description">BDC S@Mlocal, Intranet local, AMELI RESEAU.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">directions</span></div><div class="step-content"><h4 class="step-title">Orientation Ressources</h4><p class="step-description">Fournir lien guide/FAQ. Encourager consultation.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support_agent</span></div><div class="step-content"><h4 class="step-title">Assistance Premier Niveau</h4><p class="step-description">(Si doc insuffisante/simple) Expliquer étapes, montrer via partage écran, config base.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">school</span></div><div class="step-content"><h4 class="step-title">Identification Besoins Formation</h4><p class="step-description">Suggérer service formation/référents métier si besoin.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">upgrade</span></div><div class="step-content"><h4 class="step-title">Escalade (si nécessaire)</h4><p class="step-description">Si complexe/spé métier -> Réf. métier. Si bug -> Ticket incident (6.2).</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer réponse/orientation. Documenter. Clôturer.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils :</strong> S@Mlocal, Intranets, Prise contrôle distance, Annuaire référents métiers.</p>
+                                    <p><strong>Points d'Attention :</strong> Support IT N1 = fonctionnel base (pas formation/expertise métier), privilégier orientation doc, pas donner conseil métier, identifier frontière fonctionnel/technique.</p>
+                                </div></div>
+                                <!-- FIN CONTENU REMPLACE -->
+                            </div>
+                            <!-- Activité 6.6 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-6" id="activity-trigger-6-6">6.6 : Suivi et Reporting des Incidents Applicatifs<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <!-- CONTENU REMPLACE PAR VERSION PRECEDENTE -->
+                                <div id="activity-content-6-6" role="region" aria-labelledby="activity-trigger-6-6" class="accordion-content"><div>
+                                     <strong>Objectif :</strong> Suivi structuré incidents/demandes applis métiers, analyse données, reporting pour amélioration continue.
+                                     <p><strong>Déclencheurs :</strong> Activité continue basée sur données S@Mlocal, points suivi réguliers.</p>
+
+                                     <!-- Section Visuelle pour Activités Clés 6.6 -->
+                                     <div class="activity-cards-container">
+                                         <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">history_edu</span>
+                                             <h4 class="activity-title">Enregistrement Rigoureux</h4>
+                                             <span class="activity-frequency">Continu</span>
+                                             <p class="activity-description">Assurer enregistrement correct, catégorisation, documentation dans S@Mlocal.</p>
+                                         </div>
+                                         <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">manage_search</span>
+                                             <h4 class="activity-title">Suivi Actif Tickets</h4>
+                                             <span class="activity-frequency">Continu</span>
+                                             <p class="activity-description">Surveiller tickets ouverts (surtout N3), relances si délais excessifs, comm utilisateur.</p>
+                                         </div>
+                                         <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">analytics</span>
+                                             <h4 class="activity-title">Analyse Données</h4>
+                                             <span class="activity-frequency">Périodique</span>
+                                             <p class="activity-description">Extraire données S@Mlocal, analyser indicateurs clés (volume, types, délais...).</p>
+                                         </div>
+                                         <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">trending_up</span>
+                                             <h4 class="activity-title">Identification Tendances</h4>
+                                             <span class="activity-frequency">Périodique</span>
+                                             <p class="activity-description">Repérer applis problématiques, dysfonctionnements récurrents, impacts métier.</p>
+                                         </div>
+                                         <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">assessment</span>
+                                             <h4 class="activity-title">Production Rapports</h4>
+                                             <span class="activity-frequency">Périodique</span>
+                                             <p class="activity-description">Synthétiser analyses (tableaux bord...) pour IT/Métiers/Management.</p>
+                                         </div>
+                                          <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">support</span>
+                                             <h4 class="activity-title">Communication & Plan d'Action</h4>
+                                             <span class="activity-frequency">Périodique</span>
+                                             <p class="activity-description">Présenter rapports, discuter pbs, contribuer définition actions correctives.</p>
+                                         </div>
+                                          <div class="activity-card">
+                                             <span class="material-symbols-outlined activity-icon" aria-hidden="true">autorenew</span>
+                                             <h4 class="activity-title">Amélioration Continue</h4>
+                                             <span class="activity-frequency">Continu</span>
+                                             <p class="activity-description">Utiliser retours pour améliorer processus support (BDC N1, procédures...).</p>
+                                         </div>
+                                     </div>
+                                     <!-- Fin Section Visuelle -->
+
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal (reporting/export), Outils analyse données (Excel...), Outils présentation, Plateformes communication.</p>
+                                     <p><strong>Points d'Attention :</strong> Qualité données S@Mlocal essentielle, adapter rapports destinataires, proposer pistes amélioration, comm constructive N3 basée sur faits, reporting régulier.</p>
+                                </div></div>
+                                <!-- FIN CONTENU REMPLACE -->
+                            </div>
+                            <!-- NOUVELLE Activité 6.7 - Conservée de la version actuelle -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-6-7" id="activity-trigger-6-7">6.7 : Gestion et Communication des Mises en Production (MEP) Nationales<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-6-7" role="region" aria-labelledby="activity-trigger-6-7" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer la réception, l'analyse, l'enregistrement centralisé, la planification et la communication interne rapide et efficace des informations relatives aux MEP ou maintenances planifiées sur les applications nationales, afin de minimiser l'impact sur les activités des utilisateurs et d'améliorer la visibilité interne.
+                                    <p><strong>Déclencheurs :</strong> Réception d'une notification officielle nationale (email type "[MEP-Début]...") annonçant une intervention planifiée.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">email</span></div><div class="step-content"><h4 class="step-title">Réception Notification Nationale</h4><p class="step-description">Identifier destinataire, accuser réception interne si besoin.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">fact_check</span></div><div class="step-content"><h4 class="step-title">Analyse Immédiate</h4><p class="step-description">Extraire infos clés (Appli, Impact, Fenêtre Dates/Heures exactes...). Évaluer urgence comm.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_note</span></div><div class="step-content"><h4 class="step-title">Enregistrement Obsidian (Obligatoire)</h4><p class="step-description">MAJ `MEP Suivi National.md` <strong>dès que possible</strong>. Format tâche: <br><code>- [ ] DD/MM/AAAA ; MEP : [App] ; [Fenêtre H:M] ; [Date Récep.] ; [Date Comm. Prévue] ; [Infos Lot/Lien]</code><br>(Ex: <code>- [ ] 25/04/2025 ; MEP : Hippocrate ; 25/04/2025 08:00 - 10:00 ; 18/04/2025 ; 24/04/2025 ; Lot 25032508 / Composant HI240001Z / [Lien]</code>)</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">group</span></div><div class="step-content"><h4 class="step-title">Éval Impact & Planif. Comm. Interne</h4><p class="step-description">Identifier users impactés, anticiper conséquences, définir canal comm., fixer date diffusion (Objectif: J-3 min préavis).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">speaker_notes</span></div><div class="step-content"><h4 class="step-title">Préparation Communication Interne</h4><p class="step-description">Rédiger message clair, non technique (Appli, Raison, Dates/Heures Précises, Impact, Actions user?, Contact). NE PAS transférer email tech.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">approval</span></div><div class="step-content"><h4 class="step-title">Validation Interne (Optionnelle)</h4><p class="step-description">Si impact majeur, validation rapide par responsable.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">campaign</span></div><div class="step-content"><h4 class="step-title">Diffusion Communication Interne</h4><p class="step-description">Envoyer via canal défini en respectant délai préavis.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">update</span></div><div class="step-content"><h4 class="step-title">Suivi Intervention & MAJ Obsidian</h4><p class="step-description">Surveiller comm. nationales. Cocher tâche Obsidian `[x]` à la fin.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">9</span><span class="material-symbols-outlined step-icon" aria-hidden="true">forward_to_inbox</span></div><div class="step-content"><h4 class="step-title">Communication Post-Intervention (Si besoin)</h4><p class="step-description">Informer fin si impact long, relayer pbs résiduels.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils Principaux :</strong> Messagerie, S@Mlocal (post-MEP), <strong>Note Obsidian `MEP Suivi National.md` (Obligatoire)</strong>, Canaux comm interne.</p>
+                                    <p><strong>Points d'Attention / Règles Clés :</strong> RÉACTIVITÉ & ENREGISTREMENT OBSIDIAN dès réception, ANTICIPATION & DÉLAI PRÉAVIS (J-3 min), CLARTÉ, PRÉCISION dates/heures, CIBLAGE, SUIVI OBSIDIAN.</p>
+                                    <p><strong>Escalade :</strong> Notif nationale tardive (->Encadrement Informatique), Infos nationales floues (->CTI/éditeur), Impact métier critique (->Encadrement Informatique vers National).</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+                 <li><a href="../glossaire.html">Glossaire</a></li> <!-- Chemin corrigé -->
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

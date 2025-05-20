@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre générique - !! IMPORTANT : Remplacer [Num] et [Nom Service] dans chaque page créée à partir de ce template !! -->
+    <title>Service [Num] : [Nom Service] - Catalogue des Services Informatique</title>
+    <!-- Chemin relatif vers le CSS commun (depuis le dossier 'services/') -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Liens Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Chemin relatif vers le JS commun (depuis le dossier 'services/') -->
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <form class="search-form" action="#!" method="get" role="search">
+                <label for="main-search" class="visually-hidden">Rechercher dans le catalogue</label>
+                <input type="search" id="main-search" name="q" placeholder="Rechercher un service..." aria-label="Rechercher dans le catalogue">
+                <button type="submit" aria-label="Lancer la recherche">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique à remplacer) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane (à personnaliser dynamiquement ou manuellement) -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <!-- !! Remplacer le contenu de ce span pour chaque page !! -->
+                    <li><span aria-current="page">Service [Numéro] : [Nom du Service]</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service (à personnaliser) -->
+             <!-- !! Remplacer le contenu de ces éléments pour chaque page !! -->
+            <h1 class="service-title">Service [Numéro] : [Nom du Service Placeholder]</h1>
+            <p class="service-summary">[Courte description du service placeholder - 1 phrase clé]</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                <!-- Liste des Onglets (Structure identique pour tous les services) -->
+                <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Accès & Demandes
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-sla" id="tab-sla" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">timer</span> Niveaux de Service
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+                <!-- Panneaux de Contenu des Onglets (Contenu à remplacer pour chaque service) -->
+                <div class="tab-panels">
+
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                        <h2>Description du Service</h2>
+                        <!-- !! Insérer ici la description détaillée du service spécifique !! -->
+                        <p>[Placeholder Description...]</p>
+
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                        <!-- !! Insérer ici la liste des bénéficiaires du service spécifique !! -->
+                        <ul><li>[Placeholder Bénéficiaire...]</li></ul>
+                    </div>
+
+                    <!-- Panel Accès -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                        <h2>Modalités d’accès & Demandes</h2>
+                        <!-- !! Insérer ici les modalités d'accès spécifiques au service !! -->
+                         <p>[Placeholder Modalités d'accès...]</p>
+                         <ol><li><strong>[Exemple Méthode]</strong></li></ol>
+                    </div>
+
+                    <!-- Panel SLA -->
+                    <div role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" class="tab-panel">
+                        <h2>Niveaux de Service (SLA Indicatifs)</h2>
+                        <p class="sla-notice"><strong>Note Importante :</strong> Les délais indiqués sont fournis à titre indicatif et ne constituent pas un engagement contractuel, mais des objectifs.</p>
+                        <div class="table-responsive">
+                             <!-- !! Insérer ici le tableau SLA spécifique au service !! -->
+                            <table class="sla-table">
+                                <thead><tr><th>Indicateur</th><th>Objectif Indicatif</th><th>Précisions</th></tr></thead>
+                                <tbody><tr><td>[Placeholder Indicateur]</td><td>[Placeholder Objectif]</td><td>[Placeholder Précisions]</td></tr></tbody>
+                            </table>
+                        </div>
+                         <p><br><em>[Ajouter remarque SLA si nécessaire...]</em></p>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                        <h2>Processus et fonctionnement</h2>
+                         <p>[Description générale si nécessaire...]</p>
+                        <!-- !! Insérer ici l'accordéon avec les processus spécifiques (logigrammes ou texte) !! -->
+                        <div class="accordion">
+                            <!-- Modèle Item Accordéon pour UN processus -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-X" id="process-trigger-X">[Titre Processus]<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-X" role="region" aria-labelledby="process-trigger-X" class="accordion-content"><div>
+                                    <p>[Contenu du processus : logigramme ou texte]</p>
+                                    <!-- Exemple Logigramme -->
+                                    <!--
+                                    <div class="process-flow">
+                                        <div class="process-step [...]">...</div>
+                                        <div class="step-connector"></div>
+                                        ...
+                                    </div>
+                                     -->
+                                </div></div>
+                            </div>
+                            <!-- Copier pour chaque processus -->
+                        </div>
+                    </div>
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                        <h2>Contacts et support</h2>
+                        <!-- !! Insérer ici les informations de contact spécifiques au service !! -->
+                         <div class="contact-highlight">
+                            <p><strong>[Libellé Point Contact Principal] :</strong></p>
+                            <a href="#!" class="btn btn-secondary btn-small">...</a>
+                            <p>[Autre info contact...]</p>
+                         </div>
+                         <p><strong>[Autres contacts...]</strong></p>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                        <p>[S'il n'y a pas de fiche activité pour ce service, mettre une phrase l'indiquant. Sinon, insérer l'accordéon ci-dessous.]</p>
+
+                        <div class="accordion">
+                            <!-- Modèle Item Accordéon Activité -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-X-Y" id="activity-trigger-X-Y">[Num Fiche X.Y] : [Titre Fiche]<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-X-Y" role="region" aria-labelledby="activity-trigger-X-Y" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> [Objectif...]
+                                    <p><strong>Description / Déclencheurs :</strong> [Description...]</p>
+                                    <p><strong>Processus / Étapes Clés :</strong></p>
+                                    <!-- Insérer logigramme ou liste ordonnée ici -->
+                                    <p><strong>Outils Principaux :</strong> [Outils...]</p>
+                                    <p><strong>Points d'Attention :</strong> [Points clés...]</p>
+                                </div></div>
+                            </div>
+                            <!-- Copier pour chaque fiche activité -->
+                        </div>
+                    </div>
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

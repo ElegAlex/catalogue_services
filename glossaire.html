@@ -1,0 +1,1098 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire - Catalogue des Services Informatique DRSM IDF</title>
+    <!-- Lien vers la feuille de style unique et consolidée -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Liens Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Lien vers le script unique et consolidé -->
+    <script src="js/script.js" defer></script>
+    <!-- Styles additionnels spécifiques au glossaire -->
+    <style>
+        .glossary-nav {
+            background-color: var(--card-bg);
+            padding: calc(var(--spacing-unit) * 0.8);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px var(--soft-shadow-color);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            border: 1px solid var(--border-color);
+        }
+        .glossary-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: calc(var(--spacing-unit) * 0.6);
+        }
+        .glossary-nav li {
+             margin: 0;
+        }
+        .glossary-nav a {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 0.3) calc(var(--spacing-unit) * 0.6);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background-color var(--animation-duration) ease, color var(--animation-duration) ease;
+            min-width: 30px; /* Ensure minimum width for single letters */
+            text-align: center;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+        }
+        .glossary-nav a:hover, .glossary-nav a:focus-visible {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            text-decoration: none;
+            border-color: var(--primary-color);
+        }
+         .glossary-section {
+            margin-bottom: calc(var(--spacing-unit) * 2.5);
+            padding-top: calc(var(--spacing-unit) * 2); /* Add padding for anchor jump */
+            margin-top: calc(-1 * var(--spacing-unit) * 2); /* Offset padding */
+        }
+        .glossary-section h2 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: calc(var(--spacing-unit) * 0.5);
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+        }
+        dl.definition-list strong { color: var(--text-color); }
+        /* Style pour les références "Voir Service" */
+        dl.definition-list i {
+            font-style: normal; /* Annule l'italique par défaut si non souhaité */
+            color: var(--muted-text-color);
+            font-size: 0.85em; /* Légèrement plus petit */
+            margin-left: calc(var(--spacing-unit) * 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Chemin du logo corrigé -->
+                <img src="assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <!-- Formulaire de recherche supprimé -->
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique Glossaire) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><span aria-current="page">Glossaire</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Introduction -->
+            <h1 class="service-title">Glossaire des Termes Informatiques</h1>
+            <p class="service-summary">Retrouvez ici la définition des principaux termes techniques et acronymes utilisés dans le catalogue de services IT de la DRSM Île-de-France.</p>
+
+            <!-- Navigation Alphabétique -->
+            <nav class="glossary-nav" aria-label="Navigation alphabétique du glossaire">
+                <ul>
+                    <li><a href="#letter-A">A</a></li>
+                    <li><a href="#letter-B">B</a></li>
+                    <li><a href="#letter-C">C</a></li>
+                    <li><a href="#letter-D">D</a></li>
+                    <li><a href="#letter-E">E</a></li>
+                    <li><a href="#letter-F">F</a></li>
+                    <li><a href="#letter-G">G</a></li>
+                    <li><a href="#letter-H">H</a></li>
+                    <li><a href="#letter-I">I</a></li>
+                    <li><a href="#letter-J">J</a></li>
+                    <li><a href="#letter-L">L</a></li>
+                    <li><a href="#letter-M">M</a></li>
+                    <li><a href="#letter-N">N</a></li>
+                    <li><a href="#letter-O">O</a></li>
+                    <li><a href="#letter-P">P</a></li>
+                    <li><a href="#letter-R">R</a></li>
+                    <li><a href="#letter-S">S</a></li>
+                    <li><a href="#letter-T">T</a></li>
+                    <li><a href="#letter-U">U</a></li>
+                    <li><a href="#letter-V">V</a></li>
+                    <li><a href="#letter-W">W</a></li>
+                    <li><a href="#letter-Z">Z</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sections du Glossaire par Lettre -->
+            <section id="letter-A" class="glossary-section">
+                <h2>A</h2>
+                <dl class="definition-list">
+                    <dt><strong>ACL (Access Control List)</strong></dt>
+                    <dd>Liste de contrôle d'accès. Définit les permissions (qui peut faire quoi) sur une ressource informatique (fichier, dossier...). La gestion par groupes AD est privilégiée.</dd>
+                    <dt><strong>Active Directory (AD)</strong></dt>
+                    <dd>Annuaire centralisé gérant les comptes utilisateurs, ordinateurs, groupes et politiques de sécurité au sein du réseau de l'Assurance Maladie. Votre compte Windows est un compte AD. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>AD FS (Active Directory Federation Services)</strong></dt>
+                    <dd>Service permettant l'authentification unique (SSO) entre différents systèmes en utilisant les identifiants AD.</dd>
+                     <dt><strong>Add-in (ou Complément)</strong></dt>
+                    <dd>Petit programme qui s'ajoute à une application principale (comme Outlook) pour lui apporter des fonctionnalités supplémentaires (ex: BlueFiles).</dd>
+                    <dt><strong>Airwatch (Workspace ONE UEM)</strong></dt>
+                    <dd>Solution de Mobile Device Management (MDM) utilisée pour gérer et sécuriser les smartphones professionnels. <i>(Voir Service 8)</i></dd>
+                    <dt><strong>API (Application Programming Interface)</strong></dt>
+                    <dd>Interface de programmation applicative. Ensemble de règles et d'outils permettant à différents logiciels de communiquer entre eux. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>Avamar</strong></dt>
+                    <dd>Solution de sauvegarde utilisée au niveau national, principalement pour la sauvegarde à court terme des serveurs et VM. <i>(Voir Service 11)</i></dd>
+                </dl>
+            </section>
+
+             <section id="letter-B" class="glossary-section">
+                <h2>B</h2>
+                <dl class="definition-list">
+                    <dt><strong>BAL (Boîte Aux Lettres)</strong></dt>
+                    <dd>Désigne une boîte de messagerie électronique. Peut être individuelle (associée à un utilisateur) ou générique/partagée (associée à un service, une fonction). <i>(Voir Service 3)</i></dd>
+                     <dt><strong>Bitlocker</strong></dt>
+                    <dd>Fonctionnalité de chiffrement de disque intégrée à Windows, utilisée pour sécuriser les données sur les postes de travail. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>BlueFiles</strong></dt>
+                    <dd>Add-in Outlook utilisé pour l'envoi sécurisé de fichiers volumineux ou sensibles. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>Bourrage Papier</strong></dt>
+                    <dd>Incident où une feuille de papier se coince dans le mécanisme d'une imprimante. Le retrait relève généralement de l'utilisateur. <i>(Voir Service 7)</i></dd>
+                    <dt><strong>BSOD (Blue Screen of Death)</strong></dt>
+                    <dd>Écran bleu d'erreur critique de Windows indiquant un problème système ou matériel grave. <i>(Voir Service 2)</i></dd>
+                    <dt><strong>Bug</strong></dt>
+                    <dd>Erreur ou défaut dans un programme informatique qui provoque un comportement inattendu ou incorrect. <i>(Voir Service 6, Service 12)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-C" class="glossary-section">
+                <h2>C</h2>
+                <dl class="definition-list">
+                     <dt><strong>CA (Certificate Authority)</strong></dt>
+                    <dd>Autorité de Certification. Organisme de confiance qui émet et signe les certificats numériques (SSL/TLS, Carte Agent...). <i>(Voir Service 9, Service 10)</i></dd>
+                     <dt><strong>Carte Agent (IDPRIME)</strong></dt>
+                    <dd>Carte à puce personnelle utilisée pour l'authentification forte (ouverture de session Windows, VPN...) et la signature électronique. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>Catalogue de Services</strong></dt>
+                    <dd>Document (comme celui-ci) décrivant les services informatiques proposés, leurs modalités d'accès et les niveaux de service attendus.</dd>
+                    <dt><strong>CEDRE</strong></dt>
+                    <dd>Politique visant à promouvoir l'impression responsable (réduction de la consommation de papier et de toner). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>CERT (Computer Emergency Response Team)</strong></dt>
+                    <dd>Équipe de réponse aux incidents de sécurité informatique. Le CERT-Assurance Maladie émet des alertes et recommandations. <i>(Voir Service 10)</i></dd>
+                     <dt><strong>Certificat Numérique</strong></dt>
+                    <dd>Fichier électronique utilisé pour prouver l'identité d'un utilisateur, d'un serveur ou d'un appareil, et pour sécuriser les communications (chiffrement). <i>(Voir Service 9, Service 10)</i></dd>
+                     <dt><strong>Charte Informatique</strong></dt>
+                    <dd>Document officiel définissant les règles d'utilisation des ressources informatiques de l'Assurance Maladie que chaque utilisateur s'engage à respecter.</dd>
+                     <dt><strong>CI/CD (Continuous Integration / Continuous Deployment)</strong></dt>
+                    <dd>Intégration Continue / Déploiement Continu. Pratiques visant à automatiser les phases de tests et de mise en production des logiciels. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>Client Lourd</strong></dt>
+                    <dd>Application installée directement sur le poste de travail (par opposition à une application web accessible via navigateur). Ex: Outlook, Hippocrate client.</dd>
+                     <dt><strong>CMDB (Configuration Management Database)</strong></dt>
+                    <dd>Base de données de gestion des configurations. Utilisée par l'IT pour inventorier et gérer les composants du système d'information (matériel, logiciels, relations...). <i>(Voir Service 2, Service 10)</i></dd>
+                     <dt><strong>CONIBI / Pro XL</strong></dt>
+                    <dd>Programmes et prestataires pour la collecte et le recyclage des consommables d'impression usagés (toners...). <i>(Voir Service 7)</i></dd>
+                     <dt><strong>Console d'Administration</strong></dt>
+                    <dd>Interface (souvent logicielle) permettant aux équipes IT de gérer et configurer un système (ex: ADUC, console Exchange, console MDM, console de sauvegarde...).</dd>
+                    <dt><strong>CPAM / CRAMIF</strong></dt>
+                    <dd>Caisse Primaire / Régionale d'Assurance Maladie. Entités avec lesquelles la DRSM interagit, notamment pour la gestion des accès physiques sur certains sites. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>CSR (Certificate Signing Request)</strong></dt>
+                    <dd>Demande de signature de certificat. Fichier généré par un serveur ou un client contenant les informations nécessaires pour demander un certificat numérique à une Autorité de Certification (CA). <i>(Voir Service 10)</i></dd>
+                    <dt><strong>CVSS (Common Vulnerability Scoring System)</strong></dt>
+                    <dd>Système standardisé pour évaluer la sévérité des vulnérabilités informatiques. <i>(Voir Service 10)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-D" class="glossary-section">
+                <h2>D</h2>
+                <dl class="definition-list">
+                     <dt><strong>Demande (de service)</strong></dt>
+                    <dd>Sollicitation standard d'un utilisateur pour obtenir quelque chose (accès, matériel, logiciel, information...) via un processus défini. Différent d'un incident. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>DHCP (Dynamic Host Configuration Protocol)</strong></dt>
+                    <dd>Protocole réseau qui attribue automatiquement des adresses IP et d'autres informations de configuration réseau aux appareils qui se connectent. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>Diadème</strong></dt>
+                    <dd>Exemple d'application métier utilisée à la DRSM IDF. <i>(Voir Service 6)</i></dd>
+                    <dt><strong>DNS (Domain Name System)</strong></dt>
+                    <dd>Système qui traduit les noms de domaine lisibles par l'homme (ex: www.google.fr) en adresses IP numériques utilisables par les machines.</dd>
+                    <dt><strong>DRSM (Direction Régionale du Service Médical)</strong></dt>
+                    <dd>L'entité concernée par ce catalogue de services.</dd>
+                    <dt><strong>Droits d'Accès / Habilitations</strong></dt>
+                    <dd>Permissions accordées à un utilisateur pour accéder à des ressources (dossiers, applications) ou effectuer des actions spécifiques. <i>(Voir Service 5, Service 6)</i></dd>
+                     <dt><strong>Dysfonctionnement</strong></dt>
+                    <dd>Terme général désignant un problème, une panne, un comportement anormal d'un matériel ou d'un logiciel.</dd>
+                 </dl>
+            </section>
+
+             <section id="letter-E" class="glossary-section">
+                <h2>E</h2>
+                <dl class="definition-list">
+                    <dt><strong>EDR (Endpoint Detection and Response)</strong></dt>
+                    <dd>Solution de sécurité pour les postes de travail et serveurs qui surveille, détecte et répond aux menaces avancées. Ex: Tehtris. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>ELSM / ERSM (Échelon Local / Régional du Service Médical)</strong></dt>
+                    <dd>Structures organisationnelles de la DRSM.</dd>
+                     <dt><strong>eMaintenance</strong></dt>
+                    <dd>Système de Canon pour la surveillance à distance des MFP et la commande automatique des consommables (toners). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>Escalade</strong></dt>
+                    <dd>Processus consistant à transférer un incident ou une demande non résolu à un niveau de support supérieur (N1 vers N2, N2 vers N3) ou à une autre équipe spécialisée. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>ESD (ElectroStatic Discharge)</strong></dt>
+                    <dd>Décharge électrostatique. Peut endommager les composants électroniques sensibles. Des précautions (ex: bracelet antistatique) sont nécessaires lors des manipulations matérielles. <i>(Voir Service 2)</i></dd>
+                     <dt><strong>Expression de Besoin</strong></dt>
+                    <dd>Document décrivant les objectifs et les exigences fonctionnelles d'un nouveau projet ou d'une évolution applicative, généralement rédigé par le service demandeur (métier). <i>(Voir Service 12)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-F" class="glossary-section">
+                <h2>F</h2>
+                <dl class="definition-list">
+                    <dt><strong>FAQ (Frequently Asked Questions)</strong></dt>
+                    <dd>Foire Aux Questions. Section documentaire regroupant les réponses aux questions les plus courantes.</dd>
+                    <dt><strong>Fiche Activité</strong></dt>
+                    <dd>Partie du catalogue de services décrivant en détail une procédure ou un processus spécifiques au sein d'un service IT.</dd>
+                    <dt><strong>Fiche Service</strong></dt>
+                    <dd>Partie principale du catalogue décrivant un service informatique global, ses bénéficiaires, modalités d'accès, SLA indicatifs, etc.</dd>
+                    <dt><strong>Firewall (Pare-feu)</strong></dt>
+                    <dd>Dispositif matériel ou logiciel qui contrôle le trafic réseau entrant et sortant, en autorisant ou bloquant les communications selon des règles de sécurité définies. Ex: Stormshield. <i>(Voir Service 4, Service 10)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-G" class="glossary-section">
+                <h2>G</h2>
+                <dl class="definition-list">
+                     <dt><strong>GFS (Grandfather-Father-Son)</strong></dt>
+                    <dd>Stratégie de rétention des sauvegardes permettant de conserver des points de restauration sur différentes périodicités (quotidienne, hebdomadaire, mensuelle, annuelle). Utilisée notamment par Veeam. <i>(Voir Service 11)</i></dd>
+                     <dt><strong>GPO (Group Policy Object)</strong></dt>
+                    <dd>Objet de stratégie de groupe. Mécanisme dans Active Directory permettant de définir et d'appliquer des configurations (logiciels, sécurité, paramètres Windows...) aux utilisateurs et aux ordinateurs du domaine. <i>(Voir Service 7)</i></dd>
+                     <dt><strong>Groupe AD (Groupe Active Directory)</strong></dt>
+                    <dd>Collection de comptes utilisateurs, d'ordinateurs ou d'autres groupes dans Active Directory. Utilisé principalement pour simplifier la gestion des droits d'accès (RBAC). <i>(Voir Service 5)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-H" class="glossary-section">
+                <h2>H</h2>
+                <dl class="definition-list">
+                    <dt><strong>Hippocrate</strong></dt>
+                    <dd>Nom d'une application métier majeure utilisée à la DRSM IDF (versions Production et Décisionnel). <i>(Voir Service 6)</i></dd>
+                    <dt><strong>Hotline</strong></dt>
+                    <dd>Ligne téléphonique dédiée au support informatique, utilisée principalement en cas d'urgence ou d'impossibilité d'accès à S@Mlocal. <i>(Voir Service 1)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-I" class="glossary-section">
+                <h2>I</h2>
+                <dl class="definition-list">
+                    <dt><strong>IDPRIME</strong></dt>
+                    <dd>Technologie ou nom associé aux Cartes Agents utilisées pour l'authentification. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>IDE (Integrated Development Environment)</strong></dt>
+                    <dd>Environnement de développement intégré. Logiciel fournissant des outils complets aux développeurs pour écrire, tester et déboguer du code (ex: Visual Studio). <i>(Voir Service 12)</i></dd>
+                    <dt><strong>IMACD (Install, Move, Add, Change, Delete)</strong></dt>
+                    <dd>Terme désignant l'ensemble des opérations de gestion du cycle de vie du matériel (installation, déplacement, ajout, modification, suppression). Utilisé notamment pour les imprimantes sous contrat UCANSS. <i>(Voir Service 7)</i></dd>
+                    <dt><strong>Incident</strong></dt>
+                    <dd>Interruption imprévue ou dégradation de la qualité d'un service informatique. L'objectif prioritaire du support est de rétablir le service le plus rapidement possible. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>Informatique (IT - Information Technology)</strong></dt>
+                    <dd>Terme générique désignant l'ensemble des technologies et services liés au traitement de l'information (matériel, logiciels, réseaux, support...).</dd>
+                    <dt><strong>Infrastructure</strong></dt>
+                    <dd>Ensemble des composants matériels (serveurs, réseau, stockage) et logiciels de base (OS, bases de données) nécessaires au fonctionnement du système d'information.</dd>
+                    <dt><strong>Intranet</strong></dt>
+                    <dd>Réseau informatique privé et interne à une organisation, utilisé pour partager des informations et des ressources (ex: Toutenclic). <i>(Voir Service 3, Service 4)</i></dd>
+                     <dt><strong>IP (Internet Protocol)</strong></dt>
+                    <dd>Protocole principal régissant l'adressage et le routage des données sur les réseaux informatiques.</dd>
+                 </dl>
+            </section>
+
+             <section id="letter-J" class="glossary-section">
+                <h2>J</h2>
+                <dl class="definition-list">
+                    <dt><strong>Jamespot</strong></dt>
+                    <dd>Nom de l'éditeur de la plateforme collaborative "liam". <i>(Voir Service 3)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-L" class="glossary-section">
+                <h2>L</h2>
+                <dl class="definition-list">
+                    <dt><strong>LAN (Local Area Network)</strong></dt>
+                    <dd>Réseau informatique local, généralement filaire (câbles Ethernet), couvrant un bâtiment ou un site. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>liam</strong></dt>
+                    <dd>Plateforme collaborative nationale (basée sur Jamespot) utilisée pour la mise en réseau, la gestion de projet, le partage d'informations. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>Logigramme</strong></dt>
+                    <dd>Représentation graphique d'un processus ou d'un algorithme, utilisée dans ce catalogue pour visualiser le fonctionnement de certains services ou activités.</dd>
+                </dl>
+            </section>
+
+            <section id="letter-M" class="glossary-section">
+                <h2>M</h2>
+                <dl class="definition-list">
+                    <dt><strong>MDM (Mobile Device Management)</strong></dt>
+                    <dd>Gestion des Appareils Mobiles. Solution logicielle (ex: Airwatch) permettant de configurer, sécuriser et gérer à distance une flotte de smartphones ou tablettes. <i>(Voir Service 8)</i></dd>
+                    <dt><strong>MEP (Mise En Production)</strong></dt>
+                    <dd>Processus de déploiement d'une nouvelle version d'application ou d'un nouveau service dans l'environnement utilisé par les utilisateurs finaux. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>MFA (Multi-Factor Authentication)</strong></dt>
+                    <dd>Authentification multi-facteurs. Méthode de connexion qui requiert plusieurs preuves d'identité (ex: mot de passe + code SMS, ou mot de passe + Carte Agent) pour renforcer la sécurité.</dd>
+                    <dt><strong>MGAP (Module de Gestion des Accès et des Personnes ?)</strong></dt>
+                    <dd>Outil utilisé par le PGAP et les correspondants locaux pour gérer les commandes de Cartes Agent. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>Middleware</strong></dt>
+                    <dd>Logiciel intermédiaire qui assure la communication ou la gestion entre d'autres composants logiciels (ex: middleware de carte à puce). <i>(Voir Service 9, Service 10)</i></dd>
+                    <dt><strong>MSSI (Manager de la Sécurité des Systèmes d'Information)</strong></dt>
+                    <dd>Responsable de la définition et de la mise en œuvre de la politique de sécurité informatique au sein de l'organisme.</dd>
+                 </dl>
+            </section>
+
+            <section id="letter-N" class="glossary-section">
+                <h2>N</h2>
+                <dl class="definition-list">
+                    <dt><strong>N1 / N2 / N3 / Niveau 4 (Niveau 1 / 2 / 3 / 4)</strong></dt> <!-- MODIFIÉ ICI -->
+                    <dd>Niveaux de support technique :
+                        <ul>
+                           <li><strong>N1 (Niveau 1) :</strong> Premier point de contact (Pôle Support), traite les incidents/demandes courants et documentés.</li>
+                           <li><strong>N2 (Niveau 2) :</strong> Support technique plus spécialisé réalisé par les référents support utilisateur, intervient sur escalade du N1.</li> <!-- MODIFIÉ ICI -->
+                           <li><strong>N3 (Niveau 3) :</strong> Experts internes, administrateurs systèmes/sécurité ou développeurs. Intervient sur escalade du N2 pour les problèmes complexes ou les bugs.</li> <!-- MODIFIÉ ICI -->
+                           <li><strong>N4 (Niveau 4) :</strong> Experts externes, support éditeur/national. Intervient sur escalade du N3 pour les problèmes complexes ou les bugs.</li> <!-- AJOUTÉ ICI -->
+                        </ul>
+                    </dd>
+                    <dt><strong>NAS (Network Attached Storage)</strong></dt>
+                    <dd>Périphérique de stockage connecté au réseau, permettant de partager des fichiers. Peut être utilisé comme dépôt de sauvegarde Veeam. <i>(Voir Service 10, Service 11)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-O" class="glossary-section">
+                <h2>O</h2>
+                <dl class="definition-list">
+                     <dt><strong>Objet (Ticket S@Mlocal)</strong></dt>
+                    <dd>Champ "Objet" du ticket S@Mlocal. Doit être une phrase courte et explicite résumant la demande/l'incident.</dd>
+                     <dt><strong>OS (Operating System)</strong></dt>
+                    <dd>Système d'exploitation. Logiciel principal qui gère le matériel et les ressources d'un ordinateur (ex: Windows, Linux). <i>(Voir Service 2, Service 10)</i></dd>
+                    <dt><strong>OU (Organizational Unit)</strong></dt>
+                    <dd>Unité d'Organisation. Conteneur dans Active Directory permettant d'organiser les objets (utilisateurs, ordinateurs, groupes) et d'appliquer des stratégies spécifiques. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>Outlook</strong></dt>
+                    <dd>Client de messagerie "lourd" de Microsoft, installé sur le poste de travail pour gérer les emails, calendriers, contacts. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>OWA (Outlook Web App / Outlook on the Web)</strong></dt>
+                    <dd>Version web de la messagerie Outlook, accessible via un navigateur internet sans installation sur le poste. Aussi appelé "Webmail". <i>(Voir Service 3)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-P" class="glossary-section">
+                <h2>P</h2>
+                <dl class="definition-list">
+                    <dt><strong>Patch Management</strong></dt>
+                    <dd>Processus de gestion des correctifs logiciels ("patchs"), consistant à identifier, tester et déployer les mises à jour (notamment de sécurité) sur les systèmes. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>PCA (Plan de Continuité d'Activité) / PRA (Plan de Reprise d'Activité)</strong></dt>
+                    <dd>Ensemble de mesures et procédures visant à assurer la continuité des activités critiques en cas de sinistre majeur et à permettre la reprise des systèmes informatiques. <i>(Voir Service 11)</i></dd>
+                    <dt><strong>PGAP (Pôle de Gestion Administrative du Personnel)</strong></dt>
+                    <dd>Service interne gérant notamment les commandes et la distribution initiale des Cartes Agent via MGAP, ainsi que les accès physiques du site d'Argonne. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>Phishing (Hameçonnage)</strong></dt>
+                    <dd>Technique frauduleuse visant à obtenir des informations personnelles ou confidentielles (identifiants, mots de passe...) en se faisant passer pour un tiers de confiance (souvent par email). <i>(Voir Service 3)</i></dd>
+                    <dt><strong>PIN / NIP (Personal Identification Number / Numéro d'Identification Personnel)</strong></dt>
+                    <dd>Code secret associé à une carte (Carte Agent, carte SIM) pour en protéger l'accès. <i>(Voir Service 7, Service 8, Service 9)</i></dd>
+                     <dt><strong>PKI (Public Key Infrastructure)</strong></dt>
+                    <dd>Infrastructure à Clés Publiques. Ensemble de composants (matériels, logiciels, procédures) permettant de gérer le cycle de vie des certificats numériques et d'assurer la confiance. <i>(Voir Service 9, Service 10)</i></dd>
+                    <dt><strong>Pôle Support</strong></dt>
+                    <dd>Équipe constituant le premier point de contact (N1) pour les utilisateurs IT. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>Poste de Travail</strong></dt>
+                    <dd>Équipement informatique individuel mis à disposition d'un collaborateur (PC fixe ou portable) et ses périphériques associés. <i>(Voir Service 2)</i></dd>
+                    <dt><strong>Prestataire Externe</strong></dt>
+                    <dd>Personne employée par une société extérieure intervenant pour une mission spécifique au sein de la DRSM et pouvant nécessiter un accès temporaire et limité au SI. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>PST (Personal Storage Table)</strong></dt>
+                    <dd>Format de fichier utilisé par Outlook pour archiver des emails et autres éléments localement sur le poste de travail. La sauvegarde de ces fichiers relève de la responsabilité de l'utilisateur. <i>(Voir Service 3)</i></dd>
+                     <dt><strong>PUK (Personal Unblocking Key)</strong></dt>
+                    <dd>Code de déblocage personnel. Utilisé pour déverrouiller une carte (SIM ou parfois Carte Agent) après plusieurs saisies erronées du code PIN. <i>(Voir Service 8, Service 9)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-R" class="glossary-section">
+                <h2>R</h2>
+                <dl class="definition-list">
+                    <dt><strong>RAMAGE</strong></dt>
+                    <dd>Nom du réseau Wi-Fi interne sécurisé de l'Assurance Maladie. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>RBAC (Role-Based Access Control)</strong></dt>
+                    <dd>Contrôle d'accès basé sur les rôles. Modèle de gestion des droits où les permissions sont attribuées via des rôles (souvent matérialisés par des groupes AD) définis selon les fonctions des utilisateurs. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>RFC (Request For Change)</strong></dt>
+                    <dd>Demande de changement. Document formalisant une demande de modification sur un système ou une application, souvent utilisée dans le cadre de processus de gestion des changements ITIL. <i>(Voir Service 12)</i></dd>
+                     <dt><strong>Rollback (Retour arrière)</strong></dt>
+                    <dd>Procédure visant à annuler une modification ou un déploiement récent et à revenir à l'état stable précédent, en cas de problème majeur. <i>(Voir Service 10, Service 12)</i></dd>
+                    <dt><strong>Routeur</strong></dt>
+                    <dd>Équipement réseau qui interconnecte différents réseaux informatiques et achemine les données (paquets IP) entre eux. <i>(Voir Service 4, Service 10)</i></dd>
+                    <dt><strong>RPO / RTO (Recovery Point Objective / Recovery Time Objective)</strong></dt>
+                    <dd>Objectifs de point de reprise / Objectifs de temps de reprise. Indicateurs clés définissant la perte de données maximale acceptable (RPO) et le délai maximal acceptable pour restaurer un service après incident (RTO). Utilisés dans les politiques de sauvegarde et de continuité d'activité. <i>(Voir Service 11)</i></dd>
+                    <dt><strong>Runbook</strong></dt>
+                    <dd>Document décrivant de manière détaillée les étapes séquentielles à suivre pour réaliser une opération technique complexe, comme une mise en production. <i>(Voir Service 12)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-S" class="glossary-section">
+                <h2>S</h2>
+                <dl class="definition-list">
+                    <dt><strong>S@Mlocal</strong></dt>
+                    <dd>Portail en ligne (outil de ticketing) utilisé comme canal privilégié par les utilisateurs pour soumettre leurs incidents et demandes au Pôle Support IT. Permet également le suivi des tickets. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>SAN (Storage Area Network)</strong></dt>
+                    <dd>Réseau dédié au stockage de données à haute performance, reliant les serveurs aux baies de disques. <i>(Voir Service 10, Service 11)</i></dd>
+                    <dt><strong>SDS (Software-Defined Storage ou nom de serveur spécifique ?)</strong></dt>
+                    <dd>Terme pouvant désigner un type de stockage défini par logiciel ou, dans le contexte du lexique S@Mlocal, un serveur spécifique (à clarifier si possible). <i>(Voir Service 10)</i></dd>
+                    <dt><strong>Serveur d'Impression</strong></dt>
+                    <dd>Serveur centralisé qui gère les files d'attente d'impression pour plusieurs imprimantes réseau et facilite leur partage et leur administration. <i>(Voir Service 7)</i></dd>
+                     <dt><strong>SharePoint</strong></dt>
+                    <dd>Plateforme collaborative de Microsoft (partie d'Office 365) utilisée pour le partage de documents, la création de sites d'équipe, la co-édition, etc. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>SID (Security Identifier)</strong></dt>
+                    <dd>Identifiant de sécurité unique attribué par Windows à chaque objet (utilisateur, groupe, ordinateur) dans Active Directory. Utilisé en interne pour gérer les permissions. La suppression d'un compte supprime son SID. <i>(Voir Service 5)</i></dd>
+                     <dt><strong>SIEM (Security Information and Event Management)</strong></dt>
+                    <dd>Gestion des informations et des événements de sécurité. Système collectant, corrélant et analysant les logs de sécurité provenant de diverses sources pour détecter les menaces et faciliter les investigations. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>SLA (Service Level Agreement)</strong></dt>
+                    <dd>Accord sur les niveaux de service. Dans ce catalogue, terme utilisé pour désigner les **objectifs indicatifs** de délai de réponse et de résolution fixés par le service informatique (non contractuels). <i>(Voir Introduction & chaque Fiche Service)</i></dd>
+                    <dt><strong>SPOC (Single Point of Contact)</strong></dt>
+                    <dd>Point de contact unique. Principe selon lequel l'utilisateur doit s'adresser à une seule entité (ici, le Pôle Support) pour toutes ses sollicitations IT. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>SSO (Single Sign-On)</strong></dt>
+                    <dd>Authentification unique. Mécanisme permettant à un utilisateur de s'authentifier une seule fois (ex: avec son compte Windows) pour accéder à plusieurs applications différentes sans avoir à ressaisir ses identifiants. <i>(Voir Service 3, Service 5)</i></dd>
+                    <dt><strong>SSL/TLS (Secure Sockets Layer / Transport Layer Security)</strong></dt>
+                    <dd>Protocoles cryptographiques assurant la sécurité des communications sur Internet (ex: HTTPS). Utilisent des certificats numériques. <i>(Voir Service 10)</i></dd>
+                     <dt><strong>Stepper</strong></dt>
+                    <dd>Composant visuel utilisé dans certaines fiches activités pour représenter un processus étape par étape de manière linéaire.</dd>
+                    <dt><strong>Stormshield</strong></dt>
+                    <dd>Marque de firewalls (pare-feu) utilisés pour la sécurité périmétrique du réseau. <i>(Voir Service 4, Service 10)</i></dd>
+                     <dt><strong>Switch (Commutateur)</strong></dt>
+                    <dd>Équipement réseau qui relie plusieurs appareils (ordinateurs, imprimantes...) au sein d'un même réseau local (LAN) et achemine les données entre eux. <i>(Voir Service 4, Service 10)</i></dd>
+                    <dt><strong>Système d'exploitation (OS)</strong></dt>
+                    <dd>Voir OS.</dd>
+                 </dl>
+            </section>
+
+             <section id="letter-T" class="glossary-section">
+                <h2>T</h2>
+                <dl class="definition-list">
+                    <dt><strong>Tehtris</strong></dt>
+                    <dd>Solution de sécurité de type EDR (Endpoint Detection and Response) déployée sur les postes pour détecter et contrer les menaces avancées. <i>(Voir Service 10)</i></dd>
+                     <dt><strong>Télédistribution</strong></dt>
+                    <dd>Déploiement automatisé de logiciels ou de configurations sur un grand nombre de postes de travail à partir d'un serveur central (ex: via SCCM). <i>(Voir Service 2, Service 6)</i></dd>
+                    <dt><strong>Télétravail (TLT)</strong></dt>
+                    <dd>Mode d'organisation du travail permettant aux collaborateurs d'exercer leur activité depuis leur domicile ou un autre lieu distant. Nécessite souvent l'utilisation du VPN. <i>(Voir Service 1, Service 4, Service 8)</i></dd>
+                    <dt><strong>Ticket (S@Mlocal)</strong></dt>
+                    <dd>Enregistrement électronique dans l'outil S@Mlocal correspondant à un incident signalé ou à une demande de service formulée par un utilisateur. Chaque ticket possède un numéro unique pour le suivi.</dd>
+                     <dt><strong>TOIP (Telephony over IP)</strong></dt>
+                    <dd>Téléphonie sur IP. Technologie permettant de faire passer les communications vocales sur un réseau informatique IP. Concerne les postes téléphoniques fixes résiduels. <i>(Voir Service 8)</i></dd>
+                    <dt><strong>TWAIN / WIA (Windows Image Acquisition)</strong></dt>
+                    <dd>Standards et pilotes permettant aux applications Windows de communiquer avec des périphériques d'acquisition d'images comme les scanners. <i>(Voir Service 7)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-U" class="glossary-section">
+                <h2>U</h2>
+                <dl class="definition-list">
+                    <dt><strong>UAT (User Acceptance Testing)</strong></dt>
+                    <dd>Tests d'acceptation utilisateur. Phase de tests réalisée par les utilisateurs finaux (métier) pour valider qu'une nouvelle application ou version répond bien à leurs besoins avant la mise en production. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>UCANSS (Union des Caisses Nationales de Sécurité Sociale)</strong></dt>
+                    <dd>Organisme via lequel sont passés certains marchés nationaux, notamment pour les imprimantes multifonctions (contrat Canon). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>Uniflow</strong></dt>
+                    <dd>Solution logicielle de Canon pour la gestion des impressions (impression suivie, quotas, reporting...). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>URL (Uniform Resource Locator)</strong></dt>
+                    <dd>Adresse web permettant d'accéder à une ressource sur Internet ou sur un intranet (ex: http://..., https://...).</dd>
+                    <dt><strong>USGF (Unité de Soutien et de Gestion Financière)</strong></dt>
+                    <dd>Service interne responsable du processus d'achat et de commande de matériel informatique. <i>(Voir Service 2)</i></dd>
+                     <dt><strong>Use Cases / User Stories (Cas d'utilisation / Scénarios Utilisateur)</strong></dt>
+                    <dd>Techniques utilisées lors de l'analyse des besoins pour décrire comment un utilisateur interagit avec un système pour atteindre un objectif spécifique. <i>(Voir Service 12)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-V" class="glossary-section">
+                <h2>V</h2>
+                <dl class="definition-list">
+                    <dt><strong>Veeam</strong></dt>
+                    <dd>Solution de sauvegarde utilisée localement à la DRSM IDF, notamment pour les sauvegardes à plus long terme ou pour des besoins spécifiques non couverts par Avamar. <i>(Voir Service 11)</i></dd>
+                    <dt><strong>VLAN (Virtual Local Area Network)</strong></dt>
+                    <dd>Réseau local virtuel. Permet de segmenter logiquement un réseau physique en plusieurs sous-réseaux indépendants pour améliorer la sécurité et la gestion. <i>(Voir Service 4, Service 10)</i></dd>
+                    <dt><strong>VM (Virtual Machine)</strong></dt>
+                    <dd>Machine virtuelle. Environnement informatique complet (OS, applications) émulé par un logiciel (hyperviseur) sur un matériel physique. Permet de faire fonctionner plusieurs "machines" sur un seul serveur physique. <i>(Voir Service 10, Service 11)</i></dd>
+                    <dt><strong>VPN (Virtual Private Network)</strong></dt>
+                    <dd>Réseau privé virtuel. Technologie créant une connexion sécurisée et chiffrée ("tunnel") par-dessus un réseau public (Internet), permettant d'accéder aux ressources du réseau interne de l'entreprise comme si l'on y était physiquement connecté. Essentiel pour le télétravail. <i>(Voir Service 4)</i></dd>
+                </dl>
+            </section>
+
+            <section id="letter-W" class="glossary-section">
+                <h2>W</h2>
+                <dl class="definition-list">
+                    <dt><strong>Webmail</strong></dt>
+                    <dd>Interface permettant d'accéder à sa messagerie électronique via un navigateur web. Voir OWA. <i>(Voir Service 3)</i></dd>
+                     <dt><strong>Wi-Fi</strong></dt>
+                    <dd>Technologie de réseau local sans fil permettant aux appareils de se connecter à Internet ou à d'autres appareils via des ondes radio. Le réseau sécurisé interne est RAMAGE. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>WSUS (Windows Server Update Services)</strong></dt>
+                    <dd>Service Microsoft permettant de gérer et de distribuer les mises à jour Windows et Office au sein d'un réseau d'entreprise. <i>(Voir Service 2, Service 10)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-Z" class="glossary-section">
+                <h2>Z</h2>
+                <dl class="definition-list">
+                     <dt><strong>Zero-day (Vulnérabilité / Attaque)</strong></dt>
+                    <dd>Faille de sécurité qui est découverte et potentiellement exploitée par des attaquants avant que l'éditeur du logiciel n'ait pu développer et diffuser un correctif. Nécessite une réaction rapide du service sécurité. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>Zoom</strong></dt>
+                    <dd>Outil de visioconférence, webinaire et messagerie instantanée utilisé au sein de l'Assurance Maladie. <i>(Voir Service 3)</i></dd>
+                </dl>
+            </section>
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire - Catalogue des Services Informatique DRSM IDF</title>
+    <!-- Lien vers la feuille de style unique et consolidée -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Liens Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Lien vers le script unique et consolidé -->
+    <script src="js/script.js" defer></script>
+    <!-- Styles additionnels spécifiques au glossaire -->
+    <style>
+        .glossary-nav {
+            background-color: var(--card-bg);
+            padding: calc(var(--spacing-unit) * 0.8);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px var(--soft-shadow-color);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            border: 1px solid var(--border-color);
+        }
+        .glossary-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: calc(var(--spacing-unit) * 0.6);
+        }
+        .glossary-nav li {
+             margin: 0;
+        }
+        .glossary-nav a {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 0.3) calc(var(--spacing-unit) * 0.6);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background-color var(--animation-duration) ease, color var(--animation-duration) ease;
+            min-width: 30px; /* Ensure minimum width for single letters */
+            text-align: center;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+        }
+        .glossary-nav a:hover, .glossary-nav a:focus-visible {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            text-decoration: none;
+            border-color: var(--primary-color);
+        }
+         .glossary-section {
+            margin-bottom: calc(var(--spacing-unit) * 2.5);
+            padding-top: calc(var(--spacing-unit) * 2); /* Add padding for anchor jump */
+            margin-top: calc(-1 * var(--spacing-unit) * 2); /* Offset padding */
+        }
+        .glossary-section h2 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: calc(var(--spacing-unit) * 0.5);
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+        }
+        dl.definition-list strong { color: var(--text-color); }
+        /* Style pour les références "Voir Service" */
+        dl.definition-list i {
+            font-style: normal; /* Annule l'italique par défaut si non souhaité */
+            color: var(--muted-text-color);
+            font-size: 0.85em; /* Légèrement plus petit */
+            margin-left: calc(var(--spacing-unit) * 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Chemin du logo corrigé -->
+                <img src="assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <!-- Formulaire de recherche supprimé -->
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique Glossaire) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><span aria-current="page">Glossaire</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Introduction -->
+            <h1 class="service-title">Glossaire des Termes Informatiques</h1>
+            <p class="service-summary">Retrouvez ici la définition des principaux termes techniques et acronymes utilisés dans le catalogue de services IT de la DRSM Île-de-France.</p>
+
+            <!-- Navigation Alphabétique -->
+            <nav class="glossary-nav" aria-label="Navigation alphabétique du glossaire">
+                <ul>
+                    <li><a href="#letter-A">A</a></li>
+                    <li><a href="#letter-B">B</a></li>
+                    <li><a href="#letter-C">C</a></li>
+                    <li><a href="#letter-D">D</a></li>
+                    <li><a href="#letter-E">E</a></li>
+                    <li><a href="#letter-F">F</a></li>
+                    <li><a href="#letter-G">G</a></li>
+                    <li><a href="#letter-H">H</a></li>
+                    <li><a href="#letter-I">I</a></li>
+                    <li><a href="#letter-J">J</a></li>
+                    <li><a href="#letter-L">L</a></li>
+                    <li><a href="#letter-M">M</a></li>
+                    <li><a href="#letter-N">N</a></li>
+                    <li><a href="#letter-O">O</a></li>
+                    <li><a href="#letter-P">P</a></li>
+                    <li><a href="#letter-R">R</a></li>
+                    <li><a href="#letter-S">S</a></li>
+                    <li><a href="#letter-T">T</a></li>
+                    <li><a href="#letter-U">U</a></li>
+                    <li><a href="#letter-V">V</a></li>
+                    <li><a href="#letter-W">W</a></li>
+                    <li><a href="#letter-Z">Z</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sections du Glossaire par Lettre -->
+            <section id="letter-A" class="glossary-section">
+                <h2>A</h2>
+                <dl class="definition-list">
+                    <dt><strong>ACL (Access Control List)</strong></dt>
+                    <dd>Liste de contrôle d'accès. Définit les permissions (qui peut faire quoi) sur une ressource informatique (fichier, dossier...). La gestion par groupes AD est privilégiée.</dd>
+                    <dt><strong>Active Directory (AD)</strong></dt>
+                    <dd>Annuaire centralisé gérant les comptes utilisateurs, ordinateurs, groupes et politiques de sécurité au sein du réseau de l'Assurance Maladie. Votre compte Windows est un compte AD. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>AD FS (Active Directory Federation Services)</strong></dt>
+                    <dd>Service permettant l'authentification unique (SSO) entre différents systèmes en utilisant les identifiants AD.</dd>
+                     <dt><strong>Add-in (ou Complément)</strong></dt>
+                    <dd>Petit programme qui s'ajoute à une application principale (comme Outlook) pour lui apporter des fonctionnalités supplémentaires (ex: BlueFiles).</dd>
+                    <dt><strong>Airwatch (Workspace ONE UEM)</strong></dt>
+                    <dd>Solution de Mobile Device Management (MDM) utilisée pour gérer et sécuriser les smartphones professionnels. <i>(Voir Service 8)</i></dd>
+                    <dt><strong>API (Application Programming Interface)</strong></dt>
+                    <dd>Interface de programmation applicative. Ensemble de règles et d'outils permettant à différents logiciels de communiquer entre eux. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>Avamar</strong></dt>
+                    <dd>Solution de sauvegarde utilisée au niveau national, principalement pour la sauvegarde à court terme des serveurs et VM. <i>(Voir Service 11)</i></dd>
+                </dl>
+            </section>
+
+             <section id="letter-B" class="glossary-section">
+                <h2>B</h2>
+                <dl class="definition-list">
+                    <dt><strong>BAL (Boîte Aux Lettres)</strong></dt>
+                    <dd>Désigne une boîte de messagerie électronique. Peut être individuelle (associée à un utilisateur) ou générique/partagée (associée à un service, une fonction). <i>(Voir Service 3)</i></dd>
+                     <dt><strong>Bitlocker</strong></dt>
+                    <dd>Fonctionnalité de chiffrement de disque intégrée à Windows, utilisée pour sécuriser les données sur les postes de travail. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>BlueFiles</strong></dt>
+                    <dd>Add-in Outlook utilisé pour l'envoi sécurisé de fichiers volumineux ou sensibles. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>Bourrage Papier</strong></dt>
+                    <dd>Incident où une feuille de papier se coince dans le mécanisme d'une imprimante. Le retrait relève généralement de l'utilisateur. <i>(Voir Service 7)</i></dd>
+                    <dt><strong>BSOD (Blue Screen of Death)</strong></dt>
+                    <dd>Écran bleu d'erreur critique de Windows indiquant un problème système ou matériel grave. <i>(Voir Service 2)</i></dd>
+                    <dt><strong>Bug</strong></dt>
+                    <dd>Erreur ou défaut dans un programme informatique qui provoque un comportement inattendu ou incorrect. <i>(Voir Service 6, Service 12)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-C" class="glossary-section">
+                <h2>C</h2>
+                <dl class="definition-list">
+                     <dt><strong>CA (Certificate Authority)</strong></dt>
+                    <dd>Autorité de Certification. Organisme de confiance qui émet et signe les certificats numériques (SSL/TLS, Carte Agent...). <i>(Voir Service 9, Service 10)</i></dd>
+                     <dt><strong>Carte Agent (IDPRIME)</strong></dt>
+                    <dd>Carte à puce personnelle utilisée pour l'authentification forte (ouverture de session Windows, VPN...) et la signature électronique. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>Catalogue de Services</strong></dt>
+                    <dd>Document (comme celui-ci) décrivant les services informatiques proposés, leurs modalités d'accès et les niveaux de service attendus.</dd>
+                    <dt><strong>CEDRE</strong></dt>
+                    <dd>Politique visant à promouvoir l'impression responsable (réduction de la consommation de papier et de toner). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>CERT (Computer Emergency Response Team)</strong></dt>
+                    <dd>Équipe de réponse aux incidents de sécurité informatique. Le CERT-Assurance Maladie émet des alertes et recommandations. <i>(Voir Service 10)</i></dd>
+                     <dt><strong>Certificat Numérique</strong></dt>
+                    <dd>Fichier électronique utilisé pour prouver l'identité d'un utilisateur, d'un serveur ou d'un appareil, et pour sécuriser les communications (chiffrement). <i>(Voir Service 9, Service 10)</i></dd>
+                     <dt><strong>Charte Informatique</strong></dt>
+                    <dd>Document officiel définissant les règles d'utilisation des ressources informatiques de l'Assurance Maladie que chaque utilisateur s'engage à respecter.</dd>
+                     <dt><strong>CI/CD (Continuous Integration / Continuous Deployment)</strong></dt>
+                    <dd>Intégration Continue / Déploiement Continu. Pratiques visant à automatiser les phases de tests et de mise en production des logiciels. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>Client Lourd</strong></dt>
+                    <dd>Application installée directement sur le poste de travail (par opposition à une application web accessible via navigateur). Ex: Outlook, Hippocrate client.</dd>
+                     <dt><strong>CMDB (Configuration Management Database)</strong></dt>
+                    <dd>Base de données de gestion des configurations. Utilisée par l'IT pour inventorier et gérer les composants du système d'information (matériel, logiciels, relations...). <i>(Voir Service 2, Service 10)</i></dd>
+                     <dt><strong>CONIBI / Pro XL</strong></dt>
+                    <dd>Programmes et prestataires pour la collecte et le recyclage des consommables d'impression usagés (toners...). <i>(Voir Service 7)</i></dd>
+                     <dt><strong>Console d'Administration</strong></dt>
+                    <dd>Interface (souvent logicielle) permettant aux équipes IT de gérer et configurer un système (ex: ADUC, console Exchange, console MDM, console de sauvegarde...).</dd>
+                    <dt><strong>CPAM / CRAMIF</strong></dt>
+                    <dd>Caisse Primaire / Régionale d'Assurance Maladie. Entités avec lesquelles la DRSM interagit, notamment pour la gestion des accès physiques sur certains sites. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>CSR (Certificate Signing Request)</strong></dt>
+                    <dd>Demande de signature de certificat. Fichier généré par un serveur ou un client contenant les informations nécessaires pour demander un certificat numérique à une Autorité de Certification (CA). <i>(Voir Service 10)</i></dd>
+                    <dt><strong>CVSS (Common Vulnerability Scoring System)</strong></dt>
+                    <dd>Système standardisé pour évaluer la sévérité des vulnérabilités informatiques. <i>(Voir Service 10)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-D" class="glossary-section">
+                <h2>D</h2>
+                <dl class="definition-list">
+                     <dt><strong>Demande (de service)</strong></dt>
+                    <dd>Sollicitation standard d'un utilisateur pour obtenir quelque chose (accès, matériel, logiciel, information...) via un processus défini. Différent d'un incident. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>DHCP (Dynamic Host Configuration Protocol)</strong></dt>
+                    <dd>Protocole réseau qui attribue automatiquement des adresses IP et d'autres informations de configuration réseau aux appareils qui se connectent. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>Diadème</strong></dt>
+                    <dd>Exemple d'application métier utilisée à la DRSM IDF. <i>(Voir Service 6)</i></dd>
+                    <dt><strong>DNS (Domain Name System)</strong></dt>
+                    <dd>Système qui traduit les noms de domaine lisibles par l'homme (ex: www.google.fr) en adresses IP numériques utilisables par les machines.</dd>
+                    <dt><strong>DRSM (Direction Régionale du Service Médical)</strong></dt>
+                    <dd>L'entité concernée par ce catalogue de services.</dd>
+                    <dt><strong>Droits d'Accès / Habilitations</strong></dt>
+                    <dd>Permissions accordées à un utilisateur pour accéder à des ressources (dossiers, applications) ou effectuer des actions spécifiques. <i>(Voir Service 5, Service 6)</i></dd>
+                     <dt><strong>Dysfonctionnement</strong></dt>
+                    <dd>Terme général désignant un problème, une panne, un comportement anormal d'un matériel ou d'un logiciel.</dd>
+                 </dl>
+            </section>
+
+             <section id="letter-E" class="glossary-section">
+                <h2>E</h2>
+                <dl class="definition-list">
+                    <dt><strong>EDR (Endpoint Detection and Response)</strong></dt>
+                    <dd>Solution de sécurité pour les postes de travail et serveurs qui surveille, détecte et répond aux menaces avancées. Ex: Tehtris. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>ELSM / ERSM (Échelon Local / Régional du Service Médical)</strong></dt>
+                    <dd>Structures organisationnelles de la DRSM.</dd>
+                     <dt><strong>eMaintenance</strong></dt>
+                    <dd>Système de Canon pour la surveillance à distance des MFP et la commande automatique des consommables (toners). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>Escalade</strong></dt>
+                    <dd>Processus consistant à transférer un incident ou une demande non résolu à un niveau de support supérieur (N1 vers N2, N2 vers N3) ou à une autre équipe spécialisée. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>ESD (ElectroStatic Discharge)</strong></dt>
+                    <dd>Décharge électrostatique. Peut endommager les composants électroniques sensibles. Des précautions (ex: bracelet antistatique) sont nécessaires lors des manipulations matérielles. <i>(Voir Service 2)</i></dd>
+                     <dt><strong>Expression de Besoin</strong></dt>
+                    <dd>Document décrivant les objectifs et les exigences fonctionnelles d'un nouveau projet ou d'une évolution applicative, généralement rédigé par le service demandeur (métier). <i>(Voir Service 12)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-F" class="glossary-section">
+                <h2>F</h2>
+                <dl class="definition-list">
+                    <dt><strong>FAQ (Frequently Asked Questions)</strong></dt>
+                    <dd>Foire Aux Questions. Section documentaire regroupant les réponses aux questions les plus courantes.</dd>
+                    <dt><strong>Fiche Activité</strong></dt>
+                    <dd>Partie du catalogue de services décrivant en détail une procédure ou un processus spécifiques au sein d'un service IT.</dd>
+                    <dt><strong>Fiche Service</strong></dt>
+                    <dd>Partie principale du catalogue décrivant un service informatique global, ses bénéficiaires, modalités d'accès, SLA indicatifs, etc.</dd>
+                    <dt><strong>Firewall (Pare-feu)</strong></dt>
+                    <dd>Dispositif matériel ou logiciel qui contrôle le trafic réseau entrant et sortant, en autorisant ou bloquant les communications selon des règles de sécurité définies. Ex: Stormshield. <i>(Voir Service 4, Service 10)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-G" class="glossary-section">
+                <h2>G</h2>
+                <dl class="definition-list">
+                     <dt><strong>GFS (Grandfather-Father-Son)</strong></dt>
+                    <dd>Stratégie de rétention des sauvegardes permettant de conserver des points de restauration sur différentes périodicités (quotidienne, hebdomadaire, mensuelle, annuelle). Utilisée notamment par Veeam. <i>(Voir Service 11)</i></dd>
+                     <dt><strong>GPO (Group Policy Object)</strong></dt>
+                    <dd>Objet de stratégie de groupe. Mécanisme dans Active Directory permettant de définir et d'appliquer des configurations (logiciels, sécurité, paramètres Windows...) aux utilisateurs et aux ordinateurs du domaine. <i>(Voir Service 7)</i></dd>
+                     <dt><strong>Groupe AD (Groupe Active Directory)</strong></dt>
+                    <dd>Collection de comptes utilisateurs, d'ordinateurs ou d'autres groupes dans Active Directory. Utilisé principalement pour simplifier la gestion des droits d'accès (RBAC). <i>(Voir Service 5)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-H" class="glossary-section">
+                <h2>H</h2>
+                <dl class="definition-list">
+                    <dt><strong>Hippocrate</strong></dt>
+                    <dd>Nom d'une application métier majeure utilisée à la DRSM IDF (versions Production et Décisionnel). <i>(Voir Service 6)</i></dd>
+                    <dt><strong>Hotline</strong></dt>
+                    <dd>Ligne téléphonique dédiée au support informatique, utilisée principalement en cas d'urgence ou d'impossibilité d'accès à S@Mlocal. <i>(Voir Service 1)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-I" class="glossary-section">
+                <h2>I</h2>
+                <dl class="definition-list">
+                    <dt><strong>IDPRIME</strong></dt>
+                    <dd>Technologie ou nom associé aux Cartes Agents utilisées pour l'authentification. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>IDE (Integrated Development Environment)</strong></dt>
+                    <dd>Environnement de développement intégré. Logiciel fournissant des outils complets aux développeurs pour écrire, tester et déboguer du code (ex: Visual Studio). <i>(Voir Service 12)</i></dd>
+                    <dt><strong>IMACD (Install, Move, Add, Change, Delete)</strong></dt>
+                    <dd>Terme désignant l'ensemble des opérations de gestion du cycle de vie du matériel (installation, déplacement, ajout, modification, suppression). Utilisé notamment pour les imprimantes sous contrat UCANSS. <i>(Voir Service 7)</i></dd>
+                    <dt><strong>Incident</strong></dt>
+                    <dd>Interruption imprévue ou dégradation de la qualité d'un service informatique. L'objectif prioritaire du support est de rétablir le service le plus rapidement possible. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>Informatique (IT - Information Technology)</strong></dt>
+                    <dd>Terme générique désignant l'ensemble des technologies et services liés au traitement de l'information (matériel, logiciels, réseaux, support...).</dd>
+                    <dt><strong>Infrastructure</strong></dt>
+                    <dd>Ensemble des composants matériels (serveurs, réseau, stockage) et logiciels de base (OS, bases de données) nécessaires au fonctionnement du système d'information.</dd>
+                    <dt><strong>Intranet</strong></dt>
+                    <dd>Réseau informatique privé et interne à une organisation, utilisé pour partager des informations et des ressources (ex: Toutenclic). <i>(Voir Service 3, Service 4)</i></dd>
+                     <dt><strong>IP (Internet Protocol)</strong></dt>
+                    <dd>Protocole principal régissant l'adressage et le routage des données sur les réseaux informatiques.</dd>
+                 </dl>
+            </section>
+
+             <section id="letter-J" class="glossary-section">
+                <h2>J</h2>
+                <dl class="definition-list">
+                    <dt><strong>Jamespot</strong></dt>
+                    <dd>Nom de l'éditeur de la plateforme collaborative "liam". <i>(Voir Service 3)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-L" class="glossary-section">
+                <h2>L</h2>
+                <dl class="definition-list">
+                    <dt><strong>LAN (Local Area Network)</strong></dt>
+                    <dd>Réseau informatique local, généralement filaire (câbles Ethernet), couvrant un bâtiment ou un site. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>liam</strong></dt>
+                    <dd>Plateforme collaborative nationale (basée sur Jamespot) utilisée pour la mise en réseau, la gestion de projet, le partage d'informations. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>Logigramme</strong></dt>
+                    <dd>Représentation graphique d'un processus ou d'un algorithme, utilisée dans ce catalogue pour visualiser le fonctionnement de certains services ou activités.</dd>
+                </dl>
+            </section>
+
+            <section id="letter-M" class="glossary-section">
+                <h2>M</h2>
+                <dl class="definition-list">
+                    <dt><strong>MDM (Mobile Device Management)</strong></dt>
+                    <dd>Gestion des Appareils Mobiles. Solution logicielle (ex: Airwatch) permettant de configurer, sécuriser et gérer à distance une flotte de smartphones ou tablettes. <i>(Voir Service 8)</i></dd>
+                    <dt><strong>MEP (Mise En Production)</strong></dt>
+                    <dd>Processus de déploiement d'une nouvelle version d'application ou d'un nouveau service dans l'environnement utilisé par les utilisateurs finaux. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>MFA (Multi-Factor Authentication)</strong></dt>
+                    <dd>Authentification multi-facteurs. Méthode de connexion qui requiert plusieurs preuves d'identité (ex: mot de passe + code SMS, ou mot de passe + Carte Agent) pour renforcer la sécurité.</dd>
+                    <dt><strong>MGAP (Module de Gestion des Accès et des Personnes ?)</strong></dt>
+                    <dd>Outil utilisé par le PGAP et les correspondants locaux pour gérer les commandes de Cartes Agent. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>Middleware</strong></dt>
+                    <dd>Logiciel intermédiaire qui assure la communication ou la gestion entre d'autres composants logiciels (ex: middleware de carte à puce). <i>(Voir Service 9, Service 10)</i></dd>
+                    <dt><strong>MSSI (Manager de la Sécurité des Systèmes d'Information)</strong></dt>
+                    <dd>Responsable de la définition et de la mise en œuvre de la politique de sécurité informatique au sein de l'organisme.</dd>
+                 </dl>
+            </section>
+
+            <section id="letter-N" class="glossary-section">
+                <h2>N</h2>
+                <dl class="definition-list">
+                    <dt><strong>N1 / N2 / N3 / Niveau 4 (Niveau 1 / 2 / 3 / 4)</strong></dt> <!-- MODIFIÉ ICI -->
+                    <dd>Niveaux de support technique :
+                        <ul>
+                           <li><strong>N1 (Niveau 1) :</strong> Premier point de contact (Pôle Support), traite les incidents/demandes courants et documentés.</li>
+                           <li><strong>N2 (Niveau 2) :</strong> Support technique plus spécialisé réalisé par les référents support utilisateur, intervient sur escalade du N1.</li> <!-- MODIFIÉ ICI -->
+                           <li><strong>N3 (Niveau 3) :</strong> Experts internes, administrateurs systèmes/sécurité ou développeurs. Intervient sur escalade du N2 pour les problèmes complexes ou les bugs.</li> <!-- MODIFIÉ ICI -->
+                           <li><strong>N4 (Niveau 4) :</strong> Experts externes, support éditeur/national. Intervient sur escalade du N3 pour les problèmes complexes ou les bugs.</li> <!-- AJOUTÉ ICI -->
+                        </ul>
+                    </dd>
+                    <dt><strong>NAS (Network Attached Storage)</strong></dt>
+                    <dd>Périphérique de stockage connecté au réseau, permettant de partager des fichiers. Peut être utilisé comme dépôt de sauvegarde Veeam. <i>(Voir Service 10, Service 11)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-O" class="glossary-section">
+                <h2>O</h2>
+                <dl class="definition-list">
+                     <dt><strong>Objet (Ticket S@Mlocal)</strong></dt>
+                    <dd>Champ "Objet" du ticket S@Mlocal. Doit être une phrase courte et explicite résumant la demande/l'incident.</dd>
+                     <dt><strong>OS (Operating System)</strong></dt>
+                    <dd>Système d'exploitation. Logiciel principal qui gère le matériel et les ressources d'un ordinateur (ex: Windows, Linux). <i>(Voir Service 2, Service 10)</i></dd>
+                    <dt><strong>OU (Organizational Unit)</strong></dt>
+                    <dd>Unité d'Organisation. Conteneur dans Active Directory permettant d'organiser les objets (utilisateurs, ordinateurs, groupes) et d'appliquer des stratégies spécifiques. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>Outlook</strong></dt>
+                    <dd>Client de messagerie "lourd" de Microsoft, installé sur le poste de travail pour gérer les emails, calendriers, contacts. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>OWA (Outlook Web App / Outlook on the Web)</strong></dt>
+                    <dd>Version web de la messagerie Outlook, accessible via un navigateur internet sans installation sur le poste. Aussi appelé "Webmail". <i>(Voir Service 3)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-P" class="glossary-section">
+                <h2>P</h2>
+                <dl class="definition-list">
+                    <dt><strong>Patch Management</strong></dt>
+                    <dd>Processus de gestion des correctifs logiciels ("patchs"), consistant à identifier, tester et déployer les mises à jour (notamment de sécurité) sur les systèmes. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>PCA (Plan de Continuité d'Activité) / PRA (Plan de Reprise d'Activité)</strong></dt>
+                    <dd>Ensemble de mesures et procédures visant à assurer la continuité des activités critiques en cas de sinistre majeur et à permettre la reprise des systèmes informatiques. <i>(Voir Service 11)</i></dd>
+                    <dt><strong>PGAP (Pôle de Gestion Administrative du Personnel)</strong></dt>
+                    <dd>Service interne gérant notamment les commandes et la distribution initiale des Cartes Agent via MGAP, ainsi que les accès physiques du site d'Argonne. <i>(Voir Service 9)</i></dd>
+                    <dt><strong>Phishing (Hameçonnage)</strong></dt>
+                    <dd>Technique frauduleuse visant à obtenir des informations personnelles ou confidentielles (identifiants, mots de passe...) en se faisant passer pour un tiers de confiance (souvent par email). <i>(Voir Service 3)</i></dd>
+                    <dt><strong>PIN / NIP (Personal Identification Number / Numéro d'Identification Personnel)</strong></dt>
+                    <dd>Code secret associé à une carte (Carte Agent, carte SIM) pour en protéger l'accès. <i>(Voir Service 7, Service 8, Service 9)</i></dd>
+                     <dt><strong>PKI (Public Key Infrastructure)</strong></dt>
+                    <dd>Infrastructure à Clés Publiques. Ensemble de composants (matériels, logiciels, procédures) permettant de gérer le cycle de vie des certificats numériques et d'assurer la confiance. <i>(Voir Service 9, Service 10)</i></dd>
+                    <dt><strong>Pôle Support</strong></dt>
+                    <dd>Équipe constituant le premier point de contact (N1) pour les utilisateurs IT. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>Poste de Travail</strong></dt>
+                    <dd>Équipement informatique individuel mis à disposition d'un collaborateur (PC fixe ou portable) et ses périphériques associés. <i>(Voir Service 2)</i></dd>
+                    <dt><strong>Prestataire Externe</strong></dt>
+                    <dd>Personne employée par une société extérieure intervenant pour une mission spécifique au sein de la DRSM et pouvant nécessiter un accès temporaire et limité au SI. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>PST (Personal Storage Table)</strong></dt>
+                    <dd>Format de fichier utilisé par Outlook pour archiver des emails et autres éléments localement sur le poste de travail. La sauvegarde de ces fichiers relève de la responsabilité de l'utilisateur. <i>(Voir Service 3)</i></dd>
+                     <dt><strong>PUK (Personal Unblocking Key)</strong></dt>
+                    <dd>Code de déblocage personnel. Utilisé pour déverrouiller une carte (SIM ou parfois Carte Agent) après plusieurs saisies erronées du code PIN. <i>(Voir Service 8, Service 9)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-R" class="glossary-section">
+                <h2>R</h2>
+                <dl class="definition-list">
+                    <dt><strong>RAMAGE</strong></dt>
+                    <dd>Nom du réseau Wi-Fi interne sécurisé de l'Assurance Maladie. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>RBAC (Role-Based Access Control)</strong></dt>
+                    <dd>Contrôle d'accès basé sur les rôles. Modèle de gestion des droits où les permissions sont attribuées via des rôles (souvent matérialisés par des groupes AD) définis selon les fonctions des utilisateurs. <i>(Voir Service 5)</i></dd>
+                    <dt><strong>RFC (Request For Change)</strong></dt>
+                    <dd>Demande de changement. Document formalisant une demande de modification sur un système ou une application, souvent utilisée dans le cadre de processus de gestion des changements ITIL. <i>(Voir Service 12)</i></dd>
+                     <dt><strong>Rollback (Retour arrière)</strong></dt>
+                    <dd>Procédure visant à annuler une modification ou un déploiement récent et à revenir à l'état stable précédent, en cas de problème majeur. <i>(Voir Service 10, Service 12)</i></dd>
+                    <dt><strong>Routeur</strong></dt>
+                    <dd>Équipement réseau qui interconnecte différents réseaux informatiques et achemine les données (paquets IP) entre eux. <i>(Voir Service 4, Service 10)</i></dd>
+                    <dt><strong>RPO / RTO (Recovery Point Objective / Recovery Time Objective)</strong></dt>
+                    <dd>Objectifs de point de reprise / Objectifs de temps de reprise. Indicateurs clés définissant la perte de données maximale acceptable (RPO) et le délai maximal acceptable pour restaurer un service après incident (RTO). Utilisés dans les politiques de sauvegarde et de continuité d'activité. <i>(Voir Service 11)</i></dd>
+                    <dt><strong>Runbook</strong></dt>
+                    <dd>Document décrivant de manière détaillée les étapes séquentielles à suivre pour réaliser une opération technique complexe, comme une mise en production. <i>(Voir Service 12)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-S" class="glossary-section">
+                <h2>S</h2>
+                <dl class="definition-list">
+                    <dt><strong>S@Mlocal</strong></dt>
+                    <dd>Portail en ligne (outil de ticketing) utilisé comme canal privilégié par les utilisateurs pour soumettre leurs incidents et demandes au Pôle Support IT. Permet également le suivi des tickets. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>SAN (Storage Area Network)</strong></dt>
+                    <dd>Réseau dédié au stockage de données à haute performance, reliant les serveurs aux baies de disques. <i>(Voir Service 10, Service 11)</i></dd>
+                    <dt><strong>SDS (Software-Defined Storage ou nom de serveur spécifique ?)</strong></dt>
+                    <dd>Terme pouvant désigner un type de stockage défini par logiciel ou, dans le contexte du lexique S@Mlocal, un serveur spécifique (à clarifier si possible). <i>(Voir Service 10)</i></dd>
+                    <dt><strong>Serveur d'Impression</strong></dt>
+                    <dd>Serveur centralisé qui gère les files d'attente d'impression pour plusieurs imprimantes réseau et facilite leur partage et leur administration. <i>(Voir Service 7)</i></dd>
+                     <dt><strong>SharePoint</strong></dt>
+                    <dd>Plateforme collaborative de Microsoft (partie d'Office 365) utilisée pour le partage de documents, la création de sites d'équipe, la co-édition, etc. <i>(Voir Service 3)</i></dd>
+                    <dt><strong>SID (Security Identifier)</strong></dt>
+                    <dd>Identifiant de sécurité unique attribué par Windows à chaque objet (utilisateur, groupe, ordinateur) dans Active Directory. Utilisé en interne pour gérer les permissions. La suppression d'un compte supprime son SID. <i>(Voir Service 5)</i></dd>
+                     <dt><strong>SIEM (Security Information and Event Management)</strong></dt>
+                    <dd>Gestion des informations et des événements de sécurité. Système collectant, corrélant et analysant les logs de sécurité provenant de diverses sources pour détecter les menaces et faciliter les investigations. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>SLA (Service Level Agreement)</strong></dt>
+                    <dd>Accord sur les niveaux de service. Dans ce catalogue, terme utilisé pour désigner les **objectifs indicatifs** de délai de réponse et de résolution fixés par le service informatique (non contractuels). <i>(Voir Introduction & chaque Fiche Service)</i></dd>
+                    <dt><strong>SPOC (Single Point of Contact)</strong></dt>
+                    <dd>Point de contact unique. Principe selon lequel l'utilisateur doit s'adresser à une seule entité (ici, le Pôle Support) pour toutes ses sollicitations IT. <i>(Voir Service 1)</i></dd>
+                     <dt><strong>SSO (Single Sign-On)</strong></dt>
+                    <dd>Authentification unique. Mécanisme permettant à un utilisateur de s'authentifier une seule fois (ex: avec son compte Windows) pour accéder à plusieurs applications différentes sans avoir à ressaisir ses identifiants. <i>(Voir Service 3, Service 5)</i></dd>
+                    <dt><strong>SSL/TLS (Secure Sockets Layer / Transport Layer Security)</strong></dt>
+                    <dd>Protocoles cryptographiques assurant la sécurité des communications sur Internet (ex: HTTPS). Utilisent des certificats numériques. <i>(Voir Service 10)</i></dd>
+                     <dt><strong>Stepper</strong></dt>
+                    <dd>Composant visuel utilisé dans certaines fiches activités pour représenter un processus étape par étape de manière linéaire.</dd>
+                    <dt><strong>Stormshield</strong></dt>
+                    <dd>Marque de firewalls (pare-feu) utilisés pour la sécurité périmétrique du réseau. <i>(Voir Service 4, Service 10)</i></dd>
+                     <dt><strong>Switch (Commutateur)</strong></dt>
+                    <dd>Équipement réseau qui relie plusieurs appareils (ordinateurs, imprimantes...) au sein d'un même réseau local (LAN) et achemine les données entre eux. <i>(Voir Service 4, Service 10)</i></dd>
+                    <dt><strong>Système d'exploitation (OS)</strong></dt>
+                    <dd>Voir OS.</dd>
+                 </dl>
+            </section>
+
+             <section id="letter-T" class="glossary-section">
+                <h2>T</h2>
+                <dl class="definition-list">
+                    <dt><strong>Tehtris</strong></dt>
+                    <dd>Solution de sécurité de type EDR (Endpoint Detection and Response) déployée sur les postes pour détecter et contrer les menaces avancées. <i>(Voir Service 10)</i></dd>
+                     <dt><strong>Télédistribution</strong></dt>
+                    <dd>Déploiement automatisé de logiciels ou de configurations sur un grand nombre de postes de travail à partir d'un serveur central (ex: via SCCM). <i>(Voir Service 2, Service 6)</i></dd>
+                    <dt><strong>Télétravail (TLT)</strong></dt>
+                    <dd>Mode d'organisation du travail permettant aux collaborateurs d'exercer leur activité depuis leur domicile ou un autre lieu distant. Nécessite souvent l'utilisation du VPN. <i>(Voir Service 1, Service 4, Service 8)</i></dd>
+                    <dt><strong>Ticket (S@Mlocal)</strong></dt>
+                    <dd>Enregistrement électronique dans l'outil S@Mlocal correspondant à un incident signalé ou à une demande de service formulée par un utilisateur. Chaque ticket possède un numéro unique pour le suivi.</dd>
+                     <dt><strong>TOIP (Telephony over IP)</strong></dt>
+                    <dd>Téléphonie sur IP. Technologie permettant de faire passer les communications vocales sur un réseau informatique IP. Concerne les postes téléphoniques fixes résiduels. <i>(Voir Service 8)</i></dd>
+                    <dt><strong>TWAIN / WIA (Windows Image Acquisition)</strong></dt>
+                    <dd>Standards et pilotes permettant aux applications Windows de communiquer avec des périphériques d'acquisition d'images comme les scanners. <i>(Voir Service 7)</i></dd>
+                 </dl>
+            </section>
+
+            <section id="letter-U" class="glossary-section">
+                <h2>U</h2>
+                <dl class="definition-list">
+                    <dt><strong>UAT (User Acceptance Testing)</strong></dt>
+                    <dd>Tests d'acceptation utilisateur. Phase de tests réalisée par les utilisateurs finaux (métier) pour valider qu'une nouvelle application ou version répond bien à leurs besoins avant la mise en production. <i>(Voir Service 12)</i></dd>
+                    <dt><strong>UCANSS (Union des Caisses Nationales de Sécurité Sociale)</strong></dt>
+                    <dd>Organisme via lequel sont passés certains marchés nationaux, notamment pour les imprimantes multifonctions (contrat Canon). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>Uniflow</strong></dt>
+                    <dd>Solution logicielle de Canon pour la gestion des impressions (impression suivie, quotas, reporting...). <i>(Voir Service 7)</i></dd>
+                    <dt><strong>URL (Uniform Resource Locator)</strong></dt>
+                    <dd>Adresse web permettant d'accéder à une ressource sur Internet ou sur un intranet (ex: http://..., https://...).</dd>
+                    <dt><strong>USGF (Unité de Soutien et de Gestion Financière)</strong></dt>
+                    <dd>Service interne responsable du processus d'achat et de commande de matériel informatique. <i>(Voir Service 2)</i></dd>
+                     <dt><strong>Use Cases / User Stories (Cas d'utilisation / Scénarios Utilisateur)</strong></dt>
+                    <dd>Techniques utilisées lors de l'analyse des besoins pour décrire comment un utilisateur interagit avec un système pour atteindre un objectif spécifique. <i>(Voir Service 12)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-V" class="glossary-section">
+                <h2>V</h2>
+                <dl class="definition-list">
+                    <dt><strong>Veeam</strong></dt>
+                    <dd>Solution de sauvegarde utilisée localement à la DRSM IDF, notamment pour les sauvegardes à plus long terme ou pour des besoins spécifiques non couverts par Avamar. <i>(Voir Service 11)</i></dd>
+                    <dt><strong>VLAN (Virtual Local Area Network)</strong></dt>
+                    <dd>Réseau local virtuel. Permet de segmenter logiquement un réseau physique en plusieurs sous-réseaux indépendants pour améliorer la sécurité et la gestion. <i>(Voir Service 4, Service 10)</i></dd>
+                    <dt><strong>VM (Virtual Machine)</strong></dt>
+                    <dd>Machine virtuelle. Environnement informatique complet (OS, applications) émulé par un logiciel (hyperviseur) sur un matériel physique. Permet de faire fonctionner plusieurs "machines" sur un seul serveur physique. <i>(Voir Service 10, Service 11)</i></dd>
+                    <dt><strong>VPN (Virtual Private Network)</strong></dt>
+                    <dd>Réseau privé virtuel. Technologie créant une connexion sécurisée et chiffrée ("tunnel") par-dessus un réseau public (Internet), permettant d'accéder aux ressources du réseau interne de l'entreprise comme si l'on y était physiquement connecté. Essentiel pour le télétravail. <i>(Voir Service 4)</i></dd>
+                </dl>
+            </section>
+
+            <section id="letter-W" class="glossary-section">
+                <h2>W</h2>
+                <dl class="definition-list">
+                    <dt><strong>Webmail</strong></dt>
+                    <dd>Interface permettant d'accéder à sa messagerie électronique via un navigateur web. Voir OWA. <i>(Voir Service 3)</i></dd>
+                     <dt><strong>Wi-Fi</strong></dt>
+                    <dd>Technologie de réseau local sans fil permettant aux appareils de se connecter à Internet ou à d'autres appareils via des ondes radio. Le réseau sécurisé interne est RAMAGE. <i>(Voir Service 4)</i></dd>
+                    <dt><strong>WSUS (Windows Server Update Services)</strong></dt>
+                    <dd>Service Microsoft permettant de gérer et de distribuer les mises à jour Windows et Office au sein d'un réseau d'entreprise. <i>(Voir Service 2, Service 10)</i></dd>
+                 </dl>
+            </section>
+
+             <section id="letter-Z" class="glossary-section">
+                <h2>Z</h2>
+                <dl class="definition-list">
+                     <dt><strong>Zero-day (Vulnérabilité / Attaque)</strong></dt>
+                    <dd>Faille de sécurité qui est découverte et potentiellement exploitée par des attaquants avant que l'éditeur du logiciel n'ait pu développer et diffuser un correctif. Nécessite une réaction rapide du service sécurité. <i>(Voir Service 10)</i></dd>
+                    <dt><strong>Zoom</strong></dt>
+                    <dd>Outil de visioconférence, webinaire et messagerie instantanée utilisé au sein de l'Assurance Maladie. <i>(Voir Service 3)</i></dd>
+                </dl>
+            </section>
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+>>>>>>> becb2bcb588f511a1f0f3cea860c0aae982af8e4
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 4: Réseau & Connectivité - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                 <!-- Chemin du logo relatif -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <!-- Formulaire de recherche supprimé -->
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 4) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 4 : Réseau et Connectivité</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 4 : Réseau et Connectivité (LAN, Wi-Fi, VPN)</h1>
+            <p class="service-summary">Assure la mise à disposition, la gestion et la maintenance des infrastructures de connectivité réseau filaire (LAN), sans fil (Wi-Fi) et d'accès distant (VPN).</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                <!-- Liste des Onglets -->
+                 <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Accès
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-sla" id="tab-sla" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">timer</span> Niveaux de Service
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                        <h2>Description du Service</h2>
+                        <p>Ce service assure la mise à disposition, la gestion et la maintenance des <strong>infrastructures de connectivité réseau</strong> de la DRSM IDF. Il couvre :</p>
+                        <ul>
+                            <li>Le réseau local filaire (<strong>LAN</strong>) dans les bâtiments.</li>
+                            <li>Le réseau sans fil (<strong>Wi-Fi</strong>) interne sécurisé.</li>
+                            <li>L'accès distant sécurisé via <strong>VPN</strong> (Virtual Private Network) pour le télétravail et la mobilité.</li>
+                        </ul>
+                        <p>L’objectif est de garantir une connectivité <strong>performante, disponible et sécurisée</strong> pour l'accès aux applications, à l'intranet et à Internet. Cela inclut la gestion technique des équipements (switches, routeurs, bornes Wi-Fi, contrôleurs) et l'assistance aux utilisateurs pour les problèmes de connexion.</p>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                         <ul>
+                           <li><strong>Tous les collaborateurs</strong> de la DRSM IDF nécessitant un accès au réseau informatique de l'organisme, que ce soit sur site ou à distance.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                        <h2>Modalités d’accès</h2>
+                         <ol>
+                            <li>
+                                <strong>Connexion au réseau local (LAN)</strong>
+                                <ul>
+                                    <li>Automatique via câble Ethernet pour les postes fixes. Authentification via le compte Windows (Active Directory).</li>
+                                    <li>Pour l'activation d'une nouvelle prise réseau (déménagement, nouvel équipement), une demande doit être faite via <strong>ticket S@Mlocal</strong>.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Connexion Wi-Fi</strong>
+                                <ul>
+                                    <li>Le <strong>réseau Wi-Fi interne sécurisé (RAMAGE)</strong> est disponible dans les zones couvertes (Argonne).</li>
+                                    <li>La connexion est normalement automatique pour les postes portables professionnels configurés.</li>
+                                    <li>En cas de problème de connexion Wi-Fi (signal faible, impossible de se connecter), contacter le <strong>pôle support</strong> via S@Mlocal.</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>Accès VPN (à distance)</strong>
+                                <ul>
+                                    <li>Le service VPN est généralisé pour permettre le travail à distance.</li>
+                                    <li>L'accès nécessite le client VPN installé sur le poste et l'authentification via les identifiants Windows et la Carte Agent (IDPRIME).</li>
+                                    <li>En cas de problème de connexion VPN, contacter le <strong>pôle support</strong> via S@Mlocal.</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>Disponibilité</strong>
+                                <ul>
+                                    <li>Le réseau (LAN, Wi-Fi, VPN) est conçu pour être disponible <strong>24h/24, 7j/7</strong>.</li>
+                                    <li>Le <strong>support actif</strong> est assuré pendant les heures ouvrées. Une panne majeure en dehors de ces heures sera traitée en priorité le jour ouvré suivant (sauf astreinte spécifique si existante).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Panel SLA -->
+                    <div role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" class="tab-panel">
+                        <h2>Niveaux de Service (SLA Indicatifs)</h2>
+                        <p class="sla-notice"><strong>Note Importante :</strong> Les délais indiqués sont fournis à titre indicatif et ne constituent pas un engagement contractuel, mais des objectifs.</p>
+                        <div class="table-responsive">
+                            <table class="sla-table">
+                                <thead>
+                                    <tr>
+                                        <th>Indicateur</th>
+                                        <th>Objectif Indicatif</th>
+                                        <th>Précisions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Disponibilité Cible (LAN, VPN)</td>
+                                        <td><strong>99%</strong> (heures ouvrées)</td>
+                                        <td>Objectif de disponibilité pendant les heures de bureau.</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Délai de prise en charge (Incident Réseau)</td>
+                                        <td><strong>1 heure ouvrée</strong> (signalement individuel) / <strong>Immédiat</strong> (panne critique détectée)</td>
+                                        <td>Ticket individuel pris en compte sous 1h. Intervention immédiate si détection via supervision.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Délai de Rétablissement (Incident Majeur Réseau)</td>
+                                        <td><strong>4 heures ouvrées</strong></td>
+                                        <td>Objectif pour rétablir service sur incident majeur (ex: panne switch principal, perte lien opérateur). Communication prioritaire.</td>
+                                     </tr>
+                                     <tr>
+                                        <td>Délai de résolution (incident individuel)</td>
+                                        <td>Sous <strong>8 heures ouvrées</strong></td>
+                                        <td>Problèmes courants (port switch à réactiver, aide config Wi-Fi/VPN).</td>
+                                     </tr>
+                                     <tr>
+                                         <td>Délai de traitement (demandes)</td>
+                                         <td><strong>1 jour ouvré</strong> (après validation)</td>
+                                         <td>Activation prise réseau existante, création/modif accès VPN standard.</td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                        <h2>Processus et fonctionnement</h2>
+                         <div class="accordion">
+                             <!-- Item Accordéon: Supervision & Maintenance Préventive -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-4-supervision" id="process-trigger-4-supervision">Supervision et Maintenance Préventive<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-4-supervision" role="region" aria-labelledby="process-trigger-4-supervision" class="accordion-content"><div>
+                                    <p>Surveillance active des équipements clés (routeurs, switches, liens WAN) et des performances réseau via outils de monitoring. Maintenance planifiée (mises à jour firmwares) réalisée en heures non ouvrées et annoncée.</p>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Gestion Incident Réseau -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-4-incident" id="process-trigger-4-incident">Gestion d’un incident réseau<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-4-incident" role="region" aria-labelledby="process-trigger-4-incident" class="accordion-content"><div>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">radar</span></div><div class="step-content"><h4 class="step-title">Détection Incident</h4><p class="step-description">Via supervision active ou signalement utilisateur (S@Mlocal).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_search</span></div><div class="step-content"><h4 class="step-title">Diagnostic & Isolation</h4><p class="step-description">Identifier cause racine (équipement local, ligne opérateur CNGR, config). Distinguer individuel vs collectif.</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                          <div class="process-step decision-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div><div class="step-content decision-question"><h4 class="step-title">Impact ?</h4></div><div class="decision-branches-container"><div class="decision-branch branch-yes" style="flex-basis: 50%;"><div class="branch-path"><span class="branch-label">Individuel</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">cable</span></div><div class="step-content"><h4 class="step-title">Intervention Locale (N1/N2)</h4><p class="step-description">Vérifications base (câble, config poste), intervention N2 si besoin (port switch, analyse).</p></div></div></div></div><div class="decision-branch branch-no" style="flex-basis: 50%;"><div class="branch-path"><span class="branch-label">Collectif</span><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">router</span></div><div class="step-content"><h4 class="step-title">Intervention Centrale (N2/N3)</h4><p class="step-description">Action sur équipement défaillant (switch, routeur, firewall).</p></div></div><div class="step-connector-branch"></div><div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3c</span><span class="material-symbols-outlined step-icon" aria-hidden="true">public</span></div><div class="step-content"><h4 class="step-title">Contact Opérateur (si externe)</h4><p class="step-description">Contact et suivi avec l'opérateur (ex: CNGR).</p></div></div></div></div></div></div>
+                                          <div class="step-connector after-decision"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">campaign</span></div><div class="step-content"><h4 class="step-title">Communication Utilisateurs</h4><p class="step-description">Information aux utilisateurs impactés (cause, délai estimé, résolution).</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_note</span></div><div class="step-content"><h4 class="step-title">Documentation & Clôture</h4><p class="step-description">Documentation de l'incident et de sa résolution dans S@Mlocal.</p></div></div>
+                                    </div>
+                                </div></div>
+                            </div>
+                             <!-- Item Accordéon: Gestion Demandes Réseau -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-4-demandes" id="process-trigger-4-demandes">Gestion des demandes réseau<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-4-demandes" role="region" aria-labelledby="process-trigger-4-demandes" class="accordion-content"><div>
+                                    <p>Les demandes d'activation de ports, de configuration VLAN, ou de gestion des accès VPN sont traitées via S@Mlocal, après validation si nécessaire.</p>
+                                </div></div>
+                            </div>
+                            <!-- Item Accordéon: Sécurité Réseau -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-4-security" id="process-trigger-4-security">Sécurité réseau<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="process-content-4-security" role="region" aria-labelledby="process-trigger-4-security" class="accordion-content"><div>
+                                    <p>Application des politiques de sécurité (filtrage pare-feu, segmentation réseau, contrôle d'accès VPN). Toute demande de modification de flux est soumise à analyse de risque et processus de gestion des changements.</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon principal -->
+                    </div> <!-- Fin Panel Processus -->
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                        <h2>Contacts et support</h2>
+                         <div class="contact-highlight">
+                            <p><strong>Pôle support :</strong> Premier point de contact via <strong>S@Mlocal</strong> pour toute question ou problème de connectivité réseau (LAN, Wi-Fi, VPN).</p>
+                             <!-- URL S@Mlocal mise à jour -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/?version=300000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                         <p><strong>Équipe Réseau/Infrastructure (N2/N3) :</strong> Intervient sur escalade pour les incidents complexes, la maintenance et les évolutions.</p>
+                         <p><strong>Planification :</strong> Pour les projets impliquant des besoins réseau spécifiques (déménagement important, nouveau service), contacter le pôle support via S@Mlocal le plus en amont possible.</p>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                        <div class="accordion">
+                             <!-- Activité 4.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-4-1" id="activity-trigger-4-1">4.1 : Assistance et Support VPN<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-4-1" role="region" aria-labelledby="activity-trigger-4-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Aider utilisateurs avec connexion VPN (établissement, maintien, erreurs).
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal/appel (connexion impossible, erreur, déconnexion, oubli MDP VPN, client corrompu).</p>
+                                    <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Contexte (lieu, connexion?), message erreur?</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist</span></div><div class="step-content"><h4 class="step-title">Vérification Prérequis (N1)</h4><p class="step-description">Identifiants (AD/Carte Agent)? Connexion Internet OK? Client démarré? Redémarrage client/poste? Certificats valides? Panne générale VPN?</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Diagnostic & Résolution (N1/N2)</h4><p class="step-description">Réinitialisation connexion, réparation/réinstall client (N1/N2 selon droits), vérif profil VPN (N2), analyse logs client (N2). Prise de contrôle si besoin (respect Fiche 1.9).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer connexion stable avec user. Documenter. Clôturer ticket.</p></div></div>
+                                    </div>
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal, Client VPN, Prise contrôle distance (respecter Fiche 1.9), Console AD, Outils certificats poste, Outils diag N2/logs serveur (N2/N3), Procédures VPN.</p>
+                                     <p><strong>Points d'Attention :</strong> Sécurité authentification, support limité connexion domestique, utiliser client approuvé, config serveur VPN = N3.</p>
+                                      <p><strong>Escalade :</strong> Problème persistant (->N3 Réseau/Sécu), Problème compte AD/Certificat (->N2/N3 Identité/PKI), Panne générale (->N3).</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 4.2 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-4-2" id="activity-trigger-4-2">4.2 : Diagnostic et Dépannage de la Connectivité LAN<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-4-2" role="region" aria-labelledby="activity-trigger-4-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Diagnostiquer et résoudre problèmes connexion réseau filaire (LAN) sur site.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal/appel (pas connexion, déconnexions, lenteur LAN, accès impossible vs voisins OK).</p>
+                                    <p><strong>Processus / Étapes Clés (N1/N2) :</strong></p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Nature, étendue, depuis quand?</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">monitor</span></div><div class="step-content"><h4 class="step-title">Diagnostic Initial Distant (N1)</h4><p class="step-description">Vérif câbles (guidé), redémarrage poste, état carte réseau, config IP (ipconfig), tests ping. Prise de contrôle si besoin (respecter Fiche 1.9).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">engineering</span></div><div class="step-content"><h4 class="step-title">Intervention sur Site (N1/N2)</h4><p class="step-description">Tester autre câble, tester prise murale, vérifier brassage, vérifier/activer port switch (N2). Si poste: réinstaller pilote carte, diag matériel.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">network_intelligence</span></div><div class="step-content"><h4 class="step-title">Diagnostic Avancé (N2)</h4><p class="step-description">Analyse config switch (VLAN...), surveillance trafic port, vérif logs DHCP/DNS.</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer connectivité stable avec user. Documenter. Clôturer.</p></div></div>
+                                    </div>
+                                    <p><strong>Outils Principaux :</strong> S@Mlocal, Prise contrôle distance (respecter Fiche 1.9), Commandes réseau Win, Câbles rechange, Testeur câble, Portable test, Console switches (N2), Outils analyse réseau (N2/N3).</p>
+                                    <p><strong>Points d'Attention :</strong> Méthodologie structurée, intervention local technique réservées N2/habilités, sécurité interventions physiques, documenter modifs brassage/switch.</p>
+                                    <p><strong>Escalade :</strong> Pb équipement réseau central (->N3), Pb câblage structurel, Panne générale étage/bâtiment (->N2/N3 Incident majeur).</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 4.3 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-4-3" id="activity-trigger-4-3">4.3 : Assistance à la Connexion Wi-Fi<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-4-3" role="region" aria-labelledby="activity-trigger-4-3" class="accordion-content"><div>
+                                     <strong>Objectif :</strong> Aider connexion Wi-Fi pro (RAMAGE) sur site et support base en TLT.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal/appel (connexion RAMAGE impossible/instable, erreur connexion, pb Wi-Fi TLT).</p>
+                                    <p><strong>Processus / Étapes Clés (N1/N2) :</strong></p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Contexte (site/TLT?), erreur, impact?</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">wifi_find</span></div><div class="step-content"><h4 class="step-title">Diagnostic Initial (N1)</h4><p class="step-description"><strong>Site:</strong> Wi-Fi activé poste? RAMAGE visible? "Oublier" réseau + Reconnexion? État carte Wi-Fi Win? Redémarrer poste? <strong>TLT:</strong> Confirmer pb Wi-Fi vs VPN? Autres appareils OK? Redémarrer Box perso/poste? Rapprocher point accès? Tester filaire? Rappeler support limité.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Diagnostic & Résolution (N1/N2 Site)</h4><p class="step-description">Réinstaller/MAJ pilote Wi-Fi (N1/N2). Vérifier config auth 802.1x/certificats (N2). Vérifier état bornes Wi-Fi via contrôleur si pb zone (N2).</p></div></div>
+                                          <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer connexion stable avec user. Documenter. Clôturer.</p></div></div>
+                                    </div>
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal, Prise contrôle distance (respecter Fiche 1.9), Gestionnaire périphériques Win, Paramètres réseau Win, Console contrôleur Wi-Fi (N2/N3), Outils analyse spectre (N2/N3).</p>
+                                     <p><strong>Points d'Attention :</strong> RAMAGE seul réseau pro supporté site, auth sécurisée/gérée, support TLT limité (pas box/FAI), modifs contrôleur/bornes = N2/N3.</p>
+                                     <p><strong>Escalade :</strong> Problème persistant site (->N3 Réseau analyse), Panne borne(s) (->N2/N3 Incident), Pb auth certifs/AD (->N2/N3 Identité/PKI).</p>
+                                </div></div>
+                            </div>
+                             <!-- Activité 4.4 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-4-4" id="activity-trigger-4-4">4.4 : Gestion des Dispositifs de Sécurité et Équipements Réseaux (Support N1-N2)<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-4-4" role="region" aria-labelledby="activity-trigger-4-4" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Assurer fonctionnement base dispositifs sécurité sur postes (client VPN...) et participer gestion certificats associés (coordination N3). <i>Note: Config équipements centraux (Stormshield...) = N3.</i>
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal (pb client sécu poste, erreur MAJ client, erreur certificat poste pour VPN/Wi-Fi), demande install/vérif client sécu standard.</p>
+                                     <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification</h4><p class="step-description">Identifier dispositif, problème.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">security</span></div><div class="step-content"><h4 class="step-title">Vérification Client Sécu Poste (N1/N2)</h4><p class="step-description">Présence/État/Service? Tenter MAJ client? Réparation/Réinstallation si corrompu? (Respecter Fiche 1.9 si prise de contrôle).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">badge</span></div><div class="step-content"><h4 class="step-title">Gestion Certificats User/Machine (N1/N2)</h4><p class="step-description">Vérif validité (expiration Carte Agent?). Suivre procédure renouvellement. Diag erreurs certificat.</p></div></div>
+                                         <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">sync_alt</span></div><div class="step-content"><h4 class="step-title">Coordination avec N3 (Sécu/Infra)</h4><p class="step-description">Remonter pb récurrents, escalader erreurs complexes (logs Stormshield, PKI...), appliquer instructions N3.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Confirmer résolution avec user. Documenter. Clôturer.</p></div></div>
+                                    </div>
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal, Clients sécu poste, Gestionnaire certificats Win (certmgr.msc), Prise contrôle distance (respecter Fiche 1.9), Console AD (limitée), Portail PKI (limité N1/N2), Outils déploiement (N2), Procédures internes.</p>
+                                      <p><strong>Points d'Attention :</strong> Clients sécu essentiels (pas désactiver), versions approuvées, config équipements centraux (Stormshield) = N3/Sce10, renouvellement certificats critique, respect procédures sécu.</p>
+                                      <p><strong>Escalade :</strong> Problème équipement central (Stormshield, Switch...) (->N3 Réseau/Sécu/Sce 10), Pb complexe certificat/PKI (->N2/N3 PKI/Identité), Détection activité malveillante (->N3 Sécu/MSSI).</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+                 <li><a href="../glossaire.html">Glossaire</a></li> <!-- Chemin corrigé -->
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

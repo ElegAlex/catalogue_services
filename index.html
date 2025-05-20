@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue des Services Informatique - DRSM Île-de-France</title>
+    <!-- Lien vers la feuille de style unique et consolidée -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Liens Google Fonts & Material Symbols (avec display=swap) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Lien vers le script unique et consolidé, chargé en différé -->
+    <script src="js/script.js" defer></script>
+    <!-- Style additionnel pour l'espacement des boutons hero -->
+    <style>
+        .hero .button-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Pour petits écrans */
+            gap: var(--spacing-unit); /* Espacement entre les boutons */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Chemin du logo mis à jour -->
+                <img src="assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <!-- Formulaire de recherche supprimé -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Hero avec titre/sous-titre ET BOUTONS -->
+        <section class="hero fade-in-element">
+            <div class="container">
+                <h2>Catalogue des Services Informatique</h2>
+                <p>DRSM Île-de-France</p>
+                <!-- Conteneur pour les boutons -->
+                <div class="button-group">
+                    <!-- Mettre le lien réel vers S@Mlocal -->
+                    <a href="http://www.support-national.cnamts.fr/espacelocal/?version=300000" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span class="material-symbols-outlined" aria-hidden="true">contact_support</span> Contacter le Support (S@Mlocal)
+                    </a>
+                    <!-- NOUVEAU BOUTON GLOSSAIRE -->
+                    <a href="glossaire.html" class="btn btn-secondary"> <!-- Changé en btn-secondary pour contraste -->
+                        <span class="material-symbols-outlined" aria-hidden="true">menu_book</span> Consulter le Glossaire
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section des cartes de service -->
+        <section class="all-services section-padding fade-in-element">
+            <div class="container">
+                <!-- Grille des cartes -->
+                <div class="card-grid">
+
+                    <!-- Carte Service 1 -->
+                    <a href="services/service-1.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">support_agent</span></span>
+                         <h4>Service 1 : Assistance & Support</h4>
+                         <p>Point de contact unique (SPOC)</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 2 -->
+                    <a href="services/service-2.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">devices</span></span>
+                         <h4>Service 2 : Poste de Travail</h4>
+                         <p>Matériel, périphériques, installation</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 3 -->
+                    <a href="services/service-3.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">mail</span></span>
+                         <h4>Service 3 : Messagerie & Outils Collaboratifs</h4>
+                         <p>Outlook, Zoom, SharePoint, liam</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <!-- Carte Service 4 -->
+                    <a href="services/service-4.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">router</span></span>
+                         <h4>Service 4 : Réseau & Connectivité</h4>
+                         <p>LAN, Wi-Fi, VPN</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <!-- Carte Service 5 -->
+                    <a href="services/service-5.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">manage_accounts</span></span>
+                         <h4>Service 5 : Comptes & Accès</h4>
+                         <p>Identités, mots de passe, droits</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 6 -->
+                     <a href="services/service-6.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">widgets</span></span>
+                         <h4>Service 6 : Applications Métiers</h4>
+                         <p>Support Hippocrate, Diadème, etc.</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 7 -->
+                     <a href="services/service-7.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">print</span></span>
+                         <h4>Service 7 : Impression</h4>
+                         <p>Multifonctions, consommables</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 8 -->
+                     <a href="services/service-8.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">smartphone</span></span>
+                         <h4>Service 8 : Téléphonie</h4>
+                         <p>Mobiles professionnels, lignes</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 9 -->
+                     <a href="services/service-9.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">badge</span></span>
+                         <h4>Service 9 : Carte Agent</h4>
+                         <p>Authentification, accès physiques (SI)</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <!-- Carte Service 10 -->
+                    <a href="services/service-10.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">security</span></span>
+                         <h4>Service 10 : Maintenance & Sécurité Infra</h4>
+                         <p>Serveurs, mises à jour, sécurité</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                     <!-- Carte Service 11 -->
+                     <a href="services/service-11.html" class="card service-card">
+                        <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">database</span></span>
+                         <h4>Service 11 : Sauvegardes</h4>
+                         <p>Avamar, Veeam</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <!-- Carte Service 12 -->
+                    <a href="services/service-12.html" class="card service-card">
+                         <span class="icon-wrapper"><span class="material-symbols-outlined icon-large" aria-hidden="true">integration_instructions</span></span>
+                         <h4>Service 12 : Développements internes</h4>
+                         <p>Applications développées en interne</p>
+                         <span class="card-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div> <!-- Fin Card Grid -->
+            </div> <!-- Fin Container -->
+        </section> <!-- Fin All Services -->
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <!-- Liens Footer mis à jour -->
+            <ul>
+                <!-- Lien Charte supprimé -->
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+                <!-- Ajouter un lien vers le glossaire dans le footer aussi peut être pertinent -->
+                <li><a href="glossaire.html">Glossaire</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

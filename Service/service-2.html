@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service 2: Gestion des Postes de Travail - Catalogue des Services Informatique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ***** HEADER (Commun) ***** -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Le chemin et les attributs du logo sont déjà corrects selon l'exemple -->
+                <img src="../assets/images/logo-drsm.png" alt="Logo DRSM IDF / Assurance Maladie" width="150" height="40">
+            </div>
+            <form class="search-form" action="#!" method="get" role="search">
+                <label for="main-search" class="visually-hidden">Rechercher dans le catalogue</label>
+                <input type="search" id="main-search" name="q" placeholder="Rechercher un service..." aria-label="Rechercher dans le catalogue">
+                <button type="submit" aria-label="Lancer la recherche">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- ***** MAIN (Contenu spécifique service 2) ***** -->
+    <main class="service-detail-page section-padding">
+        <div class="container">
+
+            <!-- Fil d'Ariane -->
+            <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><span aria-current="page">Service 2 : Gestion des Postes de Travail et Périphériques</span></li>
+                </ol>
+            </nav>
+
+            <!-- Titre et Résumé du Service -->
+            <h1 class="service-title">Service 2 : Gestion des Postes de Travail et Périphériques</h1>
+            <p class="service-summary">Ce service couvre le cycle de vie complet des équipements informatiques individuels mis à disposition des collaborateurs.</p>
+
+            <!-- Conteneur des Onglets -->
+            <div class="tabs-container">
+                <!-- Liste des Onglets -->
+                <div class="tab-list" role="tablist" aria-label="Sections du service">
+                    <button role="tab" aria-selected="true" aria-controls="panel-description" id="tab-description" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">description</span> Description
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-beneficiaires" id="tab-beneficiaires" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">groups</span> Bénéficiaires
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-acces" id="tab-acces" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">login</span> Accès
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-sla" id="tab-sla" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">timer</span> Niveaux de Service
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-processus" id="tab-processus" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">account_tree</span> Fonctionnement
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-contacts" id="tab-contacts" class="tab-button">
+                        <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Contacts
+                    </button>
+                     <button role="tab" aria-selected="false" aria-controls="panel-activities" id="tab-activities" class="tab-button">
+                         <span class="material-symbols-outlined" aria-hidden="true">integration_instructions</span> Procédures
+                    </button>
+                </div>
+
+                <!-- Panneaux de Contenu des Onglets -->
+                <div class="tab-panels">
+                    <!-- Panel Description -->
+                    <div role="tabpanel" id="panel-description" aria-labelledby="tab-description" class="tab-panel is-active">
+                        <h2>Description du Service</h2>
+                         <p>Ce service couvre le <strong>cycle de vie complet</strong> des équipements informatiques individuels mis à disposition des collaborateurs : <strong>ordinateurs de bureau</strong>, <strong>ordinateurs portables</strong>, et leurs <strong>périphériques</strong> (moniteurs, claviers, souris, stations d’accueil, etc.). Il inclut :</p>
+                        <ul>
+                            <li>La <strong>fourniture</strong> de nouveaux matériels.</li>
+                            <li>Leur <strong>installation et configuration standard</strong> (voir onglet Procédures > Fiche Activité 2.1).</li>
+                            <li>La <strong>maintenance</strong> (préventive et corrective).</li>
+                            <li>La <strong>gestion des accessoires</strong> (remplacement, ajout).</li>
+                            <li>Le <strong>retrait et le recyclage</strong> en fin de vie.</li>
+                        </ul>
+                        <p>L’objectif est de garantir à chaque employé un environnement de travail informatique <strong>fonctionnel</strong>, <strong>sécurisé</strong>, <strong>à jour</strong> et <strong>adapté</strong> à ses besoins, en minimisant les interruptions.</p>
+                    </div>
+
+                    <!-- Panel Bénéficiaires -->
+                    <div role="tabpanel" id="panel-beneficiaires" aria-labelledby="tab-beneficiaires" class="tab-panel">
+                        <h2>Bénéficiaires</h2>
+                        <ul>
+                           <li><strong>Tous les collaborateurs</strong> de la DRSM IDF disposant d’un poste informatique (PC fixe ou portable) ou d'un périphérique fourni par le service informatique.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Panel Accès -->
+                    <div role="tabpanel" id="panel-acces" aria-labelledby="tab-acces" class="tab-panel">
+                         <h2>Modalités d’accès</h2>
+                        <ol>
+                           <li>
+                                <strong>Signalement d’une panne ou d’un problème matériel/logiciel sur le poste</strong>
+                                <ul>
+                                    <li>L’utilisateur ouvre un <strong>ticket S@Mlocal</strong> en décrivant précisément la panne ou le dysfonctionnement (ex. “l’ordinateur ne démarre plus”, “écran noir”, “message d'erreur X au lancement de Y”, “PC très lent”).</li>
+                                    <li>Préciser le <strong>nom du poste</strong> (hostname) ou le <strong>numéro d’inventaire</strong> (visible sur une étiquette) pour faciliter l'identification.</li>
+                                </ul>
+                           </li>
+                           <li>
+                                <strong>Demande de matériel ou d'accessoire</strong>
+                                <ul>
+                                     <li>Pour un nouvel équipement (dans le cadre d'une arrivée ou d'un renouvellement validé) ou un accessoire spécifique (écran supplémentaire, souris ergonomique, ajout de RAM si justifié et techniquement possible), créer une <strong>demande via S@Mlocal</strong>.</li>
+                                     <li>La demande peut nécessiter une validation managériale et/ou budgétaire.</li>
+                                </ul>
+                           </li>
+                           <li>
+                                <strong>Horaires et conditions</strong>
+                                <ul>
+                                    <li>Le support pour les postes de travail est assuré aux <strong>heures ouvrées</strong>.</li>
+                                    <li>Un <strong>prêt de matériel</strong> de remplacement est possible en cas d'immobilisation longue de l'ordinateur principal (panne matérielle majeure), sous réserve de disponibilité en stock.</li>
+                                </ul>
+                           </li>
+                        </ol>
+                    </div>
+
+                    <!-- Panel SLA -->
+                    <div role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" class="tab-panel">
+                         <h2>Niveaux de Service (SLA Indicatifs)</h2>
+                        <p class="sla-notice"><strong>Note Importante :</strong> Les délais indiqués sont fournis à titre indicatif et ne constituent pas un engagement contractuel, mais des objectifs.</p>
+                        <div class="table-responsive">
+                            <table class="sla-table">
+                                <thead>
+                                    <tr>
+                                        <th>Indicateur</th>
+                                        <th>Objectif Indicatif</th>
+                                        <th>Précisions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Délai de prise en charge (diagnostic initial)</td>
+                                        <td><strong>4 heures ouvrées</strong></td>
+                                        <td>Demande/incident matériel examiné. En cas de panne bloquante, diagnostic initial généralement le jour même.</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Délai de fourniture (nouvelle machine / remplacement)</td>
+                                        <td><strong>3 jours ouvrés</strong> (si stock)</td>
+                                        <td>Matériel standard en stock : config et mise à dispo sous 3j après validation. Si commande : délai fournisseur/achat (utilisateur informé).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Délai de résolution (incidents matériels/logiciels poste)</td>
+                                        <td><strong>2 jours ouvrés</strong> (panne simple)</td>
+                                        <td>Ex: Remplacement accessoire, RAM, pilote, problème logiciel courant. Panne majeure (garantie, réinstall) : délai variable, prêt possible.</td>
+                                     </tr>
+                                     <tr>
+                                        <td>Délai de réponse (petits problèmes logiciels poste)</td>
+                                        <td>Sous <strong>8 heures ouvrées</strong></td>
+                                        <td>Souvent traités rapidement par prise en main à distance.</td>
+                                     </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Panel Processus/Fonctionnement -->
+                    <div role="tabpanel" id="panel-processus" aria-labelledby="tab-processus" class="tab-panel">
+                        <h2>Processus et fonctionnement</h2>
+                        <div class="accordion">
+                            <!-- Item Accordéon: Nouvelle attribution/Renouvellement - Fermé par défaut -->
+                            <div class="accordion-item">
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-2-attrib" id="process-trigger-2-attrib">
+                                        Nouvelle attribution de poste / Renouvellement
+                                        <span class="accordion-icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="process-content-2-attrib" role="region" aria-labelledby="process-trigger-2-attrib" class="accordion-content"> <!-- Retrait de 'is-open' -->
+                                    <div><!-- Wrapper pour padding -->
+                                        <div class="process-flow">
+                                            <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist</span></div><div class="step-content"><h4 class="step-title">Validation Hiérarchie/RH</h4><p class="step-description">Arrivée, renouvellement planifié.</p></div></div>
+                                            <div class="step-connector"></div>
+                                            <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">inventory_2</span></div><div class="step-content"><h4 class="step-title">Vérification Stock / Commande</h4><p class="step-description">Vérification inventaire ou initiation commande via USGF.</p></div></div>
+                                            <div class="step-connector"></div>
+                                            <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Préparation & Configuration</h4><p class="step-description">Application image standard, configurations (voir Fiche 2.1).</p></div></div>
+                                             <div class="step-connector"></div>
+                                            <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">local_shipping</span></div><div class="step-content"><h4 class="step-title">Livraison & Installation</h4><p class="step-description">Remise à l'utilisateur, vérification fonctionnement.</p></div></div>
+                                            <div class="step-connector"></div>
+                                            <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Clôture Ticket</h4><p class="step-description">Ticket S@Mlocal associé clôturé.</p></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Item Accordéon: Support Incident/Panne - Fermé par défaut -->
+                            <div class="accordion-item">
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-2-support" id="process-trigger-2-support">
+                                        Support en cas d’incident/panne
+                                        <span class="accordion-icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="process-content-2-support" role="region" aria-labelledby="process-trigger-2-support" class="accordion-content"> <!-- Retrait de 'is-open' -->
+                                     <div><!-- Wrapper pour padding -->
+                                          <div class="process-flow">
+                                            <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">report_problem</span></div><div class="step-content"><h4 class="step-title">Signalement via S@Mlocal</h4><p class="step-description">Description précise de la panne.</p></div></div>
+                                            <div class="step-connector"></div>
+                                            <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">diagnosis</span></div><div class="step-content"><h4 class="step-title">Diagnostic Initial (N1/N2)</h4><p class="step-description">À distance si possible, identification cause (logiciel/matériel).</p></div></div>
+                                            <div class="step-connector decision"></div>
+                                             <div class="process-step decision-step">
+                                                 <div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div>
+                                                <div class="step-content decision-question"><h4 class="step-title">Type de Problème ?</h4></div>
+                                                <div class="decision-branches-container">
+                                                    <div class="decision-branch branch-yes"> <!-- Branche Logiciel -->
+                                                        <div class="branch-path">
+                                                            <span class="branch-label">Logiciel</span>
+                                                            <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">desktop_windows</span></div><div class="step-content"><h4 class="step-title">Résolution Logicielle</h4><p class="step-description">Tentative distante (désinfection, réparation...). Si échec, planification réinstallation (après rappel sauvegarde réseau).</p></div></div>
+                                                        </div>
+                                                    </div>
+                                                     <div class="decision-branch branch-no"> <!-- Branche Matériel -->
+                                                         <div class="branch-path">
+                                                             <span class="branch-label">Matériel</span>
+                                                             <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">hardware</span></div><div class="step-content"><h4 class="step-title">Réparation Matérielle</h4><p class="step-description">Réparation locale si simple (RAM...). Sinon, récupération pour atelier ou envoi garantie. Prêt si nécessaire.</p></div></div>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                              <div class="step-connector after-decision"></div>
+                                             <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">cloud_sync</span></div><div class="step-content"><h4 class="step-title">Accès aux Données Réseau</h4><p class="step-description">Rappel : Données réseau accessibles depuis poste prêt/réparé. Sauvegarde locale non garantie (responsabilité utilisateur).</p></div></div>
+                                              <div class="step-connector"></div>
+                                             <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Validation & Clôture</h4><p class="step-description">Vérification avec utilisateur et clôture ticket.</p></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Item Accordéon: Maintenance préventive - Fermé par défaut -->
+                             <div class="accordion-item">
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="process-content-2-preventive" id="process-trigger-2-preventive">
+                                        Maintenance préventive et mises à jour
+                                        <span class="accordion-icon" aria-hidden="true"></span>
+                                    </button>
+                                </h3>
+                                <div id="process-content-2-preventive" role="region" aria-labelledby="process-trigger-2-preventive" class="accordion-content"> <!-- Retrait de 'is-open' -->
+                                     <div><!-- Wrapper pour padding -->
+                                         <p>Cette activité est réalisée en continu par le service informatique :</p>
+                                        <ul>
+                                            <li>Déploiement régulier des <strong>mises à jour</strong> de sécurité (OS, navigateurs, Office) via des outils centralisés (ex. WSUS).</li>
+                                            <li>Maintien à jour de l'antivirus.</li>
+                                            <li>Suivi de l'inventaire matériel et logiciel.</li>
+                                            <li>Ces opérations sont majoritairement <strong>transparentes</strong> pour l'utilisateur, sauf redémarrages planifiés et annoncés.</li>
+                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Fin Accordéon principal -->
+                    </div> <!-- Fin Panel Processus -->
+
+                     <!-- Panel Contacts -->
+                    <div role="tabpanel" id="panel-contacts" aria-labelledby="tab-contacts" class="tab-panel">
+                         <h2>Contacts et support</h2>
+                         <div class="contact-highlight">
+                             <p><strong>Pôle support :</strong> Point d’entrée unique via <strong>S@Mlocal</strong> pour toute demande ou incident relatif aux postes de travail et périphériques.</p>
+                             <!-- Lien S@Mlocal mis à jour selon la consigne -->
+                             <a href="http://www.support-national.cnamts.fr/espacelocal/local.home.do" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span> Créer un ticket S@Mlocal
+                            </a>
+                         </div>
+                         <p>Le pôle support escalade si nécessaire aux <strong>techniciens N2</strong> (maintenance sur site, préparation de postes) ou au <strong>pôle expert (N3)</strong> pour des diagnostics complexes.</p>
+                    </div>
+
+                    <!-- Panel Fiches Activités -->
+                    <div role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" class="tab-panel">
+                        <h2>Procédures Détaillées (Fiches Activités)</h2>
+                        <div class="accordion">
+                             <!-- Activité 2.1 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-1" id="activity-trigger-2-1">2.1 : Configuration Standard d'un Poste de Travail<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-1" role="region" aria-labelledby="activity-trigger-2-1" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Décrire les composants logiciels et la configuration de base appliqués à tout nouveau poste.
+                                    <p><strong>Contenu Standard :</strong> OS (Win approuvé), Office, Navigateurs (Edge, Firefox), Sécurité (AV, Pare-feu, MàJ WSUS), Connectivité (VPN, LAN/Wi-Fi), Messagerie (Outlook), Collab (Zoom, SharePoint, liam), PDF Reader, Agent Gestion Parc (si utilisé).</p>
+                                    <p><strong>Exclusions :</strong> Logiciels métiers (sur demande), non approuvés/licence, configs perso non standards.</p><p><strong>Processus :</strong> Installation via image standard (Master), dernières MàJ sécurité, création profil base.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 2.2 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-2" id="activity-trigger-2-2">2.2 : Installation et Configuration des Postes de Travail<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-2" role="region" aria-labelledby="activity-trigger-2-2" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Préparer, installer et configurer un nouveau poste pour un arrivant ou en remplacement.
+                                    <p><strong>Déclencheurs :</strong> Demande validée (arrivée RH, remplacement), réception matériel.</p>
+                                    <div class="process-flow">
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">checklist_rtl</span></div><div class="step-content"><h4 class="step-title">Réception/Validation Demande</h4><p class="step-description">Vérif complétude et validation via S@Mlocal.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">inventory_2</span></div><div class="step-content"><h4 class="step-title">Vérif/Alloc Matériel</h4><p class="step-description">Consultation inventaire ou déclenchement commande USGF.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build</span></div><div class="step-content"><h4 class="step-title">Préparation Physique</h4><p class="step-description">Déballage et inspection.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">deployed_code</span></div><div class="step-content"><h4 class="step-title">Installation Image Standard</h4><p class="step-description">Application Master approuvé (OS, configs base - voir Fiche 2.1).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">tune</span></div><div class="step-content"><h4 class="step-title">Configuration Initiale</h4><p class="step-description">Jonction Domaine AD, install Office, navigateurs, VPN, AV, MàJ sécurité.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">manage_accounts</span></div><div class="step-content"><h4 class="step-title">Configuration Utilisateur</h4><p class="step-description">Prépa profil base (Coordination Service 5).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">extension</span></div><div class="step-content"><h4 class="step-title">Installation Logiciels Spécifiques</h4><p class="step-description">(Si demandés et validés initialement).</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">label</span></div><div class="step-content"><h4 class="step-title">Étiquetage & Inventaire</h4><p class="step-description">Apposition Asset Tag, enregistrement S/N, utilisateur, date...</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">9</span><span class="material-symbols-outlined step-icon" aria-hidden="true">local_shipping</span></div><div class="step-content"><h4 class="step-title">Livraison & Mise en Service</h4><p class="step-description">Remise, assistance 1ère connexion, vérif fonctionnement.</p></div></div>
+                                        <div class="step-connector"></div>
+                                        <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">10</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Clôture Ticket</h4><p class="step-description">Ticket S@Mlocal associé clôturé.</p></div></div>
+                                    </div>
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal, Outil gestion parc, Outils déploiement image, ADUC, WSUS, Base de connaissances.</p>
+                                     <p><strong>Points d'Attention :</strong> Respecter config standard, gestion licences, pas logiciels non approuvés, MàJ inventaire, coordination Service 5, rappel sauvegarde réseau utilisateur (si remplacement).</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 2.3 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-3" id="activity-trigger-2-3">2.3 : Maintenance et Réparation des Postes de Travail<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-3" role="region" aria-labelledby="activity-trigger-2-3" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Diagnostiquer et résoudre les pannes matérielles ou dysfonctionnements systèmes majeurs.
+                                    <p><strong>Déclencheurs :</strong> Ticket incident escaladé N1 (poste ne démarre pas, charge HS, BSOD, panne composant...).</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support_agent</span></div><div class="step-content"><h4 class="step-title">Prise en charge Ticket</h4><p class="step-description">Examen historique et diagnostics N1.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">diagnosis</span></div><div class="step-content"><h4 class="step-title">Diagnostic Approfondi (N2)</h4><p class="step-description">Tests matériels (BIOS, RAM, disque), analyse logs Windows. Récupération poste si besoin.</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                         <div class="process-step decision-step">
+                                             <div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">help_center</span></div>
+                                            <div class="step-content decision-question"><h4 class="step-title">Cause Racine ?</h4></div>
+                                            <div class="decision-branches-container">
+                                                <div class="decision-branch branch-yes"> <!-- Branche Matériel -->
+                                                    <div class="branch-path">
+                                                        <span class="branch-label">Matériel</span>
+                                                        <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">handyman</span></div><div class="step-content"><h4 class="step-title">Planification Réparation Matériel</h4><p class="step-description">Identif. composant, vérif garantie, procédure fournisseur ou évaluation coût/pertinence si hors garantie.</p></div></div>
+                                                    </div>
+                                                </div>
+                                                 <div class="decision-branch branch-no"> <!-- Branche Logiciel -->
+                                                     <div class="branch-path">
+                                                         <span class="branch-label">Logiciel</span>
+                                                         <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">desktop_windows</span></div><div class="step-content"><h4 class="step-title">Planification Réparation Logicielle</h4><p class="step-description">Tentative réparation système. Si échec, planification réinstallation complète (après info utilisateur).</p></div></div>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <div class="step-connector after-decision"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">construction</span></div><div class="step-content"><h4 class="step-title">Exécution Réparation / Réinstallation</h4><p class="step-description">Remplacement composant ou ré-imagerie.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">cloud_sync</span></div><div class="step-content"><h4 class="step-title">Gestion Données Utilisateur</h4><p class="step-description">Rappel sauvegarde réseau obligatoire. Récupération locale non garantie. Sauvegarde temp. possible si disque OK.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">fact_check</span></div><div class="step-content"><h4 class="step-title">Tests Post-Réparation</h4><p class="step-description">Vérification fonctionnement complet du poste.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Restitution & Clôture</h4><p class="step-description">Restitution à l'utilisateur, confirmation. MAJ ticket/inventaire.</p></div></div>
+                                         <p><em>Note: En cas de réparation longue, un poste de prêt peut être proposé si disponible.</em></p>
+                                    </div>
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal, Inventaire, Outils diagnostic matériel/logiciel, Outils déploiement image, Outils physiques (si réparation interne), Portails fournisseurs.</p>
+                                     <p><strong>Points d'Attention :</strong> Procédures garantie, manipulation matérielle (ESD), confidentialité données, communication utilisateur (délais, risques données locales), pièces approuvées, documentation.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 2.4 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-4" id="activity-trigger-2-4">2.4 : Gestion et Remplacement des Périphériques<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-4" role="region" aria-labelledby="activity-trigger-2-4" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Fournir, remplacer et supporter les périphériques individuels standards (moniteur, clavier, souris, dock...).
+                                    <p><strong>Déclencheurs :</strong> Demande S@Mlocal (panne, nouveau besoin), équipement nouvel arrivant, renouvellement.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">input</span></div><div class="step-content"><h4 class="step-title">Réception & Qualification Demande</h4><p class="step-description">Via S@Mlocal. Panne ou nouveau besoin ?</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">approval</span></div><div class="step-content"><h4 class="step-title">Validation Demande</h4><p class="step-description">Modèle standard? Besoin justifié? Validation managériale?</p></div></div>
+                                         <div class="step-connector decision"></div>
+                                         <div class="process-step decision-step">
+                                             <div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">inventory</span></div>
+                                            <div class="step-content decision-question"><h4 class="step-title">Disponible en Stock ?</h4></div>
+                                            <div class="decision-branches-container">
+                                                <div class="decision-branch branch-yes"> <!-- En Stock -->
+                                                    <div class="branch-path">
+                                                        <span class="branch-label">Oui</span>
+                                                        <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3a</span><span class="material-symbols-outlined step-icon" aria-hidden="true">package</span></div><div class="step-content"><h4 class="step-title">Traitement Stock</h4><p class="step-description">Préparation, livraison/remise, aide connexion, récup ancien.</p></div></div>
+                                                    </div>
+                                                </div>
+                                                 <div class="decision-branch branch-no"> <!-- Commande -->
+                                                     <div class="branch-path">
+                                                         <span class="branch-label">Non</span>
+                                                         <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3b</span><span class="material-symbols-outlined step-icon" aria-hidden="true">shopping_cart</span></div><div class="step-content"><h4 class="step-title">Commande</h4><p class="step-description">Initiation commande USGF, info délai utilisateur.</p></div></div>
+                                                          <div class="step-connector-branch"></div>
+                                                         <div class="process-step it-step nested"><div class="step-icon-container"><span class="step-number">3c</span><span class="material-symbols-outlined step-icon" aria-hidden="true">package</span></div><div class="step-content"><h4 class="step-title">Traitement à Réception</h4><p class="step-description">Préparation, livraison/remise...</p></div></div>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <div class="step-connector after-decision"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">label</span></div><div class="step-content"><h4 class="step-title">Mise à Jour Inventaire</h4><p class="step-description">Enregistrement nouveau périphérique (si pertinent).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">task_alt</span></div><div class="step-content"><h4 class="step-title">Tests & Clôture</h4><p class="step-description">Vérification fonctionnement avec utilisateur, clôture ticket.</p></div></div>
+                                     </div>
+                                      <p><em>Note : La gestion du cycle de vie (suivi, recyclage) est une activité continue.</em></p>
+                                     <p><strong>Outils Principaux :</strong> S@Mlocal, Inventaire, Catalogue matériel standard, Processus commande USGF.</p>
+                                     <p><strong>Points d'Attention :</strong> Privilégier standards, PAS périphériques perso, assurer compatibilité, gérer stocks tampons, procédures recyclage.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 2.5 -->
+                             <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-5" id="activity-trigger-2-5">2.5 : Assistance Technique et Dépannage sur Site<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-5" role="region" aria-labelledby="activity-trigger-2-5" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Intervenir physiquement (bureau/domicile si autorisé) si résolution distante impossible/inefficace.
+                                    <p><strong>Déclencheurs :</strong> Escalade N1 (intervention requise), incident critique bloquant, besoin install/remplacement physique.</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">support_agent</span></div><div class="step-content"><h4 class="step-title">Prise en charge Ticket/Demande</h4><p class="step-description">Examen historique et diagnostics.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">construction</span></div><div class="step-content"><h4 class="step-title">Préparation Intervention</h4><p class="step-description">Identification outils et pièces potentiels.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">calendar_month</span></div><div class="step-content"><h4 class="step-title">Planification avec Utilisateur</h4><p class="step-description">Prise de RDV, confirmation adresse si besoin.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">directions_walk</span></div><div class="step-content"><h4 class="step-title">Déplacement sur Site</h4><p class="step-description">Respect des horaires convenus.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">build_circle</span></div><div class="step-content"><h4 class="step-title">Intervention Technique</h4><p class="step-description">Diagnostic final, réparation, installation, configuration.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">fact_check</span></div><div class="step-content"><h4 class="step-title">Tests & Validation</h4><p class="step-description">Confirmation du bon fonctionnement avec l'utilisateur.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">7</span><span class="material-symbols-outlined step-icon" aria-hidden="true">info</span></div><div class="step-content"><h4 class="step-title">Conseils & Clôture sur Place</h4><p class="step-description">Fournir explications, informer MAJ ticket.</p></div></div>
+                                          <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">8</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_note</span></div><div class="step-content"><h4 class="step-title">Mise à Jour Post-Intervention</h4><p class="step-description">Documentation S@Mlocal, MAJ inventaire si besoin.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">9</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Clôture Ticket</h4><p class="step-description">Clôture finale du ticket S@Mlocal.</p></div></div>
+                                     </div>
+                                    <p><strong>Outils Principaux :</strong> S@Mlocal, Outils diagnostic portables, Mallette outils, Pièces rechange, Moyen transport.</p>
+                                     <p><strong>Points d'Attention :</strong> Respect confidentialité/espace travail, professionnalisme, sécurité, périmètre ticket, doc factuelle, procédure intervention domicile.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 2.6 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-6" id="activity-trigger-2-6">2.6 : Suivi du Parc Informatique et Gestion des Incidents Matériels<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-6" role="region" aria-labelledby="activity-trigger-2-6" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Maintenir l'inventaire précis, suivre les incidents matériels, coordonner la maintenance/réparation (y.c. fournisseurs), et aider à la planification du renouvellement.
+                                    <p><strong>Déclencheurs :</strong> Activité continue (enregistrements inventaire, tickets incidents, infos garantie...).</p>
+                                    <p><strong>Activités Principales :</strong> Gestion Inventaire (enregistrement, MAJ affectation/statuts, audits), Suivi Incidents Matériels (analyse S@Mlocal, pannes récurrentes, reporting), Coordination Réparations Garantie (ouverture dossiers, logistique, suivi, test retour), Maintenance Préventive (si applicable), Planification Renouvellement (fournir données), Gestion Fournisseurs.</p>
+                                    <p><strong>Outils Principaux :</strong> Outil gestion parc/Inventaire/CMDB, S@Mlocal, Portails support/garantie fournisseurs, Outils reporting.</p>
+                                    <p><strong>Points d'Attention :</strong> Précision inventaire cruciale, suivi rigoureux garanties, analyse incidents pour anticipation, respect procédures contractuelles, traçabilité.</p>
+                                </div></div>
+                            </div>
+                            <!-- Activité 2.7 -->
+                            <div class="accordion-item">
+                                <h3><button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="activity-content-2-7" id="activity-trigger-2-7">2.7 : Remplacement et Réattribution Post-Incident Majeur<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+                                <div id="activity-content-2-7" role="region" aria-labelledby="activity-trigger-2-7" class="accordion-content"><div>
+                                    <strong>Objectif :</strong> Gérer les cas exceptionnels (perte, vol, dommage majeur) : sécurité, remplacement rapide, continuité activité.
+                                    <p><strong>Déclencheurs :</strong> Ticket S@Mlocal perte/vol confirmé, dommage irréparable (validé).</p>
+                                     <div class="process-flow">
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">1</span><span class="material-symbols-outlined step-icon" aria-hidden="true">warning</span></div><div class="step-content"><h4 class="step-title">Réception & Validation Incident</h4><p class="step-description">Prise en charge ticket, vérification validation.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">2</span><span class="material-symbols-outlined step-icon" aria-hidden="true">security</span></div><div class="step-content"><h4 class="step-title">Actions Sécurité Immédiates</h4><p class="step-description">(Si Perte/Vol) Coordination N3: Verrouillage/Effacement distant, Révocation certificats, Reset MDP AD.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">3</span><span class="material-symbols-outlined step-icon" aria-hidden="true">devices_other</span></div><div class="step-content"><h4 class="step-title">Fournir Remplacement</h4><p class="step-description">Priorité 1: Poste de prêt. Priorité 2: Poste définitif (Fiche 2.1).</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step user-step"><div class="step-icon-container"><span class="step-number">4</span><span class="material-symbols-outlined step-icon" aria-hidden="true">cloud_off</span></div><div class="step-content"><h4 class="step-title">Gestion Données Utilisateur</h4><p class="step-description">Informer perte données locales. Assister accès données réseau. Rappel politique sauvegarde.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">5</span><span class="material-symbols-outlined step-icon" aria-hidden="true">edit_note</span></div><div class="step-content"><h4 class="step-title">Mise à Jour Admin & Inventaire</h4><p class="step-description">Marquer ancien poste, enregistrer nouveau, suivi sinistre.</p></div></div>
+                                         <div class="step-connector"></div>
+                                         <div class="process-step it-step"><div class="step-icon-container"><span class="step-number">6</span><span class="material-symbols-outlined step-icon" aria-hidden="true">assignment_turned_in</span></div><div class="step-content"><h4 class="step-title">Finalisation</h4><p class="step-description">Récupérer prêt (si utilisé), vérifier. Clôture ticket.</p></div></div>
+                                     </div>
+                                    <p><strong>Outils Principaux :</strong> S@Mlocal, Inventaire, Outils sécurité (MDM, AD), Stock postes prêt/neufs, Procédures déclaration sinistre.</p>
+                                    <p><strong>Points d'Attention :</strong> Réactivité sécu/continuité, actions sécu prioritaires, comm claire (données locales), suivi procédures admin, gestion stock prêts.</p>
+                                </div></div>
+                            </div>
+                        </div> <!-- Fin Accordéon -->
+                    </div> <!-- Fin Panel Activités -->
+
+                </div> <!-- Fin Tab Panels -->
+            </div> <!-- Fin Tabs Container -->
+
+        </div> <!-- Fin Container -->
+    </main>
+
+    <!-- ***** FOOTER (Commun) ***** -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year">2024</span> DRSM Île-de-France - Tous droits réservés.</p>
+            <ul>
+                <li><a href="http://toutenclic.ersm-idf.cnamts.fr/index.php?id=7701&FILTER=0" target="_blank" rel="noopener noreferrer">Toutenclic</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
