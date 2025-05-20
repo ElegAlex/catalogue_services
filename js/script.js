@@ -2,11 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Catalogue IT DRSM IDF - Initialisation JS Globale.");
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> becb2bcb588f511a1f0f3cea860c0aae982af8e4
     // --- Mise à jour automatique de l'année dans le footer ---
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
@@ -193,10 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-<<<<<<< HEAD
 
 }); // Fin DOMContentLoaded
-=======
-}); // Fin DOMContentLoaded
 
->>>>>>> becb2bcb588f511a1f0f3cea860c0aae982af8e4
