@@ -1,1 +1,0 @@
-# catalogue_services
