@@ -17,3 +17,7 @@ All project documentation can be found inside the [`Documentation/`](Documentati
 2. Open `index.html` in your web browser to browse the catalogue.
 3. Optionally launch a local server (for example `python -m http.server`) and visit `http://localhost:8000` for a smoother navigation experience.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
